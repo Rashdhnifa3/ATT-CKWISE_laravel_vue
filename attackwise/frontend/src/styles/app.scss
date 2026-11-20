@@ -1,0 +1,132 @@
+// Global styles. Sources: nav-app/src/styles.scss (font imports, body, print page) and
+// nav-app/src/app/app.component.scss (app container, version footer). Angular Material
+// dialog/snackbar chrome is replaced by the small .aw-dialog / .aw-snackbar rules below.
+@use 'sass:color';
+@use './attackwise-tokens';
+@use './colors.scss';
+@use './shell.scss';
+@import '@fontsource/plus-jakarta-sans/400.css';
+@import '@fontsource/plus-jakarta-sans/600.css';
+@import '@fontsource/plus-jakarta-sans/700.css';
+@import '@fontsource/noto-kufi-arabic/400.css';
+@import '@fontsource/noto-kufi-arabic/600.css';
+@import '@fontsource/jetbrains-mono/400.css';
+
+@media print {
+    @page {
+        size: A3;
+        margin: 0;
+    }
+}
+
+body {
+    margin: 0;
+    overflow-y: scroll;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.app-container {
+    min-height: 100vh;
+    @include colors.adaptive-color('background-color', colors.color(body), colors.color(dark-1));
+}
+
+.nav-app {
+    @include colors.adaptive-color('background-color', colors.color(light), color.scale(colors.color(dark), $lightness: -8%));
+
+    .tabs-host {
+        display: block;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 9pt;
+    }
+
+    .version-footer {
+        font-size: 7pt;
+        border: none;
+        background-color: transparent;
+        text-align: right;
+        margin-left: 16px;
+        display: block;
+        position: static;
+        padding: 12px 0;
+        @include colors.adaptive-color('color', colors.on-color(light), colors.on-color(dark-2));
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        @media print {
+            display: none;
+        }
+    }
+}
+
+// Replacement for MatDialog / MatSnackBar chrome (dark theme, as the reference forces theme-override-dark).
+.aw-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: grid;
+    place-items: center;
+    background: rgba(0, 0, 0, 0.32);
+}
+.aw-dialog {
+    background: colors.color(dark-2);
+    color: colors.on-color(dark);
+    border-radius: 4px;
+    padding: 24px;
+    max-width: min(75ch, calc(100vw - 32px));
+    max-height: 80vh;
+    overflow: auto;
+    font: 14px/1.5 Roboto, 'Helvetica Neue', sans-serif;
+    box-shadow: 0 11px 15px -7px #0003, 0 24px 38px 3px #00000024, 0 9px 46px 8px #0000001f;
+    h3 {
+        margin: 0 0 12px;
+        text-align: center;
+    }
+    .aw-dialog-actions {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        margin-top: 16px;
+    }
+    button {
+        font: inherit;
+        color: inherit;
+        background: transparent;
+        border: 1px solid colors.color(dark-4);
+        border-radius: 4px;
+        padding: 6px 16px;
+        cursor: pointer;
+    }
+    a {
+        color: colors.color(dark-link);
+    }
+    .markdown {
+        font-size: 11pt;
+    }
+}
+.aw-snackbar {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    max-width: min(672px, calc(100vw - 32px));
+    padding: 6px 8px 6px 16px;
+    border-radius: 4px;
+    background: #333;
+    color: #fff;
+    font: 14px/20px Roboto, 'Helvetica Neue', sans-serif;
+    box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
+    button {
+        background: transparent;
+        border: 0;
+        color: #ff4081;
+        font: inherit;
+        font-weight: 500;
+        padding: 8px;
+        cursor: pointer;
+    }
+}
