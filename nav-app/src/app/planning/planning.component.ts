@@ -10,12 +10,18 @@ import { DataService } from '../services/data.service';
 import { ViewModelsService } from '../services/viewmodels.service';
 import { validScore, scoreStyle } from './planning-state';
 import { PlanStorageService } from './plan-storage.service';
+import { D3fendService } from './d3fend.service';
+import { D3fendEvidence, isD3fendId } from './d3fend-data';
+type DefenseSource = 'attack' | 'd3fend' | 'custom';
 interface Defense {
     id: string;
     name: string;
     description: string;
     attackID: string;
-    mappings: { attack: Technique; source: string }[];
+    source: DefenseSource;
+    /** D3FEND tactic, only for D3FEND defenses and only when present in the imported data. */
+    d3fendTactic?: string;
+    mappings: { attack: Technique; source: string; mappingType?: string; evidence?: D3fendEvidence[] }[];
 }
 @Component({
     selector: 'wise-planning',
@@ -76,7 +82,17 @@ export class PlanningComponent {
     }
     get defenseCatalog() {
         const q = this.defenseSearch.trim().toLowerCase();
-        return this.defenses.filter(m => (!this.researchAttack || m.mappings.some(r => r.attack.attackID === this.researchAttack)) && (!q || (m.attackID + ' ' + m.name + ' ' + this.ui.name(m)).toLowerCase().includes(q)) && (this.defenseFilter === 'All' || this.defenseFilter === 'Selected' && this.chosenForContext(m) || this.defenseFilter === 'Official' && m.attackID !== 'Custom' || this.defenseFilter === 'Custom' && m.attackID === 'Custom'));
+        return this.defenses.filter(m => (!this.researchAttack || m.mappings.some(r => r.attack.attackID === this.researchAttack)) && (!q || (m.attackID + ' ' + m.name + ' ' + this.ui.name(m) + ' ' + this.sourceLabel(m) + ' ' + (m.d3fendTactic || '')).toLowerCase().includes(q)) && (this.defenseFilter === 'All' || this.defenseFilter === 'Selected' && this.chosenForContext(m) || this.defenseFilter === 'Official' && m.source === 'attack' || this.defenseFilter === 'D3FEND' && m.source === 'd3fend' || this.defenseFilter === 'Custom' && m.source === 'custom'));
+    }
+    sourceLabel(m: Defense) { return m.source === 'd3fend' ? 'MITRE D3FEND' : m.source === 'custom' ? this.ui.tr('Custom','مخصص') : 'MITRE ATT&CK'; }
+    evidenceText(e: D3fendEvidence) { return [this.ui.tr('Defense ','الدفاع ') + (e.defenseRelation || '—'), this.ui.tr('attack ','الهجوم ') + (e.offensiveRelation || '—'), e.artifact || this.ui.tr('artifact not specified','الأداة غير محددة')].join(' · '); }
+    /** Shown when the selected technique has no imported D3FEND relation (absence of a mapping ≠ absence of a defense). */
+    get d3fendNote() {
+        if (this.defenseFilter !== 'All' && this.defenseFilter !== 'D3FEND') return '';
+        if (this.d3fend.status === 'error') return this.ui.tr('D3FEND reference data could not be loaded.','تعذر تحميل بيانات D3FEND المرجعية.');
+        if (this.d3fend.status !== 'ready') return this.ui.tr('Loading D3FEND reference data…','جارٍ تحميل بيانات D3FEND المرجعية…');
+        if (!this.researchAttack || this.d3fend.relationsFor(this.researchAttack).length) return '';
+        return this.ui.tr('No D3FEND mapping for ','لا توجد علاقة D3FEND للتقنية ') + this.researchAttack + this.ui.tr(' in the imported data. This does not mean no effective defense exists.',' في البيانات المستوردة. هذا لا يعني عدم وجود دفاع فعّال.');
     }
     tacticNames(t: Technique) { return t.tactics.map(name => { const tactic = this.tactics.find(x => x.shortname === name); return tactic ? this.ui.name(tactic) : name; }).join(' · '); }
     get activeAttack() { return this.attacks.find(t => t.attackID === this.researchAttack) || this.attacks[0]; }
@@ -164,7 +180,9 @@ export class PlanningComponent {
     draft: number | null = null;
     customName = '';
     customDescription = '';
-    customAttack = '';
+    customAttacks: string[] = [];
+    customScore: number | null = null;
+    toggleCustomAttack(id: string, checked: boolean) { this.customAttacks = checked ? [...new Set([...this.customAttacks, id])] : this.customAttacks.filter(a => a !== id); }
     customEditing = '';
     showCustom = false;
     customError = '';
@@ -173,7 +191,7 @@ export class PlanningComponent {
     defenseFilter = 'All';
     defenseSearch = '';
     defensePage = 0;
-    defenseFilters = ['All', 'Selected', 'Not Selected', 'Official', 'Additional Sources', 'Custom'];
+    defenseFilters = ['All', 'Selected', 'Not Selected', 'Official', 'D3FEND', 'Custom'];
     get researchedAttacks() { return this.attacks.filter(t => !this.researchAttack || t.attackID === this.researchAttack); }
     get filteredDefenses() {
         const q = this.defenseSearch.toLowerCase().trim();
@@ -181,12 +199,12 @@ export class PlanningComponent {
             (!q || (m.name + ' ' + m.attackID).toLowerCase().includes(q)) &&
             (this.defenseFilter === 'All' || this.defenseFilter === 'Selected' && this.state.selectedDefenses.includes(m.id) ||
              this.defenseFilter === 'Not Selected' && !this.state.selectedDefenses.includes(m.id) ||
-             this.defenseFilter === 'Official' && m.attackID !== 'Custom' || this.defenseFilter === 'Custom' && m.attackID === 'Custom'));
+             this.defenseFilter === 'Official' && m.source === 'attack' || this.defenseFilter === 'D3FEND' && m.source === 'd3fend' || this.defenseFilter === 'Custom' && m.source === 'custom'));
     }
     get visibleDefenses() { return this.filteredDefenses.slice(this.defensePage * 8, (this.defensePage + 1) * 8); }
-    mappingKind(m: Defense) { return m.attackID === 'Custom' ? 'Custom' : m.mappings.some(r => r.source.includes('Direct')) ? 'Direct' : 'Parent-level'; }
+    mappingKind(m: Defense) { return m.source === 'custom' ? 'Custom' : m.source === 'd3fend' ? 'D3FEND inferred' : m.mappings.some(r => r.source.includes('Direct')) ? 'Direct' : 'Parent-level'; }
     relatedNames(m: Defense) { return [...new Set(m.mappings.map(r => r.attack.attackID))].join(' · '); }
-    addCustom() { this.showCustom = true; this.customEditing = ''; this.customName = ''; this.customDescription = ''; this.customAttack = this.activeAttack?.attackID || ''; this.customError = ''; setTimeout(() => this.host.nativeElement.querySelector('#custom-name')?.focus()); }
+    addCustom() { this.showCustom = true; this.customEditing = ''; this.customName = ''; this.customDescription = ''; this.customAttacks = this.activeAttack ? [this.activeAttack.attackID] : []; this.customScore = null; this.customError = ''; setTimeout(() => this.host.nativeElement.querySelector('#custom-name')?.focus()); }
     deleteCustom(id: string) {
         this.state.customDefenses = this.state.customDefenses.filter(m => m.id !== id);
         this.state.selectedDefenses = this.state.selectedDefenses.filter(value => value !== id);
@@ -214,8 +232,10 @@ export class PlanningComponent {
         public data: DataService,
         private models: ViewModelsService,
         private host: ElementRef,
-        private storage: PlanStorageService
+        private storage: PlanStorageService,
+        public d3fend: D3fendService
     ) {
+        this.d3fend.load();
         try {
             this.colorBlind = localStorage.getItem('attackwise-color-blind') === 'true';
         } catch {
@@ -251,7 +271,7 @@ export class PlanningComponent {
         this.researchAttack = ''; this.defensePage = 0; this.showCustom = false;
     }
     hasOfficialMapping(t: Technique) {
-        return this.defenses.some((m) => m.attackID !== 'Custom' && m.mappings.some((r) => r.attack.id === t.id));
+        return this.defenses.some((m) => m.source === 'attack' && m.mappings.some((r) => r.attack.id === t.id));
     }
     get filtered() {
         const q = this.search.toLowerCase().trim();
@@ -276,6 +296,7 @@ export class PlanningComponent {
                     name: m.name,
                     description: m.description,
                     attackID: m.attackID,
+                    source: 'attack' as DefenseSource,
                     mappings: selectedAttacks.flatMap((attack) => {
                         const mappings = [];
                         if (related.includes(attack.id)) mappings.push({ attack, source: 'MITRE ATT&CK · Direct mapping' });
@@ -288,11 +309,36 @@ export class PlanningComponent {
         const custom = this.state.customDefenses.map((m) => ({
             ...m,
             attackID: 'Custom',
+            source: 'custom' as DefenseSource,
             mappings: selectedAttacks
                 .filter((a) => m.attackIDs.includes(a.attackID))
                 .map((attack) => ({ attack, source: 'User-defined mapping · Not an official ATT&CK relationship' })),
         }));
-        return [...official, ...custom].map(m => ({...m, mappings: [...m.mappings, ...selectedAttacks.filter(t => (this.state.manualDefenseMappings[m.id] || []).includes(t.attackID) && !m.mappings.some(r=>r.attack.id===t.id)).map(attack=>({attack,source:'User-defined mapping · Not an official ATT&CK relationship'}))]}));
+        return [...official, ...this.d3fendDefenses(selectedAttacks), ...custom].map(m => ({...m, mappings: [...m.mappings, ...selectedAttacks.filter(t => (this.state.manualDefenseMappings[m.id] || []).includes(t.attackID) && !m.mappings.some(r=>r.attack.id===t.id)).map(attack=>({attack,source:'User-defined mapping · Not an official ATT&CK relationship'}))]}));
+    }
+    /**
+     * Every imported D3FEND technique, mapped to the selected attacks by exact ATT&CK ID (no parent →
+     * sub-technique inheritance), plus any D3FEND defense referenced by the plan so saved choices never vanish.
+     */
+    d3fendDefenses(selectedAttacks: Technique[]): Defense[] {
+        const byId = new Map<string, Defense>();
+        const entry = (id: string) => {
+            let d = byId.get(id);
+            if (!d) {
+                const info = this.d3fend.index?.defenses.get(id);
+                d = { id, name: info?.name || id.slice(4), description: '', attackID: id, source: 'd3fend', d3fendTactic: info?.tactic || '', mappings: [] };
+                byId.set(id, d);
+            }
+            return d;
+        };
+        for (const id of this.d3fend.index?.defenses.keys() || []) entry(id);
+        for (const attack of selectedAttacks)
+            for (const rel of this.d3fend.relationsFor(attack.attackID))
+                entry(rel.defense.id).mappings.push({ attack, source: 'MITRE D3FEND · ' + (rel.type || 'Mapping type not specified'), mappingType: rel.type, evidence: rel.evidence });
+        const s = this.state;
+        const referenced = [...s.selectedDefenses, ...s.standaloneDefenses, ...Object.keys(s.defenseScores), ...Object.keys(s.manualDefenseMappings), ...Object.values(s.defenseSelections).flatMap(Object.keys), ...Object.values(s.ratings).flatMap(Object.keys)];
+        for (const id of referenced) if (isD3fendId(id)) entry(id);
+        return [...byId.values()].sort((a, b) => a.name.localeCompare(b.name));
     }
     get selectedDefenses() {
         return this.defenses.filter((m) => this.state.selectedDefenses.includes(m.id));
@@ -379,19 +425,25 @@ export class PlanningComponent {
     saveScore() {
         if (!this.editor || !validScore(this.draft)) return;
         (this.editor.defense ? this.state.defenseScores : this.state.attackScores)[this.editor.id] = this.draft;
+        this.editor = null;
         this.changed();
     }
     saveCustom() {
-        if (!this.customName.trim() || !this.attacks.some((a) => a.attackID === this.customAttack)) { this.customError = 'Enter a name and choose a selected attack.'; return; }
+        const targets = this.customAttacks.filter(id => this.attacks.some(a => a.attackID === id));
+        if (!this.customName.trim() || !targets.length) { this.customError = this.ui.tr('Enter a name and choose at least one attack.','أدخل اسماً واختر هجوماً واحداً على الأقل.'); return; }
+        if (this.customScore !== null && (this.customScore as unknown) !== '' && !validScore(this.customScore)) { this.customError = this.ui.tr('Score must be a whole number from 0 to 10.','السكور رقم صحيح من 0 إلى 10.'); return; }
         const id = this.customEditing || `custom-${Date.now()}-${Math.random().toString(36).slice(2)}`;
         const existing = this.state.customDefenses.find((m) => m.id === id);
-        const value = { id, name: this.customName.trim(), description: this.customDescription.trim(), attackIDs: [this.customAttack] };
+        const value = { id, name: this.customName.trim(), description: this.customDescription.trim(), attackIDs: targets };
+        for (const old of existing?.attackIDs || []) if (!targets.includes(old)) this.state.defenseSelections[old] = { ...this.state.defenseSelections[old], [id]: false };
         if (existing) Object.assign(existing, value);
         else this.state.customDefenses.push(value);
         if (!this.state.selectedDefenses.includes(id)) this.state.selectedDefenses.push(id);
-        this.state.defenseSelections[this.customAttack] = { ...this.state.defenseSelections[this.customAttack], [id]: true };
-        this.edit(id, value.name, true);
+        for (const attack of targets) this.state.defenseSelections[attack] = { ...this.state.defenseSelections[attack], [id]: true };
+        if (validScore(this.customScore)) this.state.defenseScores[id] = this.customScore;
+        else delete this.state.defenseScores[id];
         this.customName = this.customDescription = this.customEditing = '';
+        this.customAttacks = []; this.customScore = null;
         this.showCustom = false; this.customError = '';
         this.changed();
     }
@@ -403,7 +455,8 @@ export class PlanningComponent {
             this.customEditing = id;
             this.customName = m.name;
             this.customDescription = m.description;
-            this.customAttack = m.attackIDs[0];
+            this.customAttacks = [...m.attackIDs];
+            this.customScore = this.state.defenseScores[id] ?? null;
         }
     }
     finalize() {
@@ -518,7 +571,7 @@ export class PlanningComponent {
                     1100
                 );
                 ctx.fillText('User-defined scenario assessments, not verified real-world effectiveness. Residual risk uses the strongest deployed defense.', 40, 1440);
-                ctx.fillText('Source: MITRE ATT&CK. Custom mappings are user-defined.', 40, 1470);
+                ctx.fillText('Sources: MITRE ATT&CK; MITRE D3FEND (inferred mappings). Custom mappings are user-defined.', 40, 1470);
                 const blob = await new Promise<Blob>((resolve, reject) =>
                     canvas.toBlob((b) => (b ? resolve(b) : reject(new Error('PNG encoding failed'))), 'image/png')
                 );

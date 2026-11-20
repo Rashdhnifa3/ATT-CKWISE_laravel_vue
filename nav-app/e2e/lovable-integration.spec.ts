@@ -57,7 +57,7 @@ test('Enterprise-only, optional scoring, per-attack defense selections, exports 
     await page.locator('#scenario-score').fill('0');
     await page.getByRole('button',{name:'Save score',exact:true}).click();
     await expect(page.locator('.report-table')).toContainText('0/10');
-    await page.getByRole('button',{name:'Close scoring panel'}).click();
+    await expect(page.locator('.score-drawer')).toHaveCount(0);
     await nav.getByRole('button',{name:/Attack Plan/}).click();
     await page.getByRole('button',{name:/2 sub-techniques/}).click();
     await page.getByRole('button',{name:/T1595.001 Scanning IP Blocks/}).click();
@@ -66,11 +66,11 @@ test('Enterprise-only, optional scoring, per-attack defense selections, exports 
     await page.locator('.attack-list').getByRole('button',{name:/Active Scanning/}).click();
     await page.getByRole('button',{name:'Select defense',exact:true}).click();
     await page.getByRole('button',{name:'Close scoring panel'}).click();
-    await expect(page.locator('.defense-stats')).toContainText('50%');
+    await expect(page.locator('.attack-list .status[data-status=covered]')).toHaveCount(1);
     await page.locator('.attack-list').getByRole('button',{name:/T1595.001/}).click();
     await page.getByRole('button',{name:'Select defense',exact:true}).click();
     await page.getByRole('button',{name:'Close scoring panel'}).click();
-    await expect(page.locator('.defense-stats')).toContainText('100%');
+    await expect(page.locator('.attack-list .status[data-status=covered]')).toHaveCount(2);
     await page.getByRole('button',{name:'Language',exact:true}).click();
     await expect(page.locator('html')).toHaveAttribute('dir','rtl');
     await page.setViewportSize({width:390,height:844});

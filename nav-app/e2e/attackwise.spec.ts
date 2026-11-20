@@ -73,7 +73,7 @@ test('custom defenses and optional attack scores survive JSON round trip', async
     await page.getByRole('button',{name:'Save defense',exact:true}).click();
     const custom = page.locator('.mitigation.custom');
     await expect(custom.getByRole('button',{name:'Selected',exact:true})).toHaveAttribute('aria-pressed','true');
-    await expect(page.locator('.defense-stats')).toContainText('100%');
+    await expect(page.locator('.attack-list .status[data-status=covered]')).toHaveCount(1);
     await nav.getByRole('button',{name:/Final Plan/}).click();
     const downloaded = page.waitForEvent('download');
     await page.getByRole('button',{name:'Download plan JSON',exact:true}).click();

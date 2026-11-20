@@ -51,19 +51,22 @@ test('score coloring, full-width tactic filter, mitigation filters, persisted th
     const card = page.locator('.technique-card').filter({has:page.locator('.technique-id',{hasText:'T1595'})});
     const backgrounds: string[] = [];
     for (const [score,level] of [['0','low'],['5','medium'],['9','high']]) {
+        if (score !== '0') await card.locator('.score-link').click();
         await page.locator('#scenario-score').fill(score);
         await page.getByRole('button',{name:'Save score',exact:true}).click();
         await expect(card).toHaveAttribute('data-risk',level);
         backgrounds.push(await card.evaluate(e=>getComputedStyle(e).backgroundColor));
     }
     expect(new Set(backgrounds).size).toBe(3);
-    await page.getByRole('button',{name:'Close scoring panel'}).click();
+    await expect(page.locator('.score-drawer')).toHaveCount(0);
     await page.screenshot({path:'tmp/playwright/refined-attack.png',fullPage:true});
     await page.locator('.tactic-pills').getByRole('button',{name:'All tactics',exact:true}).click();
     await expect(page.locator('.tactic-column')).toHaveCount(2);
     const nav=page.getByRole('navigation',{name:'Plan views'});
     await nav.getByRole('button',{name:/Defensive Plan/}).click();
-    await expect(page.locator('.mitigation')).toHaveCount(2);
+    await expect(page.locator('.mitigation:not(.d3fend)')).toHaveCount(2);
+    await expect(page.locator('.mitigation.d3fend')).toHaveCount(149);
+    await expect(page.locator('.defense-stats')).toHaveCount(0);
     await expect(page.getByRole('button',{name:/Fully applied|Not applied/})).toHaveCount(0);
     await page.getByLabel('Search mitigations',{exact:true}).fill('M9999');
     await expect(page.locator('.mitigation')).toHaveCount(1);
@@ -73,7 +76,7 @@ test('score coloring, full-width tactic filter, mitigation filters, persisted th
     await expect(page.locator('.mitigation')).toHaveCount(1);
     await page.getByRole('button',{name:'Select defense',exact:true}).click();
     await page.getByRole('button',{name:'Close scoring panel'}).click();
-    await expect(page.locator('.defense-stats')).toContainText('100%');
+    await expect(page.locator('.attack-list .status[data-status=covered]')).toHaveCount(1);
     await page.getByLabel('Mitigation filter',{exact:true}).selectOption('Selected');
     await expect(page.locator('.mitigation')).toHaveCount(1);
     await page.getByRole('button',{name:'Selected',exact:true}).click();
@@ -110,21 +113,18 @@ test('defense scores, manual links and all formulas survive refresh and JSON exp
     await page.getByRole('button',{name:/T1595 Active Scanning/}).click();
     await page.locator('#scenario-score').fill('8');
     await page.getByRole('button',{name:'Save score',exact:true}).click();
-    await page.getByRole('button',{name:'Close scoring panel'}).click();
     const nav = page.getByRole('navigation',{name:'Plan views'});
     await nav.getByRole('button',{name:/Defensive Plan/}).click();
     const official = page.locator('.mitigation').filter({hasText:'Network Defense'});
     await official.getByRole('button',{name:'Select defense',exact:true}).click();
     await page.locator('#scenario-score').fill('9');
     await page.getByRole('button',{name:'Save score',exact:true}).click();
-    await page.getByRole('button',{name:'Close scoring panel'}).click();
     await expect(official).toHaveAttribute('data-defense','high');
     const manual = page.locator('.mitigation').filter({hasText:'Unrelated defense'});
     await manual.getByRole('button',{name:'Select defense',exact:true}).click();
+    await page.locator('.defense-links input[type=checkbox]').check();
     await page.locator('#scenario-score').fill('3');
     await page.getByRole('button',{name:'Save score',exact:true}).click();
-    await page.locator('.defense-links input[type=checkbox]').check();
-    await page.getByRole('button',{name:'Close scoring panel'}).click();
     await expect(manual).toHaveAttribute('data-defense','low');
     await expect(manual).toContainText('User-defined mapping');
     await nav.getByRole('button',{name:/Final Plan/}).click();
@@ -154,6 +154,6 @@ test('defense scores, manual links and all formulas survive refresh and JSON exp
     await page.getByRole('button',{name:/T1595 Active Scanning/}).click();
     await page.getByRole('button',{name:'Skip for now',exact:true}).click();
     await nav.getByRole('button',{name:/Defensive Plan/}).click();
-    await expect(page.locator('.defense-stats')).toContainText('0%');
+    await expect(page.locator('.attack-list .status[data-status=covered]')).toHaveCount(0);
     await expect(page.locator('.mitigation.chosen')).toHaveCount(0);
 });
