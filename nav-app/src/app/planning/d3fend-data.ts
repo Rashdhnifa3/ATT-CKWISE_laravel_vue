@@ -10,6 +10,8 @@ export interface D3fendDefenseInfo {
     tactic: string;
     /** Parent/query technique named in the source data, empty when not present. */
     query: string;
+    /** Official D3FEND definition (d3f:definition), empty when not present in the imported data. */
+    description: string;
 }
 export interface D3fendEvidence {
     defenseRelation: string;
@@ -40,7 +42,7 @@ export function parseD3fend(raw: any): D3fendIndex {
     for (const [ontologyID, d] of Object.entries<any>(raw.defenses || {})) {
         if (!/^[A-Za-z][A-Za-z0-9-]*$/.test(ontologyID)) continue;
         const id = D3FEND_PREFIX + ontologyID;
-        defenses.set(id, { id, ontologyID, name: str(d?.name) || ontologyID, tactic: str(d?.tactic), query: str(d?.query) });
+        defenses.set(id, { id, ontologyID, name: str(d?.name) || ontologyID, tactic: str(d?.tactic), query: str(d?.query), description: str(d?.description) });
     }
     const relations = new Map<string, D3fendRelation[]>();
     for (const [attackID, list] of Object.entries<any>(raw.mappings || {})) {

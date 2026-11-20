@@ -6,6 +6,7 @@
  * Default source: data/d3fend/ATTACK_D3FEND_complete_mapping.xlsx
  * Output:         src/assets/d3fend/attack-d3fend.json (reference data, overwritten on every run)
  *                 data/d3fend/import-report.json        (validation report)
+ * Definitions:    data/d3fend/d3fend-definitions.json   (official d3f:definition text from the D3FEND ontology, optional)
  *
  * The output is fully regenerated and sorted, so running the import again never creates duplicates.
  * Only built-in Node modules are used.
@@ -19,6 +20,13 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const source = resolve(process.argv[2] || resolve(root, 'data/d3fend/ATTACK_D3FEND_complete_mapping.xlsx'));
 const outFile = resolve(root, 'src/assets/d3fend/attack-d3fend.json');
 const reportFile = resolve(root, 'data/d3fend/import-report.json');
+const definitionsFile = resolve(root, 'data/d3fend/d3fend-definitions.json');
+let definitions = {};
+try {
+    definitions = JSON.parse(readFileSync(definitionsFile, 'utf8')).definitions || {};
+} catch {
+    console.warn('No D3FEND definitions found at ' + definitionsFile + '; defenses will have no description.');
+}
 
 /** Minimal ZIP reader (central directory + deflate/stored entries). */
 function unzip(buffer) {
@@ -216,7 +224,11 @@ const output = {
         attackVersion: null,
         d3fendVersion: null,
     },
-    defenses: Object.fromEntries([...defenses].sort(([a], [b]) => a.localeCompare(b)).map(([id, d]) => [id, d])),
+    defenses: Object.fromEntries(
+        [...defenses]
+            .sort(([a], [b]) => a.localeCompare(b))
+            .map(([id, d]) => [id, { ...d, description: definitions[id]?.definition || '' }])
+    ),
     attacks: Object.fromEntries(
         [...attacks].sort(([a], [b]) => a.localeCompare(b)).map(([id, a]) => [id, { name: a.name, tactics: [...a.tactics].sort() }])
     ),
@@ -233,6 +245,7 @@ Object.assign(report, {
     subtechniquesCovered: [...attacks.keys()].filter((id) => id.includes('.')).length,
     techniqueDefensePairs: Object.values(mappings).reduce((n, list) => n + list.length, 0),
     mappingTypes: [...new Set(sorted.map((r) => r.type))],
+    defensesWithoutDefinition: [...defenses.keys()].filter((id) => !definitions[id]?.definition),
     versions: 'Not present in source workbook',
 });
 writeFileSync(reportFile, JSON.stringify(report, null, 2) + '\n');

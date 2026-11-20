@@ -326,7 +326,7 @@ export class PlanningComponent {
             let d = byId.get(id);
             if (!d) {
                 const info = this.d3fend.index?.defenses.get(id);
-                d = { id, name: info?.name || id.slice(4), description: '', attackID: id, source: 'd3fend', d3fendTactic: info?.tactic || '', mappings: [] };
+                d = { id, name: info?.name || id.slice(4), description: info?.description || '', attackID: id, source: 'd3fend', d3fendTactic: info?.tactic || '', mappings: [] };
                 byId.set(id, d);
             }
             return d;
