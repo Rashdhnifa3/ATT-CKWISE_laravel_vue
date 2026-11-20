@@ -1,0 +1,14 @@
+import { test, expect } from '@playwright/test';
+import { calculateRisk } from '../src/app/planning/risk-calculation';
+
+test('risk formulas preserve negative results, distinguish missing from zero and clamp the index', () => {
+    expect(calculateRisk(8, [3, 9], 'strongest')).toEqual({ defense: 9, result: -1, risk: 0 });
+    expect(calculateRisk(8, [3, 9], 'average')).toEqual({ defense: 6, result: 2, risk: 2 });
+    expect(calculateRisk(8, [3, 9], 'sum')).toEqual({ defense: 12, result: -4, risk: 0 });
+    expect(calculateRisk(8, [], 'strongest')).toEqual({ defense: 0, result: 8, risk: 8 });
+    expect(calculateRisk(0, [0], 'sum')).toEqual({ defense: 0, result: 0, risk: 0 });
+    for (const missing of [null, undefined, NaN, -1, 11, 2.5, '3']) {
+        expect(calculateRisk(8, [missing], 'sum').result).toBeNull();
+        expect(calculateRisk(missing, [], 'sum').result).toBeNull();
+    }
+});

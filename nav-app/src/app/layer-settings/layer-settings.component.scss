@@ -1,0 +1,76 @@
+@use 'sass:color';
+
+@use '../../colors.scss';
+.layer-settings {
+    .sidebar-content {
+        margin: 1rem 0;
+    }
+    .info-card {
+        display: flex;
+        justify-content: space-between;
+    }
+    .info-field {
+        margin: 1em 0;
+        .mat-mdc-form-field {
+            width: 100%;
+        }
+    }
+    .settings .title {
+        font-size: 14px;
+        margin: 0;
+    }
+    .layer-data {
+        .mat-divider.layer-div {
+            margin-bottom: 10px;
+            @include colors.adaptive-color-dark-only('border-top-color', colors.color(dark-4));
+        }
+    }
+    .sub-section {
+        padding-top: 1.5em;
+    }
+    .padding-top {
+        padding-top: 1em;
+    }
+    .data-input {
+        overflow-y: auto;
+        max-height: 30vh;
+    }
+    .button-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .mat-mdc-form-field,
+    .mat-mdc-form-field:hover {
+        &:not(.mat-form-field-disabled) {
+            .mat-mdc-floating-label,
+            .mat-mdc-input-element {
+                @include colors.adaptive-color-dark-only('color', colors.on-color(dark));
+            }
+            .mdc-line-ripple::before {
+                @include colors.adaptive-color-dark-only('border-bottom-color', colors.on-color(dark-3));
+            }
+        }
+
+        &.mat-form-field-disabled {
+            .mat-mdc-floating-label,
+            .mdc-text-field__input {
+                @include colors.adaptive-color-dark-only('color', color.scale(colors.on-color(dark-1), $lightness: -25%));
+            }
+            .mdc-line-ripple::before {
+                @include colors.adaptive-color-dark-only('border-bottom-color', color.scale(colors.on-color(dark-1), $lightness: -25%));
+            }
+        }
+        .mat-mdc-form-field-hint {
+            @include colors.adaptive-color-dark-only('color', colors.on-color(dark));
+        }
+    }
+    .mat-mdc-card {
+        width: 100%;
+    }
+    .mat-mdc-card-title {
+        padding: 16px 16px 0 16px;
+    }
+    .mat-mdc-card + .mat-mdc-card {
+        margin-left: 1em;
+    }
+}

@@ -1,0 +1,51 @@
+.attackwise {
+  --radius: 0.75rem;
+  --background: oklch(0.15 0.025 265);
+  --foreground: oklch(0.96 0.01 265);
+  --card: oklch(0.2 0.03 268 / 80%);
+  --card-foreground: oklch(0.96 0.01 265);
+  --popover: oklch(0.2 0.03 268);
+  --popover-foreground: oklch(0.96 0.01 265);
+  --primary: oklch(0.585 0.233 277);
+  --primary-foreground: oklch(0.99 0 0);
+  --violet: oklch(0.606 0.25 293);
+  --secondary: oklch(0.25 0.03 268);
+  --secondary-foreground: oklch(0.96 0.01 265);
+  --muted: oklch(0.25 0.03 268);
+  --muted-foreground: oklch(0.7 0.03 265);
+  --accent: oklch(0.27 0.05 275);
+  --accent-foreground: oklch(0.96 0.01 265);
+  --destructive: oklch(0.645 0.246 16.4);
+  --destructive-foreground: oklch(0.99 0 0);
+  --success: oklch(0.696 0.17 162.5);
+  --warning: oklch(0.769 0.165 70.1);
+  --danger: oklch(0.645 0.246 16.4);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 12%);
+  --ring: oklch(0.585 0.233 277);
+  --chart-1: oklch(0.585 0.233 277);
+  --chart-2: oklch(0.696 0.17 162.5);
+  --chart-3: oklch(0.769 0.165 70.1);
+  --chart-4: oklch(0.606 0.25 293);
+  --chart-5: oklch(0.645 0.246 16.4);
+  --sidebar: oklch(0.18 0.03 265);
+  --sidebar-foreground: oklch(0.96 0.01 265);
+  --sidebar-primary: oklch(0.585 0.233 277);
+  --sidebar-primary-foreground: oklch(0.99 0 0);
+  --sidebar-accent: oklch(0.25 0.03 268);
+  --sidebar-accent-foreground: oklch(0.96 0.01 265);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.585 0.233 277);
+    --aw-bg: var(--background); --aw-surface: var(--card); --aw-raised: var(--secondary); --aw-hover: var(--accent); --aw-line: var(--border); --aw-control: var(--input); --aw-text: var(--foreground); --aw-muted: var(--muted-foreground); --aw-blue: var(--primary); --aw-teal: var(--primary); --aw-danger: var(--danger); --aw-amber: var(--warning); --aw-green: var(--success);
+    --aw-font: 'Plus Jakarta Sans','Noto Kufi Arabic',system-ui,sans-serif; --aw-mono: 'JetBrains Mono',monospace; --aw-radius: 12px; --aw-transition: 200ms ease; --aw-shadow: 0 0 20px color-mix(in oklab,var(--primary) 25%,transparent);
+}
+html[lang=ar] .attackwise { --aw-font: 'Noto Kufi Arabic','Plus Jakarta Sans',sans-serif; }
+
+html[data-attackwise-theme=ember] .attackwise {
+ --background: #090909; --foreground: #faf7f2; --card: #171411e8; --card-foreground: #faf7f2;
+ --popover: #211c17; --popover-foreground: #faf7f2; --primary: #f59a38; --primary-foreground: #17100a;
+ --violet: #e96b24; --secondary: #29221b; --secondary-foreground: #faf7f2; --muted: #29221b;
+ --muted-foreground: #b5aaa0; --accent: #38291d; --accent-foreground: #faf7f2; --border: #ffffff1c;
+ --input: #ffffff26; --ring: #f59a38; --sidebar: #12100e; --sidebar-primary: #f59a38;
+ --chart-1: #f59a38; --chart-4: #e96b24;
+}

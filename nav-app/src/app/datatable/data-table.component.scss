@@ -1,0 +1,509 @@
+@use 'sass:color';
+
+@use '../../colors.scss';
+@use '../../styles.scss';
+
+$cellSize: 15px;
+
+//  _  _ ___ ___ _  _ _    ___ ___ _  _ _____ ___ _  _  ___
+// | || |_ _/ __| || | |  |_ _/ __| || |_   _|_ _| \| |/ __|
+// | __ || | (_ | __ | |__ | | (_ | __ | | |  | || .` | (_ |
+// |_||_|___\___|_||_|____|___\___|_||_| |_| |___|_|\_|\___|
+
+//  __  __   _   ___ _  _   _____ _   ___ _    ___
+// |  \/  | /_\ |_ _| \| | |_   _/_\ | _ ) |  | __|
+// | |\/| |/ _ \ | || .` |   | |/ _ \| _ \ |__| _|
+// |_|  |_/_/ \_\___|_|\_|   |_/_/ \_\___/____|___|
+
+// content of each tab
+.matrices {
+    overflow-x: scroll;
+    min-height: 50vh;
+    border: 1px solid colors.color(panel-dark);
+    transition: height ease-in-out 0.2s;
+    @include colors.adaptive-color-dark-only('background-color', color.scale(colors.color(dark-1), $lightness: 3%));
+    @include colors.adaptive-color-dark-only('color', colors.on-color(dark));
+    @include colors.adaptive-color-dark-only('border', none);
+
+    .spinner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+
+        mat-progress-spinner circle {
+            stroke: colors.on-color-deemphasis(body);
+        }
+    }
+
+    .matrices-columns {
+        display: table;
+
+        .matrix-column {
+            display: table-cell;
+            white-space: normal;
+            padding: 10px;
+            @media print {
+                padding: 0;
+            }
+
+            .matrix-name {
+                text-align: center;
+                padding-bottom: 5px;
+                margin-bottom: 5px;
+                font-size: 16px;
+                border-bottom: 1px solid colors.color(panel-dark);
+            }
+
+            & + .matrix-column {
+                border-left: 1px solid colors.color(panel-dark);
+            }
+        }
+    }
+}
+
+.colorpicker {
+    width: ($cellSize + 5 + 2) * 4 !important; //override preset width
+    align-items: center;
+    text-align: center;
+
+    .color-block {
+        cursor: pointer;
+        margin: 2.5px;
+        @include colors.adaptive-color('border', 1px solid black, 1px solid colors.color(dark-disabled));
+
+        &.square {
+            display: inline-block;
+            width: $cellSize;
+            height: $cellSize;
+        }
+
+        &.wide {
+            display: block;
+            height: $cellSize;
+            font-size: 10pt;
+            color: color.scale(white, $lightness: -50%);
+            @include colors.adaptive-color-dark-only('color', colors.color(dark-disabled));
+        }
+    }
+}
+
+//color controls
+.colorSetup {
+    font-size: 8pt;
+
+    .colorpicker {
+        width: 10ex;
+    }
+
+    .gradient-section-label {
+        font-weight: bold;
+        padding: 4px;
+        text-align: center;
+    }
+
+    .gradient-section-content {
+        border-style: solid;
+        border-width: 1px 0;
+        text-align: left;
+        @include colors.adaptive-color('border-color', black, white);
+    }
+
+    .display-buttons {
+        text-align: center;
+
+        .squarebutton {
+            padding: 4px 0;
+            cursor: pointer;
+            @include colors.adaptive-color('border', 1px solid colors.color(panel-dark), 1px solid colors.color(dark-disabled));
+
+            &:hover {
+                @include colors.adaptive-color('background', colors.color(panel-light), colors.color(cell-highlight-dark-color));
+            }
+
+            &.gradient:hover {
+                text-decoration: underline; //since background color won't be seen on gradient buttons
+            }
+        }
+
+        .presetsmenu {
+            width: 90%;
+            display: inline-block;
+        }
+    }
+
+    .gradient-controls {
+        table {
+            padding: 0;
+            margin: 0;
+            border-collapse: collapse;
+
+            td {
+                button {
+                    @include colors.adaptive-color-dark-only('background-color', colors.color(dark-1));
+                    @include colors.adaptive-color-dark-only('border', 1px solid colors.color(dark-disabled));
+                    @include colors.adaptive-color-dark-only('color', white);
+
+                    &:hover {
+                        @include colors.adaptive-color-dark-only('background-color', black);
+                    }
+                }
+
+                input {
+                    @include colors.adaptive-color-dark-only('background-color', black);
+                    @include colors.adaptive-color-dark-only('color', white);
+                }
+
+                &.buttons > div {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+
+                .left,
+                .right {
+                    display: inline-block;
+                }
+
+                .left {
+                    float: left;
+                }
+
+                .right {
+                    text-align: left;
+
+                    select {
+                        width: 80px;
+                    }
+                }
+
+                &.col2 {
+                    width: 45px;
+
+                    input[type='number'] {
+                        width: 40px;
+                    }
+                }
+            }
+
+            .minmax {
+                text-align: center;
+                @include colors.adaptive-color('background-color', colors.color(panel-light), colors.color(dark-4));
+            }
+        }
+
+        .addcolor {
+            width: 100%;
+        }
+    }
+}
+
+.select_behavior {
+    padding: 5px;
+    text-align: left;
+}
+
+.control-section-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    height: 30px;
+}
+
+.control-section-tabs {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .section-label {
+        cursor: pointer;
+        padding: 6px 24px;
+        border-style: solid;
+        border-width: 1px;
+        @include colors.adaptive-color('color', black, white);
+        @include colors.adaptive-color('border-color', black, white);
+
+        &.active {
+            @include colors.adaptive-color('background-color', white, #364370);
+            @include colors.adaptive-color('border-color', #464dff, #464dff);
+        }
+    }
+
+    .control-bar-help {
+        .control-help-button {
+            text-align: center;
+            width: 4ex;
+            height: 3ex;
+            padding: 5px;
+
+            svg {
+                @include colors.adaptive-color-dark-only('fill', colors.on-color(dark));
+            }
+            &:hover svg {
+                fill: #505050;
+                @include colors.adaptive-color-dark-only('fill', colors.on-color(dark));
+            }
+        }
+
+        .dropdown-container {
+            position: absolute;
+            right: 16px;
+            display: flex;
+            justify-content: center;
+            flex-flow: column;
+            background: white;
+            border-style: solid;
+            border-color: #ddd;
+            border-width: 1px 0 1px 1px;
+            box-shadow: 2px 1px 1px #ddd;
+            border-radius: 0 0 5px 5px;
+            padding: 10px;
+            top: 40px;
+            z-index: 9;
+            @include colors.adaptive-color-dark-only('background', colors.color(dark-3));
+            @include colors.adaptive-color-dark-only('border-color', colors.color(dark-3));
+            @include colors.adaptive-color-dark-only('box-shadow', 2px 1px 1px colors.color(dark-2));
+            @include colors.adaptive-color-dark-only('color', colors.color(dark-link));
+            button {
+                border: none;
+                background-color: transparent;
+                text-align: right;
+                padding-bottom: 5px;
+                @include colors.adaptive-color-dark-only('color', colors.on-color(dark));
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.mat-mdc-select {
+    :focus {
+        color: #63961c;
+    }
+}
+
+.filters {
+    padding: 4px;
+
+    .filter {
+        text-align: left;
+
+        &:not(:first-child) {
+            margin-top: 4px;
+        }
+
+        .filter-option {
+            &:hover {
+                @include colors.adaptive-color('background', colors.color(cell-highlight-color), colors.color(cell-highlight-dark-color));
+            }
+        }
+    }
+}
+
+.warning {
+    @include colors.adaptive-color('color', #b30000, #ffab0f);
+}
+
+.warning-label {
+    vertical-align: super;
+}
+
+.multiselect {
+    text-align: center;
+
+    .multiselect-grouping {
+        .multiselect-grouping-label {
+            padding: 4px;
+            font-weight: bold;
+        }
+
+        .multiselect-list {
+            text-align: left;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            height: 200px;
+            overflow-y: scroll;
+
+            table {
+                border-collapse: collapse;
+            }
+
+            .multiselect-list-item {
+                &:hover {
+                    @include colors.adaptive-color('background', colors.color(cell-highlight-color), colors.color(cell-highlight-dark-color));
+                }
+
+                .multiselect-list-item-label {
+                    width: 25ex;
+                }
+
+                &.selected:not(:hover) {
+                    background: colors.color(panel-dark);
+                }
+            }
+        }
+    }
+}
+
+.search {
+    text-align: center;
+
+    .search-list {
+        margin-top: 2px;
+        text-align: left;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        height: 300px;
+        overflow-y: scroll;
+
+        table {
+            border-collapse: collapse;
+            width: 325px;
+        }
+
+        .search-list-item {
+            &:hover {
+                @include colors.adaptive-color('background', colors.color(cell-highlight-color), colors.color(cell-highlight-dark-color));
+            }
+
+            .search-list-item-label {
+                width: 25ex;
+            }
+
+            &.selected:not(:hover) {
+                background: colors.color(panel-dark);
+            }
+        }
+    }
+}
+
+.search-button {
+    &:hover {
+        @include colors.adaptive-color('background', colors.color(cell-highlight-color), colors.color(cell-highlight-dark-color));
+    }
+}
+
+.button {
+    border: none;
+    padding: 4px 10px;
+    text-align: center;
+    margin: 2px 1px;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    @include colors.adaptive-color('background-color', colors.color(panel-dark), colors.color(dark-4));
+    @include colors.adaptive-color-dark-only('color', colors.on-color(dark));
+
+    &:hover {
+        @include colors.adaptive-color('background-color', colors.color(button-dark), colors.color(dark-link));
+    }
+}
+
+.deselectNumber {
+    font-size: 5pt;
+    bottom: 2px;
+    right: 4px;
+    position: absolute;
+    text-align: right;
+}
+
+.legend {
+    z-index: 999;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    height: fit-content;
+    @include colors.adaptive-color('background-color', white, colors.color(dark-3));
+    @include colors.adaptive-color-light-only('border-left', 1px solid colors.color(panel-dark));
+    @media print {
+        display: none;
+    }
+
+    .itemArea {
+        position: static;
+        overflow-y: scroll;
+        margin: 30px 8px 8px;
+        height: 270px;
+        width: 100%;
+        overflow-x: hidden;
+        @include colors.adaptive-color-dark-only('color', colors.on-color(dark));
+
+        .item + .item {
+            margin-top: 6px;
+        }
+        .item {
+            width: 100%;
+            padding-left: 5px;
+
+            .label {
+                margin-left: 10px;
+                width: 180px;
+            }
+        }
+    }
+}
+
+.legendBar {
+    z-index: 999;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    height: 30px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    @include colors.adaptive-color('background-color', colors.color(panel-dark), colors.color(dark-3));
+    @include colors.adaptive-color-dark-only('color', colors.on-color(dark));
+    @media print {
+        display: none;
+    }
+
+    .title {
+        flex: 1;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    &:hover {
+        cursor: pointer;
+        @include colors.adaptive-color('background', colors.color(cell-highlight-color), colors.color(cell-highlight-dark-color));
+    }
+}
+
+.layout {
+    width: 100px;
+    text-align: left;
+
+    select {
+        width: 100%;
+    }
+
+    .section {
+        padding: 10px;
+
+        & + .section {
+            border-top: 1px solid colors.color(panel-light);
+        }
+    }
+
+    .subsection {
+        padding-left: 5px;
+
+        .inner-dropdown-container {
+            margin: 5px;
+        }
+    }
+}
+
+.list-input {
+    width: 250px !important;
+    overflow-y: auto;
+    max-height: 50vh;
+}

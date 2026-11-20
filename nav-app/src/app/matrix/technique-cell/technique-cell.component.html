@@ -1,0 +1,33 @@
+<button
+    *ngIf="planning"
+    class="wise-technique-row"
+    [class.wise-selected]="viewModel.selectedTechniques.has(technique.get_technique_tactic_id(tactic))"
+    [attr.aria-pressed]="viewModel.selectedTechniques.has(technique.get_technique_tactic_id(tactic))"
+    (click)="leftclick.emit($event)">
+    <span class="wise-technique-name">{{ technique.name }}</span>
+    <span class="wise-technique-id">
+        {{ technique.attackID }}
+        <span *ngIf="viewModel.selectedTechniques.has(technique.get_technique_tactic_id(tactic))">· Selected</span>
+    </span>
+</button>
+<div *ngIf="!planning" class="technique-cell" [ngStyle]="getTechniqueBackground()" [ngClass]="getClass()">
+    <div (click)="onLeftClick($event)" (contextmenu)="onRightClick($event)" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+        <span [style.border-color]="getTechniqueUnderlineColor()" [style.color]="getTechniqueTextColor()">
+            <ng-container *ngIf="viewModel.layout.showID">{{ technique.attackID }}</ng-container>
+            <div class="id-name-break" *ngIf="viewModel.layout.showID && viewModel.layout.showName"></div>
+            <ng-container *ngIf="viewModel.layout.showName">{{ technique.name }}</ng-container>
+        </span>
+        <ng-container *ngIf="technique.subtechniques.length > 0">
+            <sub *ngIf="viewModel.layout.showID || viewModel.layout.showName" class="sub">
+                &nbsp;({{ annotatedSubtechniques() }}/{{ applyControls(technique.subtechniques, tactic).length }})
+            </sub>
+        </ng-container>
+    </div>
+    <app-tooltip *ngIf="showTooltip" [technique]="technique" [tactic]="tactic" [viewModel]="viewModel"></app-tooltip>
+    <app-contextmenu
+        *ngIf="showContextmenu"
+        [technique]="technique"
+        [tactic]="tactic"
+        [viewModel]="viewModel"
+        (close)="showContextmenu = false; onMouseLeave()"></app-contextmenu>
+</div>
