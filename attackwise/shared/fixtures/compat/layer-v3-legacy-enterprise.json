@@ -1,0 +1,32 @@
+{
+  "name": "Synthetic legacy 3.0 layer (enterprise id)",
+  "version": "3.0",
+  "domain": "enterprise-attack",
+  "viewMode": 2,
+  "techniques": [
+    {
+      "techniqueID": "T1566",
+      "tactic": "initial-access",
+      "score": 9,
+      "color": "#e60d0d",
+      "comment": "legacy"
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#66b1ff"
+    ],
+    "minValue": 0,
+    "maxValue": 10
+  },
+  "filters": {
+    "stages": [
+      "act"
+    ],
+    "platforms": [
+      "windows",
+      "linux"
+    ]
+  }
+}

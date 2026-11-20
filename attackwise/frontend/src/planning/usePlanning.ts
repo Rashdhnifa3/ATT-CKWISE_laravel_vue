@@ -68,14 +68,20 @@ export function usePlanning(viewModel: Ref<ViewModel>, focus: (selector: string)
 
     const vm = () => viewModel.value;
     const state = (): PlanningState => viewModel.value.planningState;
+    // Domain objects are filled in place when their bundle arrives (same identity), so every
+    // computed that reads domain contents must also track workspace.dataRevision.
     const domain = computed(() => {
         void workspace.dataRevision;
         return workspace.data.getDomain(vm().domainVersionID);
     });
-    const tactics = computed<Tactic[]>(() => domain.value?.tactics || []);
+    const domainData = () => {
+        void workspace.dataRevision;
+        return domain.value;
+    };
+    const tactics = computed<Tactic[]>(() => domainData()?.tactics || []);
     const currentTactic = computed(() => local.tactic || tactics.value[0]?.shortname);
     const catalog = computed<Technique[]>(() => {
-        const d = domain.value;
+        const d = domainData();
         if (!d) return [];
         return Array.from(new Map([...d.techniques, ...d.subtechniques].map((t) => [t.id, t] as const)).values()).filter((t) => !t.revoked && !t.deprecated);
     });
@@ -128,7 +134,7 @@ export function usePlanning(viewModel: Ref<ViewModel>, focus: (selector: string)
     const defenses = computed<Defense[]>(() => {
         const selectedAttacks = attacks.value;
         const s = state();
-        const official: Defense[] = ((domain.value?.mitigations || []) as Mitigation[])
+        const official: Defense[] = ((domainData()?.mitigations || []) as Mitigation[])
             .filter((m) => !m.revoked && !m.deprecated)
             .map((m) => {
                 const related = m.mitigated(vm().domainVersionID);

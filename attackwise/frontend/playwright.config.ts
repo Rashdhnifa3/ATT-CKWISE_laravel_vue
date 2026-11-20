@@ -21,6 +21,8 @@ export default defineConfig({
     projects: [
         { name: 'vue', testIgnore: [...legacyUi, '**/compat/**'] },
         { name: 'reference-legacy-ui', testMatch: legacyUi },
+        // Angular ↔ Vue comparisons; these tests start/stop both apps themselves (needs the API on :8000).
+        { name: 'compat', testMatch: '**/compat/**/*.spec.ts' },
     ],
     webServer: process.env.ATTACKWISE_VUE_URL
         ? undefined
