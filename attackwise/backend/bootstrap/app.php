@@ -1,5 +1,6 @@
 <?php
 
+use App\Services\Attack\AttackDataException;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
@@ -18,4 +19,9 @@ return Application::configure(basePath: dirname(__DIR__))
         $exceptions->shouldRenderJsonWhen(
             fn (Request $request) => $request->is('api/*') || $request->expectsJson(),
         );
+        // Contract error shape: {"error": {"code", "message"}} (shared/contracts/api.md).
+        $exceptions->render(fn (AttackDataException $e) => response()->json(
+            ['error' => ['code' => $e->errorCode, 'message' => $e->getMessage()]],
+            $e->status,
+        ));
     })->create();
