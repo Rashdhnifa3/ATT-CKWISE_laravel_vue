@@ -68,6 +68,7 @@ async function state(page: Page) {
         techniques: await page.locator('.technique-select strong').allInnerTexts(),
         subtechniqueToggles: await page.locator('.card-options button[aria-expanded]').count(),
         selected: await page.locator('.selected-pill').allInnerTexts(),
+        dialogs: (await page.getByRole('dialog').allInnerTexts()).map((t) => t.replace(/\s+/g, ' ').trim()),
     };
 }
 
@@ -85,6 +86,13 @@ test('deep links, default layers, banner, feature fragments, customDataURL, leav
         { name: 'priority: bundleURL beats layerURL', hash: '#' + FIRST + '&' + BUNDLE },
         { name: 'priority: layerURL beats default_layers', hash: '#' + FIRST, config: DEFAULTS },
         { name: 'priority: incomplete bundleURL (no domain) falls back to layerURL', hash: '#' + FIRST + '&bundleURL=https%3A%2F%2Fsynthetic.example%2Fcustom-bundle.json&version=14' },
+        {
+            // Start-up links never show the upgrade dialog (reference upgradeLayer(..., defaultLayers = true)):
+            // a v13 layer opens on v13 although v14 is the newest configured version.
+            name: 'outdated layer from a start-up link opens on its own version without the upgrade dialog',
+            hash: '#' + FIRST,
+            config: { versions: { enabled: true, entries: [{ name: 'ATT&CK v14', version: '14', domains: [{ name: 'Enterprise', identifier: 'enterprise-attack', data: [CUSTOM_BUNDLE] }] }, ...configData.entries] } },
+        },
         { name: 'default_layers disabled', hash: '', config: { default_layers: { enabled: false, urls: DEFAULTS.default_layers.urls } } },
         { name: 'customDataURL in an imported file', hash: '', file: layer('Custom data layer', { customDataURL: CUSTOM_BUNDLE, versions: { attack: '15', layer: '4.5' } }) },
     ];
