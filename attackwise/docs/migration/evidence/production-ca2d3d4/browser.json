@@ -1,0 +1,54 @@
+{
+  "openMatrixMs": 2175,
+  "version": "Enterprise Matrix v20",
+  "tactics": 15,
+  "afterReload": {
+    "pill": "2 Selected",
+    "result": [
+      "Not Rated",
+      "2"
+    ]
+  },
+  "jsonRoundTrip": "identical (ignoring planId)",
+  "docx-en": {
+    "filename": "ATTACKWISE-Report-2026-11-21.docx",
+    "bytes": 18725,
+    "rtl": true,
+    "tables": 2,
+    "hasPlanName": false
+  },
+  "docx-ar": {
+    "filename": "ATTACKWISE-Report-2026-11-21.docx",
+    "bytes": 19481,
+    "rtl": true,
+    "tables": 2,
+    "hasPlanName": false
+  },
+  "print": {
+    "ar": {
+      "printCalls": 1,
+      "dir": "rtl",
+      "pages": 1,
+      "pageSize": "595.92 x 842.88 pts (A4)",
+      "hasTableHeader": false,
+      "hasT1566": true,
+      "hidesButtons": true
+    },
+    "en": {
+      "printCalls": 1,
+      "dir": "ltr",
+      "pages": 1,
+      "pageSize": "595.92 x 842.88 pts (A4)",
+      "hasTableHeader": true,
+      "hasT1566": true,
+      "hidesButtons": true
+    }
+  },
+  "cspViolations": [],
+  "issues": [],
+  "foreignRequests": [],
+  "apiRequests": [
+    "GET /api/v1/attack/index",
+    "GET /api/v1/attack/bundles/enterprise-attack/20"
+  ]
+}

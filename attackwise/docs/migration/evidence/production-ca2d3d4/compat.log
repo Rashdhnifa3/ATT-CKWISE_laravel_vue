@@ -1,0 +1,71 @@
+
+Running 10 tests using 1 worker
+
+(node:113384) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [compat] › tests/e2e/compat/deep-links-and-config.spec.ts:75:5 › deep links, default layers, banner, feature fragments, customDataURL, leave-site prompt and changelog match (3.2m)
+
+  ✓   2 [compat] › tests/e2e/compat/exports-and-network.spec.ts:60:5 › Word report: same text, tables and chart in Angular and Vue (Arabic and English) (27.4s)
+  ✓   3 [compat] › tests/e2e/compat/exports-and-network.spec.ts:91:5 › Vue keeps plans and layers local: only same-origin GETs to static assets and the read-only ATT&CK API (3.4s)
+case layer-v4.5-annotated.json angular
+case layer-v4.5-annotated.json vue
+case layer-v4.5-annotated.json vue export -> angular
+case layer-v4.5-annotated.json angular export -> vue
+case layer-v4.3-minor.json angular
+case layer-v4.3-minor.json vue
+case layer-v4.3-minor.json vue export -> angular
+case layer-v4.3-minor.json angular export -> vue
+case layer-v3-legacy.json angular
+case layer-v3-legacy.json vue
+case layer-v3-legacy-enterprise.json angular
+case layer-v3-legacy-enterprise.json vue
+case layer-v3-legacy-enterprise.json vue export -> angular
+case layer-v3-legacy-enterprise.json angular export -> vue
+case layers-array.json angular
+case layers-array.json vue
+case layers-array.json vue export -> angular
+case layers-array.json angular export -> vue
+case layer-attack-v19.json [No] angular
+case layer-attack-v19.json [No] vue
+case layer-attack-v19.json [No] vue export -> angular
+case layer-attack-v19.json [No] angular export -> vue
+case layer-attack-v19.json [Yes] angular
+case layer-attack-v19.json [Yes] vue
+case layer-attack-v19.json [Yes] vue export -> angular
+case layer-attack-v19.json [Yes] angular export -> vue
+case plan-legacy-ratings.json angular
+case plan-legacy-ratings.json vue
+case plan-legacy-ratings.json vue export -> angular
+case plan-legacy-ratings.json angular export -> vue
+case layer-mobile.json angular
+case layer-mobile.json vue
+case malformed.json angular
+case malformed.json vue
+  ✓   4 [compat] › tests/e2e/compat/file-roundtrip.spec.ts:112:5 › old layers and plans: same result in both apps, and each app opens the other app’s export (3.9m)
+  ✓   5 [compat] › tests/e2e/compat/planning-extras.spec.ts:102:5 › show more, clear score, clear, color-blind preference and print match on real data (21.5s)
+
+  ✓   6 [compat] › tests/e2e/compat/print-parity.spec.ts:93:5 › printed Final Plan: same pages, text and rendering in Angular and Vue (EN and AR) (2.6m)
+{"angular":{"openMatrixMs":{"runs":[3497,5113,3546,3514,3398],"median":3514,"min":3398,"max":5113},"interactMs":{"runs":[787,870,855,776,814],"median":814,"min":776,"max":870},"importMs":{"runs":[574,702,618,587,554],"median":587,"min":554,"max":702}},"vue":{"openMatrixMs":{"runs":[1293,878,861,817,886],"median":878,"min":817,"max":1293},"interactMs":{"runs":[780,617,579,631,607],"median":617,"min":579,"max":780},"importMs":{"runs":[36,29,53,31,47],"median":36,"min":29,"max":53}}}
+  ✓   7 [compat] › tests/e2e/compat/real-data.spec.ts:67:5 › real Enterprise data: identical visible results and timing in Angular and Vue (47.7s)
+step 1) Angular: two plans with synthetic values.
+serve angular 2026-11-21T12:33:37.095Z
+step 2) Vue on the SAME origin restores both plans, edits one, reloads.
+serve vue 2026-11-21T12:33:44.921Z
+step 3) Roll back: Angular on the same origin sees both plans including Vue's edit.
+serve angular 2026-11-21T12:33:47.136Z
+step 4) Legacy draft (attackwise-draft) is migrated by Vue exactly like Angular.
+serve angular 2026-11-21T12:33:51.813Z
+serve vue 2026-11-21T12:33:55.076Z
+step 5) Corrupt attackwise-plans: Angular overwrites it on the next save; Vue keeps a backup first.
+serve angular 2026-11-21T12:33:55.737Z
+serve vue 2026-11-21T12:34:00.352Z
+step 6) Write failure: same visible message in both apps.
+serve angular 2026-11-21T12:34:01.933Z
+serve vue 2026-11-21T12:34:06.347Z
+  ✓   8 [compat] › tests/e2e/compat/storage-same-origin.spec.ts:44:5 › plans move Angular → Vue → Angular on one origin; legacy draft, corrupt entry, write failure (37.5s)
+  ✓   9 [compat] › tests/e2e/compat/taxii-and-auth.spec.ts:129:5 › TAXII and authenticated sources: same requests, headers, results and errors in Angular and Vue (5.2m)
+  ✓  10 [compat] › tests/e2e/compat/ui-parity.spec.ts:117:5 › same accessibility tree and near-identical rendering: AR/EN × desktop/phone × themes (1.0m)
+
+  Slow test file: [compat] › tests/e2e/compat/taxii-and-auth.spec.ts (5.2m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  10 passed (18.2m)

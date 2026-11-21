@@ -4,6 +4,7 @@
 //   phase vue-edit       : Vue (release) must list both, opens one, edits it, reloads, checks
 //   phase angular-check  : Angular again (rollback) must show both plans including Vue's edit
 // The orchestrating shell script swaps the server behind <url> between phases.
+import assert from 'node:assert/strict';
 import { chromium } from '@playwright/test';
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 
@@ -49,7 +50,8 @@ async function stored() {
 const result = { app: null, errors };
 if (phase === 'angular-create') {
     await page.addInitScript(() => localStorage.setItem('attackwise-language', 'en'));
-    await home();
+    await page.goto(url + '/');
+    await page.locator('.matrix-columns .tactic-column').first().waitFor();
     result.app = await app();
     for (const [name, id, value] of [[A, 'T1566', 7], [B, 'T1190', 4]]) {
         await page.locator('.wise-brand').click();
@@ -83,6 +85,11 @@ if (phase === 'angular-create') {
 } else {
     throw new Error('unknown phase ' + phase);
 }
+assert.equal(result.app, phase === 'vue-edit' ? 'vue' : 'angular');
+const record = (name) => result.stored.find((plan) => plan.name === name);
+assert.equal(record(A)?.scores.T1566, 7);
+assert.equal(record(B)?.scores.T1190, 4);
+if (phase !== 'angular-create') assert.equal(record(A)?.scores.T1059, 9);
 await context.close();
 out[phase] = result;
 writeFileSync(outFile, JSON.stringify(out, null, 2));

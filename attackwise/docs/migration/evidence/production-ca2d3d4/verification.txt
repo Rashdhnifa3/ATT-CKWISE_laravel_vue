@@ -1,0 +1,8 @@
+Release ca2d3d4995e42074349232def90794f0bd9553d7, linux/amd64, 2026-11-21.
+Verified the outer SHA-256 and extracted archive, loaded both images via the bundled script, generated an isolated key.
+HTTP and built-in TLS: both containers healthy; HTML, JS, cache headers, missing asset, version, JSON health/index/bundle and JSON API 404 passed. Validated the TLS health request with the test certificate as a trust anchor.
+Repeated init left the entire config file identical. After compose down and up, Enterprise 20.1 cache SHA-256 remained 539a843a7b53ed9749740b2123dddae3726b1a4831841c32aca740b011b910b5.
+Production browser journey: passed. Three-phase same-origin rehearsal: both plans and Vue edit preserved. The old shell was served with no-store during cutover. See browser.json and rollback.json.
+Clean source checkout: application sources identical between 4a2d6a8 and ca2d3d4. Production package verified on ca2d3d4.
+Laravel 20/20 (108 assertions), Pint passed. Vue production build, test typecheck, sync-reference-specs and 34/34 unit tests passed. Vue reference UI 13/13; all 10 compatibility tests passed. Old Navigator Playwright cases 0/3 in both applications; reference Angular Karma 311/315 as in baseline.
+No public endpoint or owner domain tested. External Workbench, external paginated TAXII and legacy Safari remain unverified.

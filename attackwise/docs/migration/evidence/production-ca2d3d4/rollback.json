@@ -1,0 +1,89 @@
+{
+  "angular-create": {
+    "app": "angular",
+    "errors": [],
+    "stored": [
+      {
+        "name": "Synthetic rehearsal plan B — خطة",
+        "scores": {
+          "T1190": 4
+        }
+      },
+      {
+        "name": "Synthetic rehearsal plan A",
+        "scores": {
+          "T1566": 7
+        }
+      },
+      {
+        "name": "Enterprise Threat Plan",
+        "scores": {}
+      }
+    ]
+  },
+  "vue-edit": {
+    "app": "vue",
+    "errors": [],
+    "listed": [
+      "Synthetic rehearsal plan B — خطة",
+      "Synthetic rehearsal plan A",
+      "Enterprise Threat Plan"
+    ],
+    "listedAfterReload": [
+      "Synthetic rehearsal plan A",
+      "Synthetic rehearsal plan B — خطة",
+      "Enterprise Threat Plan"
+    ],
+    "stored": [
+      {
+        "name": "Synthetic rehearsal plan A",
+        "scores": {
+          "T1566": 7,
+          "T1059": 9
+        }
+      },
+      {
+        "name": "Synthetic rehearsal plan B — خطة",
+        "scores": {
+          "T1190": 4
+        }
+      },
+      {
+        "name": "Enterprise Threat Plan",
+        "scores": {}
+      }
+    ]
+  },
+  "angular-check": {
+    "app": "angular",
+    "errors": [],
+    "listed": [
+      "Synthetic rehearsal plan A",
+      "Synthetic rehearsal plan B — خطة",
+      "Enterprise Threat Plan"
+    ],
+    "pressed": [
+      "T1059",
+      "T1566"
+    ],
+    "stored": [
+      {
+        "name": "Synthetic rehearsal plan A",
+        "scores": {
+          "T1566": 7,
+          "T1059": 9
+        }
+      },
+      {
+        "name": "Synthetic rehearsal plan B — خطة",
+        "scores": {
+          "T1190": 4
+        }
+      },
+      {
+        "name": "Enterprise Threat Plan",
+        "scores": {}
+      }
+    ]
+  }
+}
