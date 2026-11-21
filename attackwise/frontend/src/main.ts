@@ -1,6 +1,8 @@
+// Global styles first, component styles after — same cascade order as Angular (global styles,
+// then component styles injected later), which matters where specificity ties.
+import './styles/app.scss';
 import { createApp } from 'vue';
 import App from './App.vue';
-import './styles/app.scss';
 import { ui } from './planning/ui';
 import { workspace } from './app/workspace';
 

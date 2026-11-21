@@ -27,7 +27,7 @@ async function waitFor(url: string, timeoutMs = 30000) {
     const end = Date.now() + timeoutMs;
     while (Date.now() < end) {
         try {
-            const r = await fetch(url);
+            const r = await fetch(url, { signal: AbortSignal.timeout(2000) });
             if (r.ok) return;
         } catch {
             /* not up yet */
@@ -42,14 +42,21 @@ export async function startApp(kind: Kind, port: number): Promise<Server> {
     if (kind === 'vue' && !existsSync(resolve(FRONTEND, 'dist/index.html'))) throw new Error('Build the Vue app first: (cd attackwise/frontend && npm run build)');
     const proc =
         kind === 'angular'
-            ? spawn('python3', ['-m', 'http.server', String(port), '--bind', '127.0.0.1', '--directory', ANGULAR_DIST], { stdio: 'ignore' })
+            ? spawn('python3', ['-m', 'http.server', String(port), '--bind', '127.0.0.1', '--directory', ANGULAR_DIST], { stdio: ['ignore', 'ignore', 'pipe'] })
             : spawn(process.execPath, [resolve(FRONTEND, 'node_modules/vite/bin/vite.js'), 'preview', '--host', '127.0.0.1', '--port', String(port), '--strictPort'], {
                   cwd: FRONTEND,
-                  stdio: 'ignore',
+                  stdio: ['ignore', 'ignore', 'pipe'],
               });
+    let stderr = '';
+    proc.stderr?.on('data', (d) => (stderr = (stderr + d).slice(-2000)));
     const url = `http://127.0.0.1:${port}`;
-    await waitFor(url + '/');
-    const html = await (await fetch(url + '/')).text();
+    try {
+        await waitFor(url + '/');
+    } catch (e) {
+        proc.kill('SIGTERM');
+        throw new Error(`${kind} server did not start on ${url} (exit=${proc.exitCode}): ${stderr}`);
+    }
+    const html = await (await fetch(url + '/', { signal: AbortSignal.timeout(5000) })).text();
     const isVue = html.includes('data-attackwise-app="vue"');
     if ((kind === 'vue') !== isVue) throw new Error(`${url} is not serving the ${kind} build`);
     return { kind, port, url, proc };
@@ -63,7 +70,7 @@ export async function stopApp(server: Server | undefined) {
     // Wait until the port is free so the other app can reuse the same origin.
     for (let i = 0; i < 50; i++) {
         try {
-            await fetch(server.url + '/');
+            await fetch(server.url + '/', { signal: AbortSignal.timeout(1000) });
             await new Promise((r) => setTimeout(r, 100));
         } catch {
             return;

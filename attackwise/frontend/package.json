@@ -12,7 +12,7 @@
     "preview": "vite preview --host 127.0.0.1 --port 4174 --strictPort",
     "test": "vitest run",
     "test:e2e": "playwright test",
-    "typecheck:e2e": "tsc -p tsconfig.e2e.json"
+    "typecheck:tests": "tsc -p tsconfig.tests.json"
   },
   "dependencies": {
     "@fontsource/jetbrains-mono": "5.3.0",

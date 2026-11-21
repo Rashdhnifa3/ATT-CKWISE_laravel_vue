@@ -3,7 +3,8 @@
     "target": "ES2022",
     "lib": [
       "ES2023",
-      "DOM"
+      "DOM",
+      "DOM.Iterable"
     ],
     "module": "ESNext",
     "moduleResolution": "Bundler",
@@ -13,11 +14,15 @@
     "skipLibCheck": true,
     "noEmit": true,
     "types": [
-      "node"
-    ]
+      "node",
+      "vite/client"
+    ],
+    "baseUrl": "../../nav-app",
+    "useDefineForClassFields": false
   },
   "include": [
-    "tests/e2e/**/*.ts",
+    "tests/**/*.ts",
+    "src/env.d.ts",
     "../shared/fixtures/**/*.ts"
   ]
 }
