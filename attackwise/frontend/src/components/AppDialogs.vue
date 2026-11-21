@@ -69,7 +69,8 @@ const onKey = (d: DialogState, e: KeyboardEvent) => {
             </template>
             <template v-else-if="d.kind === 'changelog'">
                 <div class="changelog-dialog mat-dialog">
-                    <h3 :id="'aw-dialog-title-' + d.id">Changelog</h3>
+                    <!-- Reference changelog.component.html: <h1 mat-dialog-title>Changelog</h1> -->
+                    <h1 :id="'aw-dialog-title-' + d.id">Changelog</h1>
                     <div class="content markdown">
                         <p v-if="changelogError" role="alert">{{ changelogError }}</p>
                         <div v-else v-html="changelogHtml"></div>
