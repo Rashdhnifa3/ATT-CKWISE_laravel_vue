@@ -65,7 +65,7 @@ cmd_init() {
         local key
         key="$(docker run --rm --network none --entrypoint php "attackwise-api:$ATTACKWISE_VERSION" -r 'echo "base64:".base64_encode(random_bytes(32));')"
         [[ "$key" == base64:* ]] || die "could not generate APP_KEY"
-        local tmp="$CONFIG_FILE.tmp.$$"
+        local tmp; tmp="$(mktemp "$CONFIG_FILE.tmp.XXXXXXXX")"
         awk -v k="$key" 'BEGIN{d=0} /^APP_KEY=/{ if(!d){print "APP_KEY=" k; d=1}; next } {print} END{ if(!d) print "APP_KEY=" k }' "$CONFIG_FILE" > "$tmp"
         chmod 0600 "$tmp" && mv "$tmp" "$CONFIG_FILE"
         info "APP_KEY generated once and stored in $CONFIG_FILE (not printed). Back this file up."
@@ -136,7 +136,7 @@ cmd_verify() {
     check "unknown API path → 404 JSON error.code=not_found" '[ "$s" = 404 ] && hdr nope content-type | grep -q application/json && grep -q "\"code\":\"not_found\"" "$tmp/nope.b"'
     if [ "${ATTACKWISE_VERIFY_BUNDLE:-1}" = 1 ]; then
         # Newest Enterprise major listed first in the index (same rule as the app).
-        local major; major="$(grep -o 'enterprise-attack-[0-9]*\.[0-9]*\.json' "$tmp/index.b" | head -n 1 | sed 's/enterprise-attack-\([0-9]*\)\..*/\1/')"
+        local major; major="$(grep -o 'enterprise-attack-[0-9]*\.[0-9]*\.json' "$tmp/index.b" | sed -n '1p' | sed 's/enterprise-attack-\([0-9]*\)\..*/\1/')"
         s="$(get "/api/v1/attack/bundles/enterprise-attack/$major" bundle 300)"
         check "GET /api/v1/attack/bundles/enterprise-attack/$major → STIX bundle (X-Attack-Version $(hdr bundle x-attack-version))" '[ "$s" = 200 ] && head -c 4096 "$tmp/bundle.b" | grep -q "\"type\": *\"bundle\""'
     fi

@@ -16,7 +16,7 @@ RUN rm -rf .env .env.* tests phpunit.xml storage/logs/* storage/framework/*/* bo
  && composer dump-autoload --no-dev --optimize \
  && composer check-platform-reqs --no-dev \
  && php artisan package:discover --ansi \
- && rm -f /usr/local/bin/composer
+ && rm -f vendor/laravel/framework/src/Illuminate/Foundation/resources/exceptions/renderer/package-lock.json /usr/local/bin/composer
 
 FROM php:8.5.13-fpm-alpine@sha256:51414d5291758fe27f58a64c7e8a078465d32cc7dcef7bda803f5b36019802e0 AS runtime
 ARG ATTACKWISE_VERSION=dev
