@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Services\Attack\AttackDataService;
 use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Http\Client\Request;
 use Illuminate\Support\Facades\File;
@@ -223,5 +224,33 @@ class AttackApiTest extends TestCase
         $this->postJson('/api/v1/layers', ['name' => 'layer'])->assertNotFound();
         $this->postJson('/api/v1/plans', ['name' => 'plan'])->assertNotFound();
         Http::assertNothingSent();
+    }
+
+    public function test_unknown_paths_and_wrong_methods_use_the_api_error_shape_without_details(): void
+    {
+        config(['app.debug' => false]);
+        $this->getJson('/api/v1/nope')->assertNotFound()
+            ->assertExactJson(['error' => ['code' => 'not_found', 'message' => 'No API endpoint matches this path.']]);
+        // Even a client that does not ask for JSON gets JSON under /api.
+        $this->get('/api/v1/attack/nope', ['Accept' => 'text/html'])->assertNotFound()
+            ->assertHeader('Content-Type', 'application/json')->assertJsonPath('error.code', 'not_found');
+        $this->post('/api/v1/health')->assertStatus(405)
+            ->assertExactJson(['error' => ['code' => 'method_not_allowed', 'message' => 'This API is read-only; use GET.']]);
+        Http::assertNothingSent();
+    }
+
+    public function test_unexpected_errors_are_generic_in_production_mode(): void
+    {
+        config(['app.debug' => false]);
+        $this->app->bind(AttackDataService::class, fn () => throw new \RuntimeException('secret detail /var/www'));
+        $this->getJson('/api/v1/attack/index')->assertStatus(500)
+            ->assertExactJson(['error' => ['code' => 'server_error', 'message' => 'The server could not complete the request.']]);
+    }
+
+    public function test_only_read_only_get_routes_exist(): void
+    {
+        $routes = collect(app('router')->getRoutes()->getRoutes())
+            ->map(fn ($r) => implode('|', $r->methods()).' '.$r->uri())->sort()->values()->all();
+        $this->assertSame(['GET|HEAD api/v1/attack/bundles/{domain}/{version}', 'GET|HEAD api/v1/attack/index', 'GET|HEAD api/v1/health', 'GET|HEAD up'], $routes);
     }
 }

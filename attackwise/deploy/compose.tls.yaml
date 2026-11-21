@@ -1,0 +1,10 @@
+# Optional: TLS terminated by the web container itself (no other proxy on the server).
+# Enabled by ATTACKWISE_TLS=builtin in the server config (./attackwise.sh adds this file).
+# Requires ATTACKWISE_TLS_CERT_DIR with fullchain.pem and privkey.pem readable by uid 101.
+services:
+  web:
+    ports:
+      - "${ATTACKWISE_HTTPS_BIND:-0.0.0.0}:${ATTACKWISE_HTTPS_PORT:-443}:8443"
+    volumes:
+      - ./nginx/tls.conf:/etc/nginx/conf.d/default.conf:ro
+      - ${ATTACKWISE_TLS_CERT_DIR:?directory with fullchain.pem and privkey.pem}:/etc/nginx/tls:ro

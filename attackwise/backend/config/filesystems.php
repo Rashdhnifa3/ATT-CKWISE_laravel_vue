@@ -33,7 +33,8 @@ return [
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app/private'),
-            'serve' => true,
+            // No file serving or signed-upload routes (storage/{path}): the API is read-only.
+            'serve' => false,
             'throw' => false,
             'report' => false,
         ],

@@ -19,10 +19,12 @@ export default defineConfig({
     globalSetup: './tests/e2e/global-setup.ts',
     use: { browserName: 'chromium', baseURL: VUE_URL, trace: 'retain-on-failure' },
     projects: [
-        { name: 'vue', testIgnore: [...legacyUi, '**/compat/**'] },
+        { name: 'vue', testIgnore: [...legacyUi, '**/compat/**', '**/release/**'] },
         { name: 'reference-legacy-ui', testMatch: legacyUi },
         // Angular ↔ Vue comparisons; these tests start/stop both apps themselves (needs the API on :8000).
         { name: 'compat', testMatch: '**/compat/**/*.spec.ts' },
+        // Production release acceptance; needs ATTACKWISE_VUE_URL = the running release stack (no webServer).
+        { name: 'release', testMatch: '**/release/**/*.spec.ts' },
     ],
     webServer: process.env.ATTACKWISE_VUE_URL
         ? undefined

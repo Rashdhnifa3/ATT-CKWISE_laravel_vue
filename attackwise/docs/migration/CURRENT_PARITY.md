@@ -44,6 +44,7 @@
 | **C:links** | `compat/deep-links-and-config.spec.ts` |
 | **C:taxii** | `compat/taxii-and-auth.spec.ts` |
 | **C:extras** | `compat/planning-extras.spec.ts` |
+| **C:print** | `compat/print-parity.spec.ts`: ملفات PDF من طباعة Chromium في التطبيقين |
 | **API** | `backend/tests/Feature/AttackApiTest.php` |
 
 الأدلة في `docs/migration/evidence/`:
@@ -110,7 +111,7 @@
 | P-18 «افتراضي» تقرير Word (.docx) بالعربية والإنجليزية | `planning/reference-report.ts` | «Export Word report (.docx)» | ملف بنفس الاسم والجداول والنص والرسم | `reference-report.ts` (منسوخ) و`docx` 9.15.4 | C:docx: ‏`document.xml` متطابق بايتًا ببايت، وصورة الرسم PNG متطابقة، بالعربية والإنجليزية (`evidence/compat/docx-report.json`) | متحقَّق |
 | P-19 «افتراضي» «Download plan JSON» | `data-table:saveLayerLocally` | زر التنزيل في Final | طبقة 4.5 مع امتداد `attackwise` | `workspace.saveLayerLocally` | C:file، C:real، R:lovable-integration | متحقَّق |
 | P-20 «افتراضي» «Print / PDF» | `planning:printReport` (`window.print()`) | النقر على الزر | يُستدعى `window.print` مرة واحدة | `usePlanning.printReport` | C:extras (مع إيقاف نافذة الطباعة) | متحقَّق |
-| P-21 «افتراضي» شكل الصفحة المطبوعة | قواعد `@media print` في `planning.scss` و`shell.scss` | معاينة الطباعة | لم تُقارن | ملفات SCSS منسوخة كما هي | لا يوجد اختبار مقارنة لوسيط الطباعة | منفَّذ |
+| P-21 «افتراضي» شكل الصفحة المطبوعة | قواعد `@media print` في `planning.scss` و`shell.scss` | طباعة Final Plan بالعربية والإنجليزية: خطة صغيرة، وخطة كبيرة فيها 42 هجومًا على 3 صفحات، ومع خلفيات الرسوم أو بدونها | صفحات A4، والجدول باتجاه RTL في العربية. ترويسة الجدول تتكرر في كل صفحة ولا ينقسم صف بين صفحتين. أزرار الأدوات مخفية. مع تفعيل «Background graphics» تبقى الخلفية الداكنة ويصعب قراءة أسماء التقنيات في الجدول، وهذا سلوك الأصل نفسه. الافتراضي في Chrome بلا خلفيات وواضح | ملفات SCSS منسوخة كما هي | C:print (`print-parity.spec.ts`): نفس عدد الصفحات ونفس النص (`pdftotext`) وفرق بكسل 0 في 6 حالات. الصفحات فُحصت بصريًا | متحقَّق |
 | P-22 «افتراضي» «Color Blind Friendly» وحفظه | `colorBlind`، `preference()`، ومفتاح `attackwise-color-blind` | تفعيل الخيار ثم إعادة التحميل | الصنف `color-blind` موجود والقيمة `'true'` محفوظة | `usePlanning` | C:extras | متحقَّق |
 | P-23 «افتراضي» الحفظ التلقائي: عند كل تغيير، وعند `pagehide` و`visibilitychange` | `planning:changed`، و`@HostListener` في `tabs:saveAllPlans` | أي تعديل، ثم إغلاق الصفحة | الخطة محفوظة بالاسم | `usePlanning.changed` و`App.vue` | R:plan-autosave، C:store، T-comp | متحقَّق |
 | P-24 «افتراضي» العربية والإنجليزية، RTL وLTR، والحفظ في `attackwise-language` | `planning-ui.service.ts` | زر «ع/EN» | تتغيّر قيمة `dir` والنصوص | `planning/ui.ts` | C:ui (عربي وإنجليزي، شجرة وصول متطابقة، صفر بكسل فرق)، R:lovable-integration | متحقَّق |
@@ -240,7 +241,7 @@
 | UI-077 «بلا مسار» legend وتدرّجات SVG | `buildLegend` | — | U1 | — | U1 | غير قابل للوصول |
 | UI-078 «بلا مسار» التقنيات الفرعية وحدود SVG | RenderableTactic | — | U1 | — | U1 | غير قابل للوصول |
 | UI-079 «بلا مسار» تنزيل SVG | `downloadSVG` | — | U1 | — | U1 | غير قابل للوصول |
-| UI-080 «افتراضي» الطباعة وPDF | `styles.scss`، و«Print / PDF» في التخطيط | انظر P-20 وP-21 | — | — | C:extras | متحقَّق (الاستدعاء). شكل الطباعة منفَّذ (P-21) |
+| UI-080 «افتراضي» الطباعة وPDF | `styles.scss`، و«Print / PDF» في التخطيط | انظر P-20 وP-21 | — | — | C:extras، C:print | متحقَّق |
 | UI-081 «إعداد/رابط» مفاتيح الميزات | `config.service.ts:setFeature_object`، `setFeature`، `getAllFragments` | ‏`features` في الإعداد، و`#subtechniques=false` و`#leave_site_dialog=false` | الميزات المؤثرة في الواجهة الحالية اثنتان فقط: `leave_site_dialog` و`subtechniques`. البقية تتحكم بعناصر في U1 | `ConfigService` | C:links، T-dom | متحقَّق |
 | UI-082a «افتراضي» لوحة المفاتيح والوصول في الواجهة الحالية | — | انظر P-28 | — | — | C:ui | متحقَّق |
 | UI-082b «بلا مسار» اختصارات لوحة المفاتيح في الجدول | `datatable:handleKeyDown*` (مربوطة داخل U1) | — | U1 | — | U1 | غير قابل للوصول |
@@ -334,7 +335,6 @@
 |---|---|---|
 | ST-05 | تحتفظ Vue بنسخة من قيمة الخطط غير المقروءة بدل أن تفقدها | لا أثر سلبي. الرجوع لـ Angular يتجاهل المفتاح الإضافي |
 | ST-06 | تحتفظ Vue بمدخلات المصفوفة غير المعروفة، وAngular يحذفها | لا أثر على الخطط الصحيحة |
-| P-21، UI-080 | شكل الصفحة المطبوعة لم يُقارن (ملفات CSS منسوخة كما هي) | غير معروف. يحتاج فحصًا يدويًا للطباعة |
 | UI-022 | تنبيه Safari 13 أو أقدم لم يُختبر | يخص فقط متصفحات قديمة جدًا |
 | D03-ext، D04-ext | لم يُختبر Workbench أو TAXII حقيقي | الإعداد الافتراضي لا يستعملهما. من يضبطهما يحتاج تحققًا مع خادمه |
 | كل «غير قابل للوصول» | واجهة Navigator الكلاسيكية (التخطيطات، SVG، XLSX، البحث، عمليات الطبقات، مراجعة الترقية، Help) لم تُنقل | لا أثر على الموقع الحالي لأنها غير ظاهرة فيه. إذا أراد المستخدم إعادة تفعيلها في Angular لاحقًا (بتعديل المصدر)، فلا مقابل لها في Vue |

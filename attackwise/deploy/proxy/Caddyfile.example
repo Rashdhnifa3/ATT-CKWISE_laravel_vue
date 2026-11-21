@@ -1,0 +1,13 @@
+# Caddy terminating TLS (automatic certificates) in front of ATT&CKWISE (ATTACKWISE_TLS=proxy).
+# Replace <your-domain>; DNS for it must already point to this server and ports 80/443 be open.
+<your-domain> {
+    encode gzip
+    header Strict-Transport-Security "max-age=86400"
+    reverse_proxy 127.0.0.1:8080 {
+        # Caddy sends X-Forwarded-For / X-Forwarded-Proto / X-Forwarded-Host by default.
+        flush_interval -1
+        transport http {
+            read_timeout 300s
+        }
+    }
+}
