@@ -1,26 +1,33 @@
-# ATT&CKWISE migration — in progress
+# ATT&CKWISE: نسخة Vue + Laravel (قيد المراجعة، غير مدموجة)
 
-Original Angular application remains in `../nav-app`. Migration branch: `migration/attackwise-vue-laravel`.
+- التطبيق الأصلي (Angular، ATT&CK Navigator 5.3.2 مع طبقة التخطيط ATT&CKWISE) باقٍ كما هو في `../nav-app`، وهو المرجع.
+- هذا المجلد يضم النسخة الجديدة على الفرع `attackwise-vue-migration`:
+  - `frontend/`: ‏Vue 3 مع TypeScript strict وVite.
+  - `backend/`: ‏Laravel 13. API قراءة فقط لبيانات ATT&CK الرسمية.
+  - `shared/`: العقد، وبيانات D3FEND، والملفات الاصطناعية للاختبار.
+  - `docs/`: التوثيق.
+- لم يُستبدل الموقع ولم يُنشر شيء. القرار لصاحب المشروع.
 
-Source audit, feature inventory and original baseline: `docs/migration/`. Original baseline: 315 unit and 5 browser tests passed. Target feature parity is **not yet implemented or verified**.
+| الوثيقة | المحتوى |
+|---|---|
+| `docs/migration/RUNNING.md` | تشغيل الأصل والجديد على منافذ منفصلة، والاختبارات من checkout نظيف، وأثر المنفذ على الخطط المحفوظة |
+| `docs/migration/CURRENT_PARITY.md` | سجل التطابق: كل سلوك، مع دليله وحالته |
+| `docs/migration/FINAL_REPORT.md` | نتائج التحقق والفروق المتبقية وحالة الجاهزية |
+| `docs/migration/evidence/` | سجلات الاختبارات وتقارير المقارنة، ببيانات عامة أو اصطناعية |
+| `docs/migration/handoff/` | تعليمات الترحيل الأصلية: START وSCOPE وVERIFY |
 
-## Backend foundation
+الوثائق القديمة (`FEATURE_INVENTORY.md` و`SOURCE_AUDIT.md` و`BASELINE_RESULTS.md` و`MIGRATION_PLAN.md` و`audit/`) محفوظة كمرجع تاريخي. يختلف بعضها عن الحالة الحالية:
+- كانت تستبعد ميزة Plan، وهي ضمن النطاق الآن.
+- تذكر فرعًا قديمًا اسمه `migration/attackwise-vue-laravel`.
+- تفترض نقل واجهة Navigator الكلاسيكية.
 
-PHP 8.3+ (tested 8.5.4), Composer 2; Laravel 13.42 locked in composer.lock. SQLite default, optional MySQL through Laravel DB_* configuration. No account required; no layer upload endpoints.
+التفاصيل في آخر `CURRENT_PARITY.md`.
 
-Linux/macOS:
+## تشغيل سريع
 
 ```sh
-cd backend
-composer install
-cp .env.example .env
-php artisan key:generate
-php artisan migrate
-php artisan serve --host=127.0.0.1 --port=8000
+(cd backend && composer install && cp .env.example .env && php artisan key:generate && php artisan serve --host=127.0.0.1 --port=8000)
+(cd frontend && npm ci && npm run build && npm run preview)   # http://127.0.0.1:4174
 ```
 
-Windows PowerShell uses `Copy-Item .env.example .env` instead of `cp`. Ensure PHP SQLite extensions are enabled. Run `php artisan test` and `vendor/bin/pint --test` (Windows: `vendor\bin\pint --test`).
-
-`GET /api/v1/health` returns `{ "data": { "status": "ok" } }`.
-
-Remaining: official-data API, Vue frontend/domain migration, import/export, full regression and performance comparison. The framework scaffold is not a migrated Navigator implementation.
+الخطط تُحفظ في `localStorage` لكل أصل، أي لكل بروتوكول ومضيف ومنفذ. لذلك لا تظهر خطط Angular المحفوظة على منفذ آخر. انظر RUNNING.md.

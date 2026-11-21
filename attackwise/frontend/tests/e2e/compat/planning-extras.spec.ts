@@ -28,6 +28,19 @@ async function flow(browser: Browser, kind: Kind, server: Server) {
     page.on('pageerror', (e) => errors.push(e.message));
     await page.goto(server.url + '/');
     await waitForMatrix(page);
+    try {
+        return await steps(page, errors);
+    } catch (e) {
+        // Keep what the page showed when a step failed (the test launches its own browser, so no fixture snapshot).
+        await page.screenshot({ path: resolve(OUT, kind + '-failure.png'), fullPage: true }).catch(() => undefined);
+        writeFileSync(resolve(OUT, kind + '-failure.aria.yml'), await page.locator('body').ariaSnapshot().catch(() => ''));
+        throw e;
+    } finally {
+        await context.close();
+    }
+}
+
+async function steps(page: Page, errors: string[]) {
     const out: Record<string, unknown> = {};
 
     // Show more techniques: per-column count before/after one click, in the busiest column.
@@ -40,7 +53,7 @@ async function flow(browser: Browser, kind: Kind, server: Server) {
     out.cardsAfterOneClick = (await perColumn())[busiest];
 
     // Header search (attack view): by ID, by name (incl. sub-technique match), no match, cleared.
-    const search = page.getByLabel('Search techniques', { exact: true });
+    const search = page.locator('.header-search input'); // a second copy (.mobile-search) is shown on narrow screens only
     const visibleIds = async () => page.locator('.tactic-column .technique-card .technique-id').allInnerTexts();
     out.search = {} as Record<string, unknown>;
     for (const q of ['T1566', 'phishing', 'spearphishing voice', 'zzzz-no-match', '']) {
@@ -76,11 +89,13 @@ async function flow(browser: Browser, kind: Kind, server: Server) {
     await page.getByRole('button', { name: 'Print / PDF', exact: true }).click();
     out.printCalls = await page.evaluate(() => (window as unknown as { __prints: number }).__prints);
     await page.reload();
-    await waitForMatrix(page).catch(() => undefined);
+    // After a reload both apps show the home page with "Your saved plans" (no auto-open); resume the plan.
+    out.homeAfterReload = await page.locator('.wise-saved-plans li').allInnerTexts().then((t) => t.map((x) => x.split('\n')[0]));
+    await page.locator('.saved-plan-open').first().click();
+    out.viewAfterResume = await page.locator('.reference-nav button[aria-current=step]').innerText(); // the saved view (Final) is restored
     await page.getByRole('navigation', { name: 'Plan views' }).getByRole('button', { name: /Final Plan/ }).click();
     out.colorBlindAfterReload = { checked: await page.getByLabel('Color Blind Friendly').isChecked(), planner: await page.locator('.planner.color-blind').count() };
     out.errors = errors;
-    await context.close();
     return out;
 }
 
