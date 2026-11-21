@@ -1,0 +1,140 @@
+{
+  "dataset": "enterprise-attack 20.1",
+  "viewport": "1440x1000",
+  "runs": 5,
+  "browser": "chromium",
+  "facts": {
+    "version": "Enterprise Matrix v20",
+    "tactics": [
+      "Reconnaissance",
+      "Resource Development",
+      "Initial Access",
+      "Execution",
+      "Persistence",
+      "Privilege Escalation",
+      "Stealth",
+      "Defense Impairment",
+      "Credential Access",
+      "Discovery",
+      "Lateral Movement",
+      "Collection",
+      "Command and Control",
+      "Exfiltration",
+      "Impact"
+    ],
+    "counts": [
+      "12",
+      "9",
+      "11",
+      "22",
+      "22",
+      "13",
+      "31",
+      "18",
+      "18",
+      "34",
+      "9",
+      "17",
+      "18",
+      "10",
+      "15"
+    ],
+    "firstColumn": [
+      "T1592",
+      "T1682",
+      "T1594",
+      "T1589",
+      "T1596",
+      "T1681",
+      "T1595",
+      "T1591",
+      "T1590",
+      "T1593",
+      "T1597",
+      "T1598"
+    ]
+  },
+  "defenseFacts": {
+    "resultsCount": "193 mitigations",
+    "attackMitigations": 44,
+    "d3fend": 149
+  },
+  "metrics": {
+    "angular": {
+      "openMatrixMs": {
+        "runs": [
+          2737,
+          2763,
+          2830,
+          2911,
+          2967
+        ],
+        "median": 2830,
+        "min": 2737,
+        "max": 2967
+      },
+      "interactMs": {
+        "runs": [
+          649,
+          636,
+          652,
+          688,
+          674
+        ],
+        "median": 652,
+        "min": 636,
+        "max": 688
+      },
+      "importMs": {
+        "runs": [
+          447,
+          452,
+          466,
+          474,
+          478
+        ],
+        "median": 466,
+        "min": 447,
+        "max": 478
+      }
+    },
+    "vue": {
+      "openMatrixMs": {
+        "runs": [
+          664,
+          676,
+          720,
+          691,
+          718
+        ],
+        "median": 691,
+        "min": 664,
+        "max": 720
+      },
+      "interactMs": {
+        "runs": [
+          492,
+          512,
+          510,
+          541,
+          467
+        ],
+        "median": 510,
+        "min": 467,
+        "max": 541
+      },
+      "importMs": {
+        "runs": [
+          43,
+          44,
+          42,
+          47,
+          48
+        ],
+        "median": 44,
+        "min": 42,
+        "max": 48
+      }
+    }
+  }
+}

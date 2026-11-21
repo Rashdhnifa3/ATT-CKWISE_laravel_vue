@@ -1,0 +1,246 @@
+{
+  "angular": {
+    "cardsPerColumn": [
+      12,
+      9,
+      11,
+      20,
+      20,
+      13,
+      20,
+      18,
+      18,
+      20,
+      9,
+      17,
+      18,
+      10,
+      15
+    ],
+    "loadMoreButtons": 4,
+    "cardsAfterOneClick": 22,
+    "search": {
+      "T1566": {
+        "ids": [
+          "T1566"
+        ],
+        "columns": 15,
+        "empty": 14
+      },
+      "phishing": {
+        "ids": [
+          "T1598",
+          "T1566",
+          "T1534"
+        ],
+        "columns": 15,
+        "empty": 12
+      },
+      "spearphishing voice": {
+        "ids": [
+          "T1598",
+          "T1566"
+        ],
+        "columns": 15,
+        "empty": 13
+      },
+      "zzzz-no-match": {
+        "ids": [],
+        "columns": 15,
+        "empty": 15
+      },
+      "(cleared)": {
+        "ids": [
+          "T1592",
+          "T1682",
+          "T1594",
+          "T1589",
+          "T1596",
+          "T1681",
+          "T1595",
+          "T1591",
+          "T1590",
+          "T1593",
+          "T1597",
+          "T1598",
+          "T1583",
+          "T1584",
+          "T1586",
+          "T1608",
+          "T1683",
+          "T1585",
+          "T1588",
+          "T1650",
+          "T1587",
+          "T1133",
+          "T1091",
+          "T1195",
+          "T1190",
+          "T1659",
+          "T1199",
+          "T1566",
+          "T1078",
+          "T1200",
+          "T1189",
+          "T1669",
+          "T1047",
+          "T1129",
+          "T1675",
+          "T1053",
+          "T1106",
+          "T1610",
+          "T1674",
+          "T1059"
+        ],
+        "columns": 15,
+        "empty": 0
+      }
+    },
+    "drawerValue": "",
+    "afterClearScore": {
+      "drawerOpen": 1,
+      "risk": "missing"
+    },
+    "selectedBeforeClear": "2 Selected",
+    "afterClear": {
+      "pill": "0 Selected",
+      "pressed": 0
+    },
+    "colorBlind": {
+      "planner": 1,
+      "stored": "true"
+    },
+    "printCalls": 1,
+    "homeAfterReload": [
+      "Enterprise Threat Plan"
+    ],
+    "viewAfterResume": "3\nFinal Plan",
+    "colorBlindAfterReload": {
+      "checked": true,
+      "planner": 1
+    },
+    "errors": []
+  },
+  "vue": {
+    "cardsPerColumn": [
+      12,
+      9,
+      11,
+      20,
+      20,
+      13,
+      20,
+      18,
+      18,
+      20,
+      9,
+      17,
+      18,
+      10,
+      15
+    ],
+    "loadMoreButtons": 4,
+    "cardsAfterOneClick": 22,
+    "search": {
+      "T1566": {
+        "ids": [
+          "T1566"
+        ],
+        "columns": 15,
+        "empty": 14
+      },
+      "phishing": {
+        "ids": [
+          "T1598",
+          "T1566",
+          "T1534"
+        ],
+        "columns": 15,
+        "empty": 12
+      },
+      "spearphishing voice": {
+        "ids": [
+          "T1598",
+          "T1566"
+        ],
+        "columns": 15,
+        "empty": 13
+      },
+      "zzzz-no-match": {
+        "ids": [],
+        "columns": 15,
+        "empty": 15
+      },
+      "(cleared)": {
+        "ids": [
+          "T1592",
+          "T1682",
+          "T1594",
+          "T1589",
+          "T1596",
+          "T1681",
+          "T1595",
+          "T1591",
+          "T1590",
+          "T1593",
+          "T1597",
+          "T1598",
+          "T1583",
+          "T1584",
+          "T1586",
+          "T1608",
+          "T1683",
+          "T1585",
+          "T1588",
+          "T1650",
+          "T1587",
+          "T1133",
+          "T1091",
+          "T1195",
+          "T1190",
+          "T1659",
+          "T1199",
+          "T1566",
+          "T1078",
+          "T1200",
+          "T1189",
+          "T1669",
+          "T1047",
+          "T1129",
+          "T1675",
+          "T1053",
+          "T1106",
+          "T1610",
+          "T1674",
+          "T1059"
+        ],
+        "columns": 15,
+        "empty": 0
+      }
+    },
+    "drawerValue": "",
+    "afterClearScore": {
+      "drawerOpen": 1,
+      "risk": "missing"
+    },
+    "selectedBeforeClear": "2 Selected",
+    "afterClear": {
+      "pill": "0 Selected",
+      "pressed": 0
+    },
+    "colorBlind": {
+      "planner": 1,
+      "stored": "true"
+    },
+    "printCalls": 1,
+    "homeAfterReload": [
+      "Enterprise Threat Plan"
+    ],
+    "viewAfterResume": "3\nFinal Plan",
+    "colorBlindAfterReload": {
+      "checked": true,
+      "planner": 1
+    },
+    "errors": []
+  }
+}

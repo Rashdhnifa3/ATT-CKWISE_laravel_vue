@@ -1,0 +1,78 @@
+{
+  "name": "Synthetic legacy 3.0 layer (enterprise id)",
+  "versions": {
+    "attack": "20",
+    "navigator": "5.3.2",
+    "layer": "4.5"
+  },
+  "domain": "enterprise-attack",
+  "description": "",
+  "filters": {
+    "platforms": [
+      "Windows",
+      "Linux"
+    ]
+  },
+  "sorting": 0,
+  "layout": {
+    "layout": "mini",
+    "aggregateFunction": "average",
+    "showID": false,
+    "showName": false,
+    "showAggregateScores": false,
+    "countUnscored": false,
+    "expandedSubtechniques": "none"
+  },
+  "hideDisabled": false,
+  "techniques": [
+    {
+      "techniqueID": "T1566",
+      "tactic": "initial-access",
+      "score": 9,
+      "color": "#e60d0d",
+      "comment": "legacy",
+      "enabled": true,
+      "metadata": [],
+      "links": [],
+      "showSubtechniques": false
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffffff",
+      "#66b1ffff"
+    ],
+    "minValue": 0,
+    "maxValue": 10
+  },
+  "legendItems": [],
+  "metadata": [],
+  "links": [],
+  "showTacticRowBackground": false,
+  "tacticRowBackground": "#dddddd",
+  "selectTechniquesAcrossTactics": true,
+  "selectSubtechniquesWithParent": false,
+  "selectVisibleTechniques": false,
+  "attackwise": {
+    "planId": "plan-mwpvzsha-8qmdd0",
+    "view": "final",
+    "selectedTechniques": [
+      "T1190^initial-access"
+    ],
+    "planning": {
+      "attackScores": {
+        "T1190": 4
+      },
+      "defenseScores": {},
+      "selectedDefenses": [],
+      "customDefenses": [],
+      "defenseStatus": {},
+      "ratings": {},
+      "defenseSelections": {},
+      "standaloneDefenses": [],
+      "manualDefenseMappings": {},
+      "riskFormula": "strongest",
+      "finalized": false
+    }
+  }
+}

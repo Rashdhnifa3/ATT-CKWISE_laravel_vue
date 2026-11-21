@@ -1,0 +1,6 @@
+
+Running 1 test using 1 worker
+
+  ✓  1 [compat] › tests/e2e/compat/planning-extras.spec.ts:102:5 › show more, clear score, clear, color-blind preference and print match on real data (20.0s)
+
+  1 passed (21.8s)

@@ -1,0 +1,99 @@
+
+Running 3 tests using 1 worker
+
+  ✘  1 [reference-legacy-ui] › tests/e2e/reference/layer-comparison.spec.ts:64:5 › compare APT3 and APT29 technique scores @smoke (30.1s)
+  ✘  2 [reference-legacy-ui] › tests/e2e/reference/layer.spec.ts:7:5 › create, score, rename, and export an Enterprise layer @smoke (30.1s)
+  ✘  3 [reference-legacy-ui] › tests/e2e/reference/selection.spec.ts:32:5 › find, select, and clear techniques @smoke (30.1s)
+
+
+  1) [reference-legacy-ui] › tests/e2e/reference/layer-comparison.spec.ts:64:5 › compare APT3 and APT29 technique scores @smoke › create and score the APT3 layer 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByText('Create New Layer', { exact: true })
+
+
+      30 |
+      31 | async function createGroupLayer(page: Page, group: string, score: string): Promise<void> {
+    > 32 |     await page.getByText('Create New Layer', { exact: true }).click();
+         |                                                               ^
+      33 |     await page.getByRole('button', { name: 'Enterprise', exact: true }).click();
+      34 |     await expect(page.locator('technique-cell')).toHaveCount(3);
+      35 |
+        at createGroupLayer (<worktree>/attackwise/frontend/tests/e2e/reference/layer-comparison.spec.ts:32:63)
+        at <worktree>/attackwise/frontend/tests/e2e/reference/layer-comparison.spec.ts:74:15
+        at <worktree>/attackwise/frontend/tests/e2e/reference/layer-comparison.spec.ts:73:5
+
+    Error Context: tmp/playwright/test-results/reference-layer-comparison-8e9e4--and-APT29-technique-scores-reference-legacy-ui/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    tmp/playwright/test-results/reference-layer-comparison-8e9e4--and-APT29-technique-scores-reference-legacy-ui/trace.zip
+    Usage:
+
+        npx playwright show-trace tmp/playwright/test-results/reference-layer-comparison-8e9e4--and-APT29-technique-scores-reference-legacy-ui/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [reference-legacy-ui] › tests/e2e/reference/layer.spec.ts:7:5 › create, score, rename, and export an Enterprise layer @smoke 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByText('Create New Layer', { exact: true })
+
+
+      13 |
+      14 |     await page.goto('/');
+    > 15 |     await page.getByText('Create New Layer', { exact: true }).click();
+         |                                                               ^
+      16 |     await page.getByRole('button', { name: 'Enterprise', exact: true }).click();
+      17 |     await expect(page.locator('technique-cell')).toHaveCount(2);
+      18 |     await page.locator('technique-cell').getByText('Smoke technique', { exact: true }).click();
+        at <worktree>/attackwise/frontend/tests/e2e/reference/layer.spec.ts:15:63
+
+    Error Context: tmp/playwright/test-results/reference-layer-create-sco-ddc8f--export-an-Enterprise-layer-reference-legacy-ui/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    tmp/playwright/test-results/reference-layer-create-sco-ddc8f--export-an-Enterprise-layer-reference-legacy-ui/trace.zip
+    Usage:
+
+        npx playwright show-trace tmp/playwright/test-results/reference-layer-create-sco-ddc8f--export-an-Enterprise-layer-reference-legacy-ui/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [reference-legacy-ui] › tests/e2e/reference/selection.spec.ts:32:5 › find, select, and clear techniques @smoke › load deterministic ATT&CK data 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByText('Create New Layer', { exact: true })
+
+
+      38 |
+      39 |         await page.goto('/');
+    > 40 |         await page.getByText('Create New Layer', { exact: true }).click();
+         |                                                                   ^
+      41 |         await page.getByRole('button', { name: 'Enterprise', exact: true }).click();
+      42 |         await expect(page.locator('technique-cell')).toHaveCount(4);
+      43 |     });
+        at <worktree>/attackwise/frontend/tests/e2e/reference/selection.spec.ts:40:67
+        at <worktree>/attackwise/frontend/tests/e2e/reference/selection.spec.ts:36:5
+
+    Error Context: tmp/playwright/test-results/reference-selection-find-select-and-clear-techniques-reference-legacy-ui/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    tmp/playwright/test-results/reference-selection-find-select-and-clear-techniques-reference-legacy-ui/trace.zip
+    Usage:
+
+        npx playwright show-trace tmp/playwright/test-results/reference-selection-find-select-and-clear-techniques-reference-legacy-ui/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3 failed
+    [reference-legacy-ui] › tests/e2e/reference/layer-comparison.spec.ts:64:5 › compare APT3 and APT29 technique scores @smoke 
+    [reference-legacy-ui] › tests/e2e/reference/layer.spec.ts:7:5 › create, score, rename, and export an Enterprise layer @smoke 
+    [reference-legacy-ui] › tests/e2e/reference/selection.spec.ts:32:5 › find, select, and clear techniques @smoke 

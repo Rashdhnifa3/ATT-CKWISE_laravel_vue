@@ -1,0 +1,18 @@
+
+Running 13 tests using 1 worker
+
+  ✓   1 [vue] › tests/e2e/reference/attackwise.spec.ts:40:5 › failed dataset loading can be retried (362ms)
+  ✓   2 [vue] › tests/e2e/reference/attackwise.spec.ts:55:5 › uses the newest configured Enterprise version and displays the real version (246ms)
+  ✓   3 [vue] › tests/e2e/reference/attackwise.spec.ts:63:5 › custom defenses and optional attack scores survive JSON round trip (1.2s)
+  ✓   4 [vue] › tests/e2e/reference/d3fend-mapping.spec.ts:14:5 › imported D3FEND data: exact-ID lookup, no parent inheritance, no duplicates, evidence kept (881ms)
+  ✓   5 [vue] › tests/e2e/reference/d3fend-mapping.spec.ts:41:5 › re-running the import produces identical output (264ms)
+  ✓   6 [vue] › tests/e2e/reference/d3fend-mapping.spec.ts:47:5 › saved plans keep D3FEND selections and scores; scoring reuses the existing formula (2ms)
+  ✓   7 [vue] › tests/e2e/reference/d3fend-mapping.spec.ts:78:5 › all D3FEND techniques join the mitigation list, filter by attack, score, persist and reach the Final Plan (2.6s)
+  ✓   8 [vue] › tests/e2e/reference/lovable-integration.spec.ts:40:5 › Enterprise-only, optional scoring, per-attack defense selections, exports and RTL survive refresh (2.3s)
+  ✓   9 [vue] › tests/e2e/reference/plan-autosave.spec.ts:15:5 › plans autosave and can be resumed by name after closing the site (967ms)
+  ✓  10 [vue] › tests/e2e/reference/planning-icons.spec.ts:6:5 › planning SVG icons and labels render at desktop and mobile widths (1.1s)
+  ✓  11 [vue] › tests/e2e/reference/planning-refinements.spec.ts:41:5 › score coloring, full-width tactic filter, mitigation filters, persisted theme and interactive chart (2.3s)
+  ✓  12 [vue] › tests/e2e/reference/planning-refinements.spec.ts:110:5 › defense scores, manual links and all formulas survive refresh and JSON export (1.9s)
+  ✓  13 [vue] › tests/e2e/reference/risk-calculation.spec.ts:5:5 › risk formulas preserve negative results, distinguish missing from zero and clamp the index (6ms)
+
+  13 passed (15.5s)

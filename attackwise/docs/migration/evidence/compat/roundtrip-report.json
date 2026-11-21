@@ -1,0 +1,125 @@
+[
+  {
+    "case": "layer-v4.5-annotated.json",
+    "events": [],
+    "planNames": [
+      "Synthetic annotated layer — طبقة",
+      "Enterprise Threat Plan"
+    ],
+    "sameExport": true,
+    "vueToAngular": "equal",
+    "angularToVue": "equal"
+  },
+  {
+    "case": "layer-v4.3-minor.json",
+    "events": [
+      "snackbar: Uploaded layer version (4.3) is out of date. Please update to v4.5 for optimal compatibility. CHANGELOG"
+    ],
+    "planNames": [
+      "Synthetic layer format 4.3",
+      "Enterprise Threat Plan"
+    ],
+    "sameExport": true,
+    "vueToAngular": "equal",
+    "angularToVue": "equal"
+  },
+  {
+    "case": "layer-v3-legacy.json",
+    "events": [
+      "snackbar: Only Enterprise ATT&CK plans are supported in this workspace. Close"
+    ],
+    "planNames": [
+      "Enterprise Threat Plan"
+    ],
+    "sameExport": false,
+    "vueToAngular": null,
+    "angularToVue": null
+  },
+  {
+    "case": "layer-v3-legacy-enterprise.json",
+    "events": [
+      "dialog: Layer version mismatch This layer uses 3.0; the current format is 4.5. Some settings may not be restored. Dismiss",
+      "dialog: Layer version mismatch This layer uses 3.0; the current format is 4.5. Some settings may not be restored. Dismiss"
+    ],
+    "planNames": [
+      "Synthetic legacy 3.0 layer (enterprise id)",
+      "Enterprise Threat Plan"
+    ],
+    "sameExport": true,
+    "vueToAngular": "equal",
+    "angularToVue": "equal"
+  },
+  {
+    "case": "layers-array.json",
+    "events": [
+      "snackbar: Uploaded layer version (4.3) is out of date. Please update to v4.5 for optimal compatibility. CHANGELOG"
+    ],
+    "planNames": [
+      "Array layer B",
+      "Array layer A",
+      "Enterprise Threat Plan"
+    ],
+    "sameExport": true,
+    "vueToAngular": "equal",
+    "angularToVue": "equal"
+  },
+  {
+    "case": "layer-attack-v19.json [No]",
+    "events": [
+      "dialog: Upgrade layer version? The layer \"Synthetic ATT&CK v19 layer\" uses an outdated version of ATT&CK (v19). Do you want to open the workflow to upgrade this layer to ATT&CK v20? Yes No"
+    ],
+    "planNames": [
+      "Synthetic ATT&CK v19 layer",
+      "Enterprise Threat Plan"
+    ],
+    "sameExport": true,
+    "vueToAngular": "equal",
+    "angularToVue": "equal"
+  },
+  {
+    "case": "layer-attack-v19.json [Yes]",
+    "events": [
+      "dialog: Upgrade layer version? The layer \"Synthetic ATT&CK v19 layer\" uses an outdated version of ATT&CK (v19). Do you want to open the workflow to upgrade this layer to ATT&CK v20? Yes No"
+    ],
+    "planNames": [
+      "Synthetic ATT&CK v19 layer",
+      "Enterprise Threat Plan"
+    ],
+    "sameExport": true,
+    "vueToAngular": "equal",
+    "angularToVue": "equal"
+  },
+  {
+    "case": "plan-legacy-ratings.json",
+    "events": [],
+    "planNames": [
+      "Synthetic legacy plan",
+      "Enterprise Threat Plan"
+    ],
+    "sameExport": true,
+    "vueToAngular": "equal",
+    "angularToVue": "equal"
+  },
+  {
+    "case": "layer-mobile.json",
+    "events": [
+      "snackbar: Only Enterprise ATT&CK plans are supported in this workspace. Close"
+    ],
+    "planNames": [
+      "Enterprise Threat Plan"
+    ],
+    "sameExport": false,
+    "vueToAngular": null,
+    "angularToVue": null
+  },
+  {
+    "case": "malformed.json",
+    "events": [],
+    "planNames": [
+      "Enterprise Threat Plan"
+    ],
+    "sameExport": false,
+    "vueToAngular": null,
+    "angularToVue": null
+  }
+]

@@ -1,0 +1,101 @@
+{
+  "name": "Synthetic ATT&CK v19 layer",
+  "versions": {
+    "attack": "19",
+    "navigator": "5.3.2",
+    "layer": "4.5"
+  },
+  "domain": "enterprise-attack",
+  "description": "",
+  "filters": {
+    "platforms": [
+      "Windows",
+      "IaaS",
+      "Linux",
+      "macOS",
+      "SaaS",
+      "ESXi",
+      "Network Devices",
+      "PRE",
+      "Containers",
+      "Office Suite",
+      "Identity Provider"
+    ]
+  },
+  "sorting": 0,
+  "layout": {
+    "layout": "side",
+    "aggregateFunction": "average",
+    "showID": false,
+    "showName": true,
+    "showAggregateScores": false,
+    "countUnscored": false,
+    "expandedSubtechniques": "none"
+  },
+  "hideDisabled": false,
+  "techniques": [
+    {
+      "techniqueID": "T1566",
+      "tactic": "initial-access",
+      "score": 6,
+      "color": "",
+      "comment": "v19 annotation",
+      "enabled": true,
+      "metadata": [],
+      "links": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1059",
+      "tactic": "execution",
+      "score": 2,
+      "color": "",
+      "comment": "",
+      "enabled": true,
+      "metadata": [],
+      "links": [],
+      "showSubtechniques": false
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ff6666ff",
+      "#ffe766ff",
+      "#8ec843ff"
+    ],
+    "minValue": 0,
+    "maxValue": 100
+  },
+  "legendItems": [],
+  "metadata": [],
+  "links": [],
+  "showTacticRowBackground": false,
+  "tacticRowBackground": "#dddddd",
+  "selectTechniquesAcrossTactics": true,
+  "selectSubtechniquesWithParent": false,
+  "selectVisibleTechniques": false,
+  "attackwise": {
+    "planId": "plan-synthetic-v19",
+    "view": "final",
+    "selectedTechniques": [
+      "T1566^initial-access",
+      "T1190^initial-access"
+    ],
+    "planning": {
+      "attackScores": {
+        "T1566": 6,
+        "T1190": 4
+      },
+      "defenseScores": {},
+      "selectedDefenses": [],
+      "customDefenses": [],
+      "defenseStatus": {},
+      "ratings": {},
+      "defenseSelections": {},
+      "standaloneDefenses": [],
+      "manualDefenseMappings": {},
+      "riskFormula": "average",
+      "finalized": false
+    }
+  }
+}

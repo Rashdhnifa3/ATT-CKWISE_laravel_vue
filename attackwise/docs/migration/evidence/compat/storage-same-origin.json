@@ -1,0 +1,43 @@
+{
+  "angularCreated": [
+    "Synthetic second plan",
+    "Enterprise Threat Plan"
+  ],
+  "vueRestoredAndEdited": true,
+  "angularAfterRollback": "both plans and the Vue edit are readable",
+  "legacyDraft": {
+    "angular": {
+      "draftKey": null,
+      "names": [
+        "Synthetic legacy draft"
+      ],
+      "planIdSet": true
+    },
+    "vue": {
+      "draftKey": null,
+      "names": [
+        "Synthetic legacy draft"
+      ],
+      "planIdSet": true
+    }
+  },
+  "corruptEntry": {
+    "angular": {
+      "plans": [
+        "Enterprise Threat Plan"
+      ],
+      "backup": null
+    },
+    "vue": {
+      "plans": [
+        "Enterprise Threat Plan"
+      ],
+      "backup": "{\"synthetic\": corrupt"
+    }
+  },
+  "writeFailure": {
+    "angular": "Browser storage unavailable. Download your plan to keep it.",
+    "vue": "Browser storage unavailable. Download your plan to keep it."
+  },
+  "differentPort": "no plans visible on a different port (separate localStorage origin)"
+}

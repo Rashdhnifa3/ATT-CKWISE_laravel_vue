@@ -1,0 +1,402 @@
+[
+  {
+    "view": "ar-indigo-1440-attack",
+    "ariaEqual": true,
+    "sizeA": [
+      1440,
+      1186
+    ],
+    "sizeB": [
+      1440,
+      1186
+    ],
+    "diffPixels": 0,
+    "ratio": 0,
+    "overflow": {
+      "angular": false,
+      "vue": false
+    }
+  },
+  {
+    "view": "ar-indigo-1440-defensive",
+    "ariaEqual": true,
+    "sizeA": [
+      1440,
+      17225
+    ],
+    "sizeB": [
+      1440,
+      17225
+    ],
+    "diffPixels": 0,
+    "ratio": 0,
+    "overflow": {
+      "angular": false,
+      "vue": false
+    }
+  },
+  {
+    "view": "ar-indigo-1440-defensive-selected",
+    "ariaEqual": true,
+    "sizeA": [
+      1440,
+      17260
+    ],
+    "sizeB": [
+      1440,
+      17260
+    ],
+    "diffPixels": 0,
+    "ratio": 0,
+    "overflow": {
+      "angular": false,
+      "vue": false
+    }
+  },
+  {
+    "view": "ar-indigo-1440-final",
+    "ariaEqual": true,
+    "sizeA": [
+      1440,
+      1176
+    ],
+    "sizeB": [
+      1440,
+      1176
+    ],
+    "diffPixels": 0,
+    "ratio": 0,
+    "overflow": {
+      "angular": false,
+      "vue": false
+    }
+  },
+  {
+    "view": "ar-indigo-1440-home",
+    "ariaEqual": true,
+    "sizeA": [
+      1440,
+      1074
+    ],
+    "sizeB": [
+      1440,
+      1074
+    ],
+    "diffPixels": 0,
+    "ratio": 0,
+    "overflow": {
+      "angular": false,
+      "vue": false
+    }
+  },
+  {
+    "view": "en-indigo-1440-attack",
+    "ariaEqual": true,
+    "sizeA": [
+      1440,
+      1180
+    ],
+    "sizeB": [
+      1440,
+      1180
+    ],
+    "diffPixels": 0,
+    "ratio": 0,
+    "overflow": {
+      "angular": false,
+      "vue": false
+    }
+  },
+  {
+    "view": "en-indigo-1440-defensive",
+    "ariaEqual": true,
+    "sizeA": [
+      1440,
+      17195
+    ],
+    "sizeB": [
+      1440,
+      17195
+    ],
+    "diffPixels": 0,
+    "ratio": 0,
+    "overflow": {
+      "angular": false,
+      "vue": false
+    }
+  },
+  {
+    "view": "en-indigo-1440-defensive-selected",
+    "ariaEqual": true,
+    "sizeA": [
+      1440,
+      17230
+    ],
+    "sizeB": [
+      1440,
+      17230
+    ],
+    "diffPixels": 0,
+    "ratio": 0,
+    "overflow": {
+      "angular": false,
+      "vue": false
+    }
+  },
+  {
+    "view": "en-indigo-1440-final",
+    "ariaEqual": true,
+    "sizeA": [
+      1440,
+      1183
+    ],
+    "sizeB": [
+      1440,
+      1183
+    ],
+    "diffPixels": 0,
+    "ratio": 0,
+    "overflow": {
+      "angular": false,
+      "vue": false
+    }
+  },
+  {
+    "view": "en-indigo-1440-home",
+    "ariaEqual": true,
+    "sizeA": [
+      1440,
+      1111
+    ],
+    "sizeB": [
+      1440,
+      1111
+    ],
+    "diffPixels": 0,
+    "ratio": 0,
+    "overflow": {
+      "angular": false,
+      "vue": false
+    }
+  },
+  {
+    "view": "ar-ember-390-attack",
+    "ariaEqual": true,
+    "sizeA": [
+      390,
+      1132
+    ],
+    "sizeB": [
+      390,
+      1132
+    ],
+    "diffPixels": 0,
+    "ratio": 0,
+    "overflow": {
+      "angular": false,
+      "vue": false
+    }
+  },
+  {
+    "view": "ar-ember-390-defensive",
+    "ariaEqual": true,
+    "sizeA": [
+      390,
+      29528
+    ],
+    "sizeB": [
+      390,
+      29528
+    ],
+    "diffPixels": 0,
+    "ratio": 0,
+    "overflow": {
+      "angular": false,
+      "vue": false
+    }
+  },
+  {
+    "view": "ar-ember-390-defensive-selected",
+    "ariaEqual": true,
+    "sizeA": [
+      390,
+      29563
+    ],
+    "sizeB": [
+      390,
+      29563
+    ],
+    "diffPixels": 0,
+    "ratio": 0,
+    "overflow": {
+      "angular": false,
+      "vue": false
+    }
+  },
+  {
+    "view": "ar-ember-390-final",
+    "ariaEqual": true,
+    "sizeA": [
+      390,
+      1888
+    ],
+    "sizeB": [
+      390,
+      1888
+    ],
+    "diffPixels": 0,
+    "ratio": 0,
+    "overflow": {
+      "angular": false,
+      "vue": false
+    }
+  },
+  {
+    "view": "ar-ember-390-home",
+    "ariaEqual": true,
+    "sizeA": [
+      390,
+      1779
+    ],
+    "sizeB": [
+      390,
+      1779
+    ],
+    "diffPixels": 0,
+    "ratio": 0,
+    "overflow": {
+      "angular": false,
+      "vue": false
+    }
+  },
+  {
+    "view": "en-ember-390-attack",
+    "ariaEqual": true,
+    "sizeA": [
+      390,
+      1132
+    ],
+    "sizeB": [
+      390,
+      1132
+    ],
+    "diffPixels": 0,
+    "ratio": 0,
+    "overflow": {
+      "angular": false,
+      "vue": false
+    }
+  },
+  {
+    "view": "en-ember-390-defensive",
+    "ariaEqual": true,
+    "sizeA": [
+      390,
+      29232
+    ],
+    "sizeB": [
+      390,
+      29232
+    ],
+    "diffPixels": 0,
+    "ratio": 0,
+    "overflow": {
+      "angular": false,
+      "vue": false
+    }
+  },
+  {
+    "view": "en-ember-390-defensive-selected",
+    "ariaEqual": true,
+    "sizeA": [
+      390,
+      29266
+    ],
+    "sizeB": [
+      390,
+      29266
+    ],
+    "diffPixels": 0,
+    "ratio": 0,
+    "overflow": {
+      "angular": false,
+      "vue": false
+    }
+  },
+  {
+    "view": "en-ember-390-final",
+    "ariaEqual": true,
+    "sizeA": [
+      390,
+      1968
+    ],
+    "sizeB": [
+      390,
+      1968
+    ],
+    "diffPixels": 0,
+    "ratio": 0,
+    "overflow": {
+      "angular": false,
+      "vue": false
+    }
+  },
+  {
+    "view": "en-ember-390-home",
+    "ariaEqual": true,
+    "sizeA": [
+      390,
+      1832
+    ],
+    "sizeB": [
+      390,
+      1832
+    ],
+    "diffPixels": 0,
+    "ratio": 0,
+    "overflow": {
+      "angular": false,
+      "vue": false
+    }
+  },
+  {
+    "keyboard": {
+      "angular": {
+        "reached": [
+          "ATT&CKWISEEnterprise Matrix v13",
+          "1Attack Plan",
+          "2Defensive Plan",
+          "3Final Plan",
+          "Color theme",
+          "Search techniques",
+          "Language",
+          "New plan",
+          "Open plan",
+          "Plan",
+          "All tactics",
+          "Reconnaissance"
+        ],
+        "outline": "solid",
+        "dirAfterEnter": "rtl"
+      },
+      "vue": {
+        "reached": [
+          "ATT&CKWISEEnterprise Matrix v13",
+          "1Attack Plan",
+          "2Defensive Plan",
+          "3Final Plan",
+          "Color theme",
+          "Search techniques",
+          "Language",
+          "New plan",
+          "Open plan",
+          "Plan",
+          "All tactics",
+          "Reconnaissance"
+        ],
+        "outline": "solid",
+        "dirAfterEnter": "rtl"
+      }
+    }
+  }
+]

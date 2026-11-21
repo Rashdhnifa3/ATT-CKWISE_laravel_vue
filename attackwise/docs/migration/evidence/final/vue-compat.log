@@ -1,0 +1,97 @@
+
+Running 9 tests using 1 worker
+
+  ✓  1 [compat] › tests/e2e/compat/deep-links-and-config.spec.ts:75:5 › deep links, default layers, banner, feature fragments, customDataURL, leave-site prompt and changelog match (3.1m)
+
+  ✓  2 [compat] › tests/e2e/compat/exports-and-network.spec.ts:60:5 › Word report: same text, tables and chart in Angular and Vue (Arabic and English) (23.1s)
+  ✓  3 [compat] › tests/e2e/compat/exports-and-network.spec.ts:91:5 › Vue keeps plans and layers local: only same-origin GETs to static assets and the read-only ATT&CK API (3.1s)
+case layer-v4.5-annotated.json angular
+case layer-v4.5-annotated.json vue
+case layer-v4.5-annotated.json vue export -> angular
+case layer-v4.5-annotated.json angular export -> vue
+case layer-v4.3-minor.json angular
+case layer-v4.3-minor.json vue
+case layer-v4.3-minor.json vue export -> angular
+case layer-v4.3-minor.json angular export -> vue
+case layer-v3-legacy.json angular
+case layer-v3-legacy.json vue
+case layer-v3-legacy-enterprise.json angular
+case layer-v3-legacy-enterprise.json vue
+case layer-v3-legacy-enterprise.json vue export -> angular
+case layer-v3-legacy-enterprise.json angular export -> vue
+case layers-array.json angular
+case layers-array.json vue
+case layers-array.json vue export -> angular
+case layers-array.json angular export -> vue
+case layer-attack-v19.json [No] angular
+case layer-attack-v19.json [No] vue
+case layer-attack-v19.json [No] vue export -> angular
+case layer-attack-v19.json [No] angular export -> vue
+case layer-attack-v19.json [Yes] angular
+case layer-attack-v19.json [Yes] vue
+case layer-attack-v19.json [Yes] vue export -> angular
+case layer-attack-v19.json [Yes] angular export -> vue
+case plan-legacy-ratings.json angular
+case plan-legacy-ratings.json vue
+case plan-legacy-ratings.json vue export -> angular
+case plan-legacy-ratings.json angular export -> vue
+case layer-mobile.json angular
+case layer-mobile.json vue
+case malformed.json angular
+case malformed.json vue
+  ✓  4 [compat] › tests/e2e/compat/file-roundtrip.spec.ts:112:5 › old layers and plans: same result in both apps, and each app opens the other app’s export (3.5m)
+  ✘  5 [compat] › tests/e2e/compat/planning-extras.spec.ts:77:5 › show more, clear score, clear, color-blind preference and print match on real data (3.1m)
+{"angular":{"openMatrixMs":{"runs":[2737,2763,2830,2911,2967],"median":2830,"min":2737,"max":2967},"interactMs":{"runs":[649,636,652,688,674],"median":652,"min":636,"max":688},"importMs":{"runs":[447,452,466,474,478],"median":466,"min":447,"max":478}},"vue":{"openMatrixMs":{"runs":[664,676,720,691,718],"median":691,"min":664,"max":720},"interactMs":{"runs":[492,512,510,541,467],"median":510,"min":467,"max":541},"importMs":{"runs":[43,44,42,47,48],"median":44,"min":42,"max":48}}}
+  ✓  6 [compat] › tests/e2e/compat/real-data.spec.ts:67:5 › real Enterprise data: identical visible results and timing in Angular and Vue (36.5s)
+step 1) Angular: two plans with synthetic values.
+serve angular 2026-11-21T04:13:23.704Z
+step 2) Vue on the SAME origin restores both plans, edits one, reloads.
+serve vue 2026-11-21T04:13:30.524Z
+step 3) Roll back: Angular on the same origin sees both plans including Vue's edit.
+serve angular 2026-11-21T04:13:32.534Z
+step 4) Legacy draft (attackwise-draft) is migrated by Vue exactly like Angular.
+serve angular 2026-11-21T04:13:36.777Z
+serve vue 2026-11-21T04:13:39.751Z
+step 5) Corrupt attackwise-plans: Angular overwrites it on the next save; Vue keeps a backup first.
+serve angular 2026-11-21T04:13:40.381Z
+serve vue 2026-11-21T04:13:44.508Z
+step 6) Write failure: same visible message in both apps.
+serve angular 2026-11-21T04:13:45.783Z
+serve vue 2026-11-21T04:13:49.630Z
+  ✓  7 [compat] › tests/e2e/compat/storage-same-origin.spec.ts:44:5 › plans move Angular → Vue → Angular on one origin; legacy draft, corrupt entry, write failure (33.0s)
+  ✓  8 [compat] › tests/e2e/compat/taxii-and-auth.spec.ts:129:5 › TAXII and authenticated sources: same requests, headers, results and errors in Angular and Vue (5.2m)
+  ✓  9 [compat] › tests/e2e/compat/ui-parity.spec.ts:117:5 › same accessibility tree and near-identical rendering: AR/EN × desktop/phone × themes (58.8s)
+
+
+  1) [compat] › tests/e2e/compat/planning-extras.spec.ts:77:5 › show more, clear score, clear, color-blind preference and print match on real data 
+
+    TimeoutError: locator.click: Timeout 60000ms exceeded.
+    Call log:
+      - waiting for getByRole('navigation', { name: 'Plan views' }).getByRole('button', { name: /Final Plan/ })
+
+
+      68 |
+      69 |     // Final plan: Color Blind Friendly + Print / PDF.
+    > 70 |     await card.click();
+         |                        ^
+      71 |     await page.getByRole('button', { name: 'Skip for now', exact: true }).click().catch(() => undefined);
+      72 |     await page.getByRole('navigation', { name: 'Plan views' }).getByRole('button', { name: /Final Plan/ }).click();
+      73 |     const blind = page.getByLabel('Color Blind Friendly');
+        at flow (<worktree>/attackwise/frontend/tests/e2e/compat/planning-extras.spec.ts:70:108)
+        at <worktree>/attackwise/frontend/tests/e2e/compat/planning-extras.spec.ts:86:26
+
+    Error Context: tmp/playwright/test-results/compat-planning-extras-sho-771be-nd-print-match-on-real-data-compat/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    tmp/playwright/test-results/compat-planning-extras-sho-771be-nd-print-match-on-real-data-compat/trace.zip
+    Usage:
+
+        npx playwright show-trace tmp/playwright/test-results/compat-planning-extras-sho-771be-nd-print-match-on-real-data-compat/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Slow test file: [compat] › tests/e2e/compat/taxii-and-auth.spec.ts (5.2m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  1 failed
+    [compat] › tests/e2e/compat/planning-extras.spec.ts:77:5 › show more, clear score, clear, color-blind preference and print match on real data 
+  8 passed (17.4m)

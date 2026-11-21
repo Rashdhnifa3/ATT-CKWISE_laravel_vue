@@ -1,0 +1,393 @@
+{
+  "TAXII 2.1 success (authentication configured but not applied to TAXII)": {
+    "angular": {
+      "plans": [
+        "Enterprise Threat Plan"
+      ],
+      "home": 0,
+      "version": "Enterprise Matrix v13",
+      "techniques": [
+        "Active Scanning (taxii)"
+      ],
+      "planError": null,
+      "alerts": [],
+      "serverHits": [
+        {
+          "origin": "http://127.0.0.1:4205",
+          "method": "GET",
+          "path": "/taxii/api/v21/collections/coll-1/objects/",
+          "authorization": "Basic Og==",
+          "accept": "application/taxii+json;version=2.1",
+          "version": "2.1"
+        }
+      ],
+      "legacyTaxiiHits": [],
+      "browserRequestsWithAuthorization": [
+        "GET http://127.0.0.1:4205/taxii/api/v21/collections/coll-1/objects/ → Basic Og=="
+      ],
+      "keyInLocalStorage": false
+    },
+    "vue": {
+      "plans": [
+        "Enterprise Threat Plan"
+      ],
+      "home": 0,
+      "version": "Enterprise Matrix v13",
+      "techniques": [
+        "Active Scanning (taxii)"
+      ],
+      "planError": null,
+      "alerts": [],
+      "serverHits": [
+        {
+          "origin": "http://127.0.0.1:4205",
+          "method": "GET",
+          "path": "/taxii/api/v21/collections/coll-1/objects/",
+          "authorization": "Basic Og==",
+          "accept": "application/taxii+json;version=2.1",
+          "version": "2.1"
+        }
+      ],
+      "legacyTaxiiHits": [],
+      "browserRequestsWithAuthorization": [
+        "GET http://127.0.0.1:4205/taxii/api/v21/collections/coll-1/objects/ → Basic Og=="
+      ],
+      "keyInLocalStorage": false
+    },
+    "equal": true
+  },
+  "TAXII 2.1 server answers 401": {
+    "angular": {
+      "plans": [],
+      "home": 1,
+      "version": "Enterprise Matrix",
+      "techniques": [],
+      "planError": "Unable to load ATT&CK. Check your connection and try again.",
+      "alerts": [],
+      "serverHits": [
+        {
+          "origin": "http://127.0.0.1:4205",
+          "method": "GET",
+          "path": "/taxii-denied/api/v21/collections/coll-1/objects/",
+          "authorization": "Basic Og==",
+          "accept": "application/taxii+json;version=2.1",
+          "version": "2.1"
+        }
+      ],
+      "legacyTaxiiHits": [],
+      "browserRequestsWithAuthorization": [
+        "GET http://127.0.0.1:4205/taxii-denied/api/v21/collections/coll-1/objects/ → Basic Og=="
+      ],
+      "keyInLocalStorage": false
+    },
+    "vue": {
+      "plans": [],
+      "home": 1,
+      "version": "Enterprise Matrix",
+      "techniques": [],
+      "planError": "Unable to load ATT&CK. Check your connection and try again.",
+      "alerts": [],
+      "serverHits": [
+        {
+          "origin": "http://127.0.0.1:4205",
+          "method": "GET",
+          "path": "/taxii-denied/api/v21/collections/coll-1/objects/",
+          "authorization": "Basic Og==",
+          "accept": "application/taxii+json;version=2.1",
+          "version": "2.1"
+        }
+      ],
+      "legacyTaxiiHits": [],
+      "browserRequestsWithAuthorization": [
+        "GET http://127.0.0.1:4205/taxii-denied/api/v21/collections/coll-1/objects/ → Basic Og=="
+      ],
+      "keyInLocalStorage": false
+    },
+    "equal": true
+  },
+  "TAXII 2.1 server never answers (10 s client timeout)": {
+    "angular": {
+      "plans": [],
+      "home": 1,
+      "version": "Enterprise Matrix",
+      "techniques": [],
+      "planError": "Unable to load ATT&CK. Check your connection and try again.",
+      "alerts": [],
+      "serverHits": [
+        {
+          "origin": "http://127.0.0.1:4205",
+          "method": "GET",
+          "path": "/taxii-slow/api/v21/collections/coll-1/objects/",
+          "authorization": "Basic Og==",
+          "accept": "application/taxii+json;version=2.1",
+          "version": "2.1"
+        }
+      ],
+      "legacyTaxiiHits": [],
+      "browserRequestsWithAuthorization": [
+        "GET http://127.0.0.1:4205/taxii-slow/api/v21/collections/coll-1/objects/ → Basic Og=="
+      ],
+      "keyInLocalStorage": false
+    },
+    "vue": {
+      "plans": [],
+      "home": 1,
+      "version": "Enterprise Matrix",
+      "techniques": [],
+      "planError": "Unable to load ATT&CK. Check your connection and try again.",
+      "alerts": [],
+      "serverHits": [
+        {
+          "origin": "http://127.0.0.1:4205",
+          "method": "GET",
+          "path": "/taxii-slow/api/v21/collections/coll-1/objects/",
+          "authorization": "Basic Og==",
+          "accept": "application/taxii+json;version=2.1",
+          "version": "2.1"
+        }
+      ],
+      "legacyTaxiiHits": [],
+      "browserRequestsWithAuthorization": [
+        "GET http://127.0.0.1:4205/taxii-slow/api/v21/collections/coll-1/objects/ → Basic Og=="
+      ],
+      "keyInLocalStorage": false
+    },
+    "equal": true
+  },
+  "TAXII 2.0 legacy host (cti-taxii.mitre.org, routed locally)": {
+    "angular": {
+      "plans": [
+        "Enterprise Threat Plan"
+      ],
+      "home": 0,
+      "version": "Enterprise Matrix v13",
+      "techniques": [
+        "Active Scanning (taxii 2.0)"
+      ],
+      "planError": null,
+      "alerts": [],
+      "serverHits": [],
+      "legacyTaxiiHits": [
+        {
+          "origin": "https://cti-taxii.mitre.org",
+          "method": "GET",
+          "path": "/stix/collections/coll-1/objects/",
+          "authorization": "Basic Og==",
+          "accept": "application/vnd.oasis.stix+json",
+          "version": "2.0"
+        }
+      ],
+      "browserRequestsWithAuthorization": [
+        "GET https://cti-taxii.mitre.org/stix/collections/coll-1/objects/ → Basic Og=="
+      ],
+      "keyInLocalStorage": false
+    },
+    "vue": {
+      "plans": [
+        "Enterprise Threat Plan"
+      ],
+      "home": 0,
+      "version": "Enterprise Matrix v13",
+      "techniques": [
+        "Active Scanning (taxii 2.0)"
+      ],
+      "planError": null,
+      "alerts": [],
+      "serverHits": [],
+      "legacyTaxiiHits": [
+        {
+          "origin": "https://cti-taxii.mitre.org",
+          "method": "GET",
+          "path": "/stix/collections/coll-1/objects/",
+          "authorization": "Basic Og==",
+          "accept": "application/vnd.oasis.stix+json",
+          "version": "2.0"
+        }
+      ],
+      "browserRequestsWithAuthorization": [
+        "GET https://cti-taxii.mitre.org/stix/collections/coll-1/objects/ → Basic Og=="
+      ],
+      "keyInLocalStorage": false
+    },
+    "equal": true
+  },
+  "authentication: correct key": {
+    "angular": {
+      "plans": [
+        "Enterprise Threat Plan"
+      ],
+      "home": 0,
+      "version": "Enterprise Matrix v13",
+      "techniques": [
+        "Active Scanning (workbench)"
+      ],
+      "planError": null,
+      "alerts": [],
+      "serverHits": [
+        {
+          "origin": "http://127.0.0.1:4205",
+          "method": "GET",
+          "path": "/wb/enterprise.json",
+          "authorization": "synthetic key",
+          "accept": "application/json, text/plain, */*",
+          "version": null
+        }
+      ],
+      "legacyTaxiiHits": [],
+      "browserRequestsWithAuthorization": [
+        "GET http://127.0.0.1:4205/wb/enterprise.json → synthetic key"
+      ],
+      "keyInLocalStorage": false
+    },
+    "vue": {
+      "plans": [
+        "Enterprise Threat Plan"
+      ],
+      "home": 0,
+      "version": "Enterprise Matrix v13",
+      "techniques": [
+        "Active Scanning (workbench)"
+      ],
+      "planError": null,
+      "alerts": [],
+      "serverHits": [
+        {
+          "origin": "http://127.0.0.1:4205",
+          "method": "GET",
+          "path": "/wb/enterprise.json",
+          "authorization": "synthetic key",
+          "accept": "application/json, text/plain, */*",
+          "version": null
+        }
+      ],
+      "legacyTaxiiHits": [],
+      "browserRequestsWithAuthorization": [
+        "GET http://127.0.0.1:4205/wb/enterprise.json → synthetic key"
+      ],
+      "keyInLocalStorage": false
+    },
+    "equal": true
+  },
+  "authentication: wrong key → 401": {
+    "angular": {
+      "plans": [],
+      "home": 1,
+      "version": "Enterprise Matrix",
+      "techniques": [],
+      "planError": "Unable to load ATT&CK. Check your connection and try again.",
+      "alerts": [],
+      "serverHits": [
+        {
+          "origin": "http://127.0.0.1:4205",
+          "method": "GET",
+          "path": "/wb/enterprise.json",
+          "authorization": "Basic c3ludGhldGljLXNlcnZpY2U6d3Jvbmcta2V5",
+          "accept": "application/json, text/plain, */*",
+          "version": null
+        }
+      ],
+      "legacyTaxiiHits": [],
+      "browserRequestsWithAuthorization": [
+        "GET http://127.0.0.1:4205/wb/enterprise.json → Basic c3ludGhldGljLXNlcnZpY2U6d3Jvbmcta2V5"
+      ],
+      "keyInLocalStorage": false
+    },
+    "vue": {
+      "plans": [],
+      "home": 1,
+      "version": "Enterprise Matrix",
+      "techniques": [],
+      "planError": "Unable to load ATT&CK. Check your connection and try again.",
+      "alerts": [],
+      "serverHits": [
+        {
+          "origin": "http://127.0.0.1:4205",
+          "method": "GET",
+          "path": "/wb/enterprise.json",
+          "authorization": "Basic c3ludGhldGljLXNlcnZpY2U6d3Jvbmcta2V5",
+          "accept": "application/json, text/plain, */*",
+          "version": null
+        }
+      ],
+      "legacyTaxiiHits": [],
+      "browserRequestsWithAuthorization": [
+        "GET http://127.0.0.1:4205/wb/enterprise.json → Basic c3ludGhldGljLXNlcnZpY2U6d3Jvbmcta2V5"
+      ],
+      "keyInLocalStorage": false
+    },
+    "equal": true
+  },
+  "authentication: data URL redirects to another origin": {
+    "angular": {
+      "plans": [
+        "Enterprise Threat Plan"
+      ],
+      "home": 0,
+      "version": "Enterprise Matrix v13",
+      "techniques": [
+        "Active Scanning (redirected)"
+      ],
+      "planError": null,
+      "alerts": [],
+      "serverHits": [
+        {
+          "origin": "http://127.0.0.1:4205",
+          "method": "GET",
+          "path": "/wb-redirect/enterprise.json",
+          "authorization": "synthetic key",
+          "accept": "application/json, text/plain, */*",
+          "version": null
+        },
+        {
+          "origin": "http://127.0.0.1:4206",
+          "method": "GET",
+          "path": "/wb/enterprise.json",
+          "authorization": null,
+          "accept": "application/json, text/plain, */*",
+          "version": null
+        }
+      ],
+      "legacyTaxiiHits": [],
+      "browserRequestsWithAuthorization": [
+        "GET http://127.0.0.1:4205/wb-redirect/enterprise.json → synthetic key"
+      ],
+      "keyInLocalStorage": false
+    },
+    "vue": {
+      "plans": [
+        "Enterprise Threat Plan"
+      ],
+      "home": 0,
+      "version": "Enterprise Matrix v13",
+      "techniques": [
+        "Active Scanning (redirected)"
+      ],
+      "planError": null,
+      "alerts": [],
+      "serverHits": [
+        {
+          "origin": "http://127.0.0.1:4205",
+          "method": "GET",
+          "path": "/wb-redirect/enterprise.json",
+          "authorization": "synthetic key",
+          "accept": "application/json, text/plain, */*",
+          "version": null
+        },
+        {
+          "origin": "http://127.0.0.1:4206",
+          "method": "GET",
+          "path": "/wb/enterprise.json",
+          "authorization": null,
+          "accept": "application/json, text/plain, */*",
+          "version": null
+        }
+      ],
+      "legacyTaxiiHits": [],
+      "browserRequestsWithAuthorization": [
+        "GET http://127.0.0.1:4205/wb-redirect/enterprise.json → synthetic key"
+      ],
+      "keyInLocalStorage": false
+    },
+    "equal": true
+  }
+}

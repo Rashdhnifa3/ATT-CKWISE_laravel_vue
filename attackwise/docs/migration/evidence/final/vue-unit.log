@@ -1,0 +1,41 @@
+
+ RUN  v5.1.0 <worktree>/attackwise/frontend
+
+ ✓ tests/unit/domain.spec.ts > DataService.parseBundles > builds tactics in matrix order, techniques, sub-techniques, platforms and mitigations 7ms
+ ✓ tests/unit/domain.spec.ts > DataService.parseBundles > honours the subtechniques feature flag (URL fragment #subtechniques=false) 1ms
+ ✓ tests/unit/domain.spec.ts > DataService.parseBundles > throws on an object without an ATT&CK ID, like the reference 2ms
+ ✓ tests/unit/domain.spec.ts > DataService.parseBundles > parseCollectionIndex keeps the first listed entry per major, skips < 4, and routes official bundles through the API 1ms
+ ✓ tests/unit/domain.spec.ts > DataService.parseBundles > getDomainData unwraps API envelopes and reports HTTP errors 6ms
+ ✓ tests/unit/domain.spec.ts > ViewModel deserialize / serialize > expands a tactic-less technique to every tactic, keeps unknown IDs with explicit tactic, drops unknown without 7ms
+ ✓ tests/unit/domain.spec.ts > ViewModel deserialize / serialize > round-trips attackwise planning state and keeps standard Navigator fields 2ms
+ ✓ tests/unit/domain.spec.ts > ViewModel deserialize / serialize > deserializeDomainVersionID applies aliases, scalar version precedence and latest-version fallback 1ms
+ ✓ tests/unit/domain.spec.ts > PlanStorage > migrates a legacy draft once and removes the legacy key 2ms
+ ✓ tests/unit/domain.spec.ts > PlanStorage > keeps unreadable data in a backup key before the first overwrite 1ms
+ ✓ tests/unit/domain.spec.ts > PlanStorage > keeps unrecognised entries, replaces by id and sorts by recency 1ms
+ ✓ tests/unit/domain.spec.ts > PlanStorage > reports write failures instead of throwing 0ms
+ ✓ tests/unit/domain.spec.ts > Workspace helpers (reference algorithms) > getNamedFragmentValue: repeated values, percent and plus decoding 1ms
+ ✓ tests/unit/domain.spec.ts > Workspace helpers (reference algorithms) > getUniqueLayerName follows the reference numbering 0ms
+ ✓ tests/unit/domain.spec.ts > Workspace helpers (reference algorithms) > ConfigService fragment parsing and feature groups 1ms
+ ✓ tests/unit/differential.spec.ts > risk formulas (reference vs Vue) > agree for every combination of attack/defense scores and formula, incl. missing, zero, negative and bounds 71ms
+ ✓ tests/unit/differential.spec.ts > risk formulas (reference vs Vue) > rounds to two decimals like the reference 0ms
+ ✓ tests/unit/differential.spec.ts > planning state (reference vs Vue) > validScore / scoreStyle agree 1ms
+ ✓ tests/unit/differential.spec.ts > planning state (reference vs Vue) > restorePlanning sanitises old and malformed input identically 2ms
+ ✓ tests/unit/differential.spec.ts > D3FEND parsing (reference vs Vue) on the shipped asset > produces the same index 60ms
+ ✓ tests/unit/differential.spec.ts > D3FEND parsing (reference vs Vue) on the shipped asset > rejects other formats like the reference 1ms
+ ✓ tests/unit/differential.spec.ts > layer annotation classes (reference vs Vue) > TechniqueVM deserialize → serialize / modified / annotated agree 4ms
+ ✓ tests/unit/differential.spec.ts > layer annotation classes (reference vs Vue) > Filter maps historical platform names identically 1ms
+ ✓ tests/unit/differential.spec.ts > layer annotation classes (reference vs Vue) > Gradient colours, serialisation and score → colour lookup agree 18ms
+ ✓ tests/unit/differential.spec.ts > layer annotation classes (reference vs Vue) > LayoutOptions transitions and legacy values agree 1ms
+ ✓ tests/unit/components.spec.ts > PlanningView > renders tactic columns, selects a technique, opens and saves the score drawer 114ms
+ ✓ tests/unit/components.spec.ts > PlanningView > expands sub-techniques and keeps parent/child selections independent 20ms
+ ✓ tests/unit/components.spec.ts > PlanningView > defensive view: parent mapping, custom defense validation, deletion cleans every reference 54ms
+ ✓ tests/unit/components.spec.ts > PlanningView > final report: formula switch, Not Rated vs zero, signed results 37ms
+ ✓ tests/unit/components.spec.ts > PlanningView > shows the storage-unavailable message when a save fails 17ms
+ ✓ tests/unit/components.spec.ts > AwIcon and sanitizer > renders an aria-hidden inline SVG inside an <aw-icon> element 3ms
+ ✓ tests/unit/components.spec.ts > AwIcon and sanitizer > strips active content from changelog HTML 8ms
+
+ Test Files  3 passed (3)
+      Tests  32 passed (32)
+   Start at  07:00:43
+   Duration  1.43s (environment 70%, tests 14%, import 11%, transform 4%, worker 1%)
+

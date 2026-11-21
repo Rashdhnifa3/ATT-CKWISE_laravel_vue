@@ -1,0 +1,7 @@
+a95b7f878ec8e42045f8f8e766d2d7cfb91cba4770cb1ae5ff2e2cb5dbb456c0  migration-handoff/SCOPE.md
+51a598ba69011827808c63c4f259a4045ec9b334c7c3741c303f007d59ab90a2  migration-handoff/START.md
+d0a38b2e09191be41ee73b05d2e7458fc5b3581045e7e69df4f9b28dee18013a  migration-handoff/VERIFY.md
+a95b7f878ec8e42045f8f8e766d2d7cfb91cba4770cb1ae5ff2e2cb5dbb456c0  migration-handoff (2)/SCOPE.md
+51a598ba69011827808c63c4f259a4045ec9b334c7c3741c303f007d59ab90a2  migration-handoff (2)/START.md
+d0a38b2e09191be41ee73b05d2e7458fc5b3581045e7e69df4f9b28dee18013a  migration-handoff (2)/VERIFY.md
+4e90035ca85776093bf7d896aa64022549545e5b23fc21b5d02298e50066ef5d  migration-handoff.zip

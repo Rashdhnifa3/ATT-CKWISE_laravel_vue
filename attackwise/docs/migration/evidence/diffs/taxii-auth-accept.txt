@@ -1,0 +1,10 @@
+Difference found by taxii-and-auth.spec.ts (2026-11-21), recorded before changing Vue.
+Scenarios "authentication: correct key / wrong key / redirect" (config versions.entries[].authentication,
+data URL on a local loopback test server). Everything identical (paths, Authorization value, result,
+error message "Unable to load ATT&CK. Check your connection and try again.") EXCEPT the Accept header:
+  Angular (HttpClient default): Accept: application/json, text/plain, */*
+  Vue before fix (fetch default): Accept: */*
+Fix: Vue sends the HttpClient default Accept on every browser request that used HttpClient.get in the
+reference (config.json, custom/authenticated bundles, #layerURL/default_layers, #bundleURL, D3FEND
+asset, CHANGELOG.md). Rerun: all 7 scenarios identical; test passed.
+Before the TAXII port, Vue rejected TAXII sources with "TAXII sources are not supported" (CURRENT_PARITY D04).

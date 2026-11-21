@@ -1,0 +1,13 @@
+Difference found by deep-links-and-config.spec.ts (2026-11-21), recorded before changing Vue.
+Same scenario (open app, click "Navigator v5.3.2" footer button, read dialog headings), run twice.
+
+Angular (reference, nav-app/src/app/changelog/changelog.component.html: <h1 mat-dialog-title>Changelog</h1>):
+  h1: ["Changelog", "5.3.2 - 21 April 2026", "5.3.1 - 6 April 2026", ..., "5.0.1 - 9 May 2024"]  sections(h2)=85  links=202
+Vue before fix (AppDialogs.vue rendered the title as <h3>):
+  h1: ["5.3.2 - 21 April 2026", ..., "5.0.0 - 2 May 2024"]  sections(h2)=85  links=202
+Fix: dialog title rendered as <h1> (other dialogs use <h3> in both apps, verified against
+version-upgrade.component.html and tabs.component.html). Rerun: identical; test passed.
+
+Test-setup corrections (not app differences): any URL hash suppresses the auto-created first plan in
+both apps (reference ngAfterViewInit), so fragment-only cases now also load a layer; the changelog
+version heading text is "5.3.2 - 21 April 2026" (no "v"), the original regex was wrong.

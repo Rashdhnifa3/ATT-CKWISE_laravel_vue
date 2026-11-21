@@ -1,0 +1,16 @@
+clone exit=0 seconds=0
+commit b2e61744ef04fe92b208f48d9b8b695b0be2960b dest=<evidence>/tmp/clean-checkout-1795235398
+backend-composer-install exit=0 seconds=3
+backend-env exit=0 seconds=0
+backend-key exit=0 seconds=0
+backend-test exit=0 seconds=1
+backend-pint exit=0 seconds=0
+nav-app-npm-ci exit=0 seconds=11
+frontend-npm-ci exit=0 seconds=2
+frontend-typecheck exit=0 seconds=3
+frontend-typecheck-tests exit=0 seconds=3
+frontend-build exit=0 seconds=3
+frontend-unit exit=0 seconds=4
+frontend-spec-drift exit=0 seconds=0
+frontend-e2e exit=0 seconds=17
+done

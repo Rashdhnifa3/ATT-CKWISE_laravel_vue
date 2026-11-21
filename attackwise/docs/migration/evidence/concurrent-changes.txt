@@ -1,0 +1,17 @@
+Changes in the ORIGINAL checkout that appeared during the migration and were NOT made by this work
+(none were reverted). Baseline taken 2026-11-21T01:54+03:00 at HEAD a48b9e0 (master).
+
+Tracked:
+  nav-app/angular.json  (modified ~02:07)  adds  "cli": { "analytics": "<id>" }
+Untracked (not ignored):
+  .vscode/settings.json (created 02:35)   {"python.terminal.useEnvFile": true}
+Ignored (created 02:34:56, by `composer install` / `artisan` run in the original's attackwise/backend):
+  attackwise/backend/.env, vendor/, bootstrap/cache/*.php, storage/framework/views/*, storage/logs/laravel.log
+  (.env and the log were not opened or copied.)
+Unchanged: HEAD a48b9e0 on master, every other tracked file (sha256 manifest), the migration-handoff files.
+
+Concurrent activity in the migration WORKTREE that was not ours (left running, not stopped):
+  - vite dev server on 127.0.0.1:5173 (started 03:14, cwd attackwise/frontend)
+  - `php artisan serve` on 127.0.0.1:8000 started 06:21 by a Codex VS Code extension process (cwd attackwise/backend);
+    it created the git-ignored attackwise/backend/storage/app/attack-cache. Our final runs used our own API on :8001.
+  No tracked or untracked files in the worktree were changed by it (git status checked before each commit).

@@ -1,0 +1,234 @@
+{
+  "repeated layerURL fragments": {
+    "plans": [
+      "First",
+      "Pair A",
+      "Pair B"
+    ],
+    "active": "Pair B",
+    "home": 0,
+    "version": "Enterprise Matrix v13",
+    "banner": [],
+    "techniques": [
+      "Active Scanning"
+    ],
+    "subtechniqueToggles": 1,
+    "selected": [
+      "1 Selected"
+    ],
+    "dialogs": [],
+    "alerts": []
+  },
+  "layerURL that fails to load": {
+    "plans": [],
+    "active": null,
+    "home": 1,
+    "version": "Enterprise Matrix",
+    "banner": [],
+    "techniques": [],
+    "subtechniqueToggles": 0,
+    "selected": [],
+    "dialogs": [],
+    "alerts": [
+      "alert: ERROR retrieving layer from https://synthetic.example/missing/nope.json, check the javascript console for more information."
+    ]
+  },
+  "bundleURL + version + domain": {
+    "plans": [
+      "layer"
+    ],
+    "active": "layer",
+    "home": 0,
+    "version": "Enterprise Matrix v14",
+    "banner": [],
+    "techniques": [
+      "Active Scanning (custom)"
+    ],
+    "subtechniqueToggles": 1,
+    "selected": [
+      "0 Selected"
+    ],
+    "dialogs": [],
+    "alerts": []
+  },
+  "default_layers + banner": {
+    "plans": [
+      "Enterprise Threat Plan",
+      "Default one"
+    ],
+    "active": "Enterprise Threat Plan",
+    "home": 0,
+    "version": "Enterprise Matrix v13",
+    "banner": [
+      "Synthetic banner — لافتة"
+    ],
+    "techniques": [
+      "Active Scanning",
+      "Active Scanning"
+    ],
+    "subtechniqueToggles": 2,
+    "selected": [
+      "0 Selected"
+    ],
+    "dialogs": [],
+    "alerts": []
+  },
+  "subtechniques=false fragment (with a layer)": {
+    "plans": [
+      "First"
+    ],
+    "active": "First",
+    "home": 0,
+    "version": "Enterprise Matrix v13",
+    "banner": [],
+    "techniques": [
+      "Active Scanning"
+    ],
+    "subtechniqueToggles": 0,
+    "selected": [
+      "1 Selected"
+    ],
+    "dialogs": [],
+    "alerts": []
+  },
+  "subtechniques=false fragment alone": {
+    "plans": [],
+    "active": null,
+    "home": 1,
+    "version": "Enterprise Matrix",
+    "banner": [],
+    "techniques": [],
+    "subtechniqueToggles": 0,
+    "selected": [],
+    "dialogs": [],
+    "alerts": []
+  },
+  "priority: bundleURL beats layerURL": {
+    "plans": [
+      "layer"
+    ],
+    "active": "layer",
+    "home": 0,
+    "version": "Enterprise Matrix v14",
+    "banner": [],
+    "techniques": [
+      "Active Scanning (custom)"
+    ],
+    "subtechniqueToggles": 1,
+    "selected": [
+      "0 Selected"
+    ],
+    "dialogs": [],
+    "alerts": []
+  },
+  "priority: layerURL beats default_layers": {
+    "plans": [
+      "First"
+    ],
+    "active": "First",
+    "home": 0,
+    "version": "Enterprise Matrix v13",
+    "banner": [],
+    "techniques": [
+      "Active Scanning"
+    ],
+    "subtechniqueToggles": 1,
+    "selected": [
+      "1 Selected"
+    ],
+    "dialogs": [],
+    "alerts": []
+  },
+  "priority: incomplete bundleURL (no domain) falls back to layerURL": {
+    "plans": [
+      "First"
+    ],
+    "active": "First",
+    "home": 0,
+    "version": "Enterprise Matrix v13",
+    "banner": [],
+    "techniques": [
+      "Active Scanning"
+    ],
+    "subtechniqueToggles": 1,
+    "selected": [
+      "1 Selected"
+    ],
+    "dialogs": [],
+    "alerts": []
+  },
+  "outdated layer from a start-up link opens on its own version without the upgrade dialog": {
+    "plans": [
+      "First"
+    ],
+    "active": "First",
+    "home": 0,
+    "version": "Enterprise Matrix v13",
+    "banner": [],
+    "techniques": [
+      "Active Scanning"
+    ],
+    "subtechniqueToggles": 1,
+    "selected": [
+      "1 Selected"
+    ],
+    "dialogs": [],
+    "alerts": []
+  },
+  "default_layers disabled": {
+    "plans": [
+      "Enterprise Threat Plan"
+    ],
+    "active": "Enterprise Threat Plan",
+    "home": 0,
+    "version": "Enterprise Matrix v13",
+    "banner": [],
+    "techniques": [
+      "Active Scanning"
+    ],
+    "subtechniqueToggles": 1,
+    "selected": [
+      "0 Selected"
+    ],
+    "dialogs": [],
+    "alerts": []
+  },
+  "customDataURL in an imported file": {
+    "plans": [
+      "Custom data layer",
+      "Enterprise Threat Plan"
+    ],
+    "active": "Custom data layer",
+    "home": 0,
+    "version": "Enterprise Matrix v15",
+    "banner": [],
+    "techniques": [
+      "Active Scanning (custom)"
+    ],
+    "subtechniqueToggles": 1,
+    "selected": [
+      "1 Selected"
+    ],
+    "dialogs": [],
+    "alerts": []
+  },
+  "leave-site prompt": [
+    " → prompt",
+    "#layerURL=https%3A%2F%2Fsynthetic.example%2Flayers%2FFirst.json → prompt",
+    "#layerURL=https%3A%2F%2Fsynthetic.example%2Flayers%2FFirst.json&leave_site_dialog=false → no prompt"
+  ],
+  "changelog headings": {
+    "versions": [
+      "Changelog",
+      "5.3.2 - 21 April 2026",
+      "5.3.1 - 6 April 2026",
+      "5.3.0 - 15 January 2026",
+      "5.2.0 - 28 October 2025",
+      "5.1.1 - 1 July 2025",
+      "5.1.0 - 14 August 2024",
+      "5.0.1 - 9 May 2024"
+    ],
+    "sections": 85,
+    "links": 202
+  }
+}

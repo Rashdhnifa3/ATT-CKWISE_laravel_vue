@@ -1,0 +1,31 @@
+date: 2026-11-21T01:54:20+03:00
+root: <original>
+HEAD: a48b9e01eedf4d761cb79ec531248736bb39f119
+branch: master
+--- status
+? migration-handoff (2)/SCOPE.md
+? migration-handoff (2)/START.md
+? migration-handoff (2)/VERIFY.md
+? migration-handoff.zip
+? migration-handoff/SCOPE.md
+? migration-handoff/START.md
+? migration-handoff/VERIFY.md
+--- ignored
+?? "migration-handoff (2)/"
+?? migration-handoff.zip
+?? migration-handoff/
+!! nav-app/.angular/
+!! nav-app/coverage/
+!! nav-app/dist/
+!! nav-app/node_modules/
+!! nav-app/tmp/
+--- worktrees
+<original> a48b9e0 [master]
+--- tools
+v22.22.1
+9.2.0
+PHP 8.5.4 (cli) (built: Oct 19 2026 14:35:18) (NTS)
+Composer version 2.9.5 2026-01-29 11:40:53
+PHP version 8.5.4 (/usr/bin/php8.5)
+Run the "diagnose" command to get more detailed diagnostics output.
+Google Chrome 156.0.8078.79 

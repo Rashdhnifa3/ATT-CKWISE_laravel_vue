@@ -1,0 +1,3 @@
+typecheck-tests exit=0
+vue-unit exit=0
+compat planning-extras exit=0

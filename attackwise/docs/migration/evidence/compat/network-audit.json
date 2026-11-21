@@ -1,0 +1,9 @@
+{
+  "total": 24,
+  "api": [
+    "GET /api/v1/attack/index",
+    "GET /api/v1/attack/bundles/enterprise-attack/20",
+    "GET /api/v1/attack/index"
+  ],
+  "offending": []
+}

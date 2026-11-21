@@ -1,0 +1,18 @@
+Listing tests:
+  attackwise.spec.ts:39:5 › failed dataset loading can be retried
+  attackwise.spec.ts:54:5 › uses the newest configured Enterprise version and displays the real version
+  attackwise.spec.ts:62:5 › custom defenses and optional attack scores survive JSON round trip
+  d3fend-mapping.spec.ts:13:5 › imported D3FEND data: exact-ID lookup, no parent inheritance, no duplicates, evidence kept
+  d3fend-mapping.spec.ts:40:5 › re-running the import produces identical output
+  d3fend-mapping.spec.ts:46:5 › saved plans keep D3FEND selections and scores; scoring reuses the existing formula
+  d3fend-mapping.spec.ts:77:5 › all D3FEND techniques join the mitigation list, filter by attack, score, persist and reach the Final Plan
+  layer-comparison.spec.ts:63:5 › compare APT3 and APT29 technique scores
+  layer.spec.ts:6:5 › create, score, rename, and export an Enterprise layer
+  lovable-integration.spec.ts:39:5 › Enterprise-only, optional scoring, per-attack defense selections, exports and RTL survive refresh
+  plan-autosave.spec.ts:14:5 › plans autosave and can be resumed by name after closing the site
+  planning-icons.spec.ts:5:5 › planning SVG icons and labels render at desktop and mobile widths
+  planning-refinements.spec.ts:40:5 › score coloring, full-width tactic filter, mitigation filters, persisted theme and interactive chart
+  planning-refinements.spec.ts:109:5 › defense scores, manual links and all formulas survive refresh and JSON export
+  risk-calculation.spec.ts:4:5 › risk formulas preserve negative results, distinguish missing from zero and clamp the index
+  selection.spec.ts:31:5 › find, select, and clear techniques
+Total: 16 tests in 10 files

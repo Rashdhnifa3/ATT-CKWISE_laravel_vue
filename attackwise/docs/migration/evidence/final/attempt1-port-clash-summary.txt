@@ -1,0 +1,15 @@
+ref-build exit=0 seconds=7
+ref-karma exit=1 seconds=13
+ref-playwright-list exit=0 seconds=1
+ref-e2e exit=1 seconds=122
+vue-typecheck exit=0 seconds=1
+vue-typecheck-tests exit=0 seconds=3
+vue-build exit=0 seconds=2
+vue-unit exit=0 seconds=2
+vue-reference-specs-drift exit=0 seconds=0
+vue-e2e exit=1 seconds=2
+vue-legacy-ui exit=1 seconds=1
+vue-compat exit=1 seconds=1
+laravel-test exit=0 seconds=0
+laravel-pint exit=0 seconds=1
+done

@@ -1,0 +1,2095 @@
+
+> attack-navigator@5.3.2 test
+> ng test --watch=false --browsers=ChromeHeadlessCI
+
+- Generating browser application bundles (phase: setup)...
+✔ Browser application bundle generation complete.
+21 11 2026 01:58:06.264:INFO [karma-server]: Karma v6.4.4 server started at http://localhost:9876/
+21 11 2026 01:58:06.266:INFO [launcher]: Launching browsers ChromeHeadlessCI with concurrency unlimited
+21 11 2026 01:58:06.270:INFO [launcher]: Starting browser ChromeHeadless
+21 11 2026 01:58:06.743:INFO [Chrome Headless 156.0.0.0 (Linux 0.0.0)]: Connected on socket QyG6Hv4KfnS0g__WAAAB with id 95601072
+Chrome Headless 156.0.0.0 (Linux 0.0.0) DEBUG: 'initializing ViewModel 'layer''
+
+Chrome Headless 156.0.0.0 (Linux 0.0.0) DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0) DEBUG: 'initializing ViewModel 'layer1''
+
+Chrome Headless 156.0.0.0 (Linux 0.0.0) DEBUG: 'initializing ViewModel 'layer1''
+
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 0 of 315 SUCCESS (0 secs / 0 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 0 of 315 SUCCESS (0 secs / 0 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 0 of 315 SUCCESS (0 secs / 0 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 1 of 315 SUCCESS (0 secs / 0.415 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 1 of 315 SUCCESS (0 secs / 0.415 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 1 of 315 SUCCESS (0 secs / 0.415 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 2 of 315 SUCCESS (0 secs / 0.427 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 2 of 315 SUCCESS (0 secs / 0.427 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 2 of 315 SUCCESS (0 secs / 0.427 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 3 of 315 SUCCESS (0 secs / 0.438 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 3 of 315 SUCCESS (0 secs / 0.438 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 3 of 315 SUCCESS (0 secs / 0.438 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 4 of 315 SUCCESS (0 secs / 0.449 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 4 of 315 SUCCESS (0 secs / 0.449 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 4 of 315 SUCCESS (0 secs / 0.449 secs)
+DEBUG: 'initializing tabs component'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 4 of 315 SUCCESS (0 secs / 0.449 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0) AppComponent should set user theme to theme-override-light FAILED
+	Expected 'theme-override-dark' to equal 'theme-override-light'.
+	    at <Jasmine>
+	    at UserContext.apply (src/app/app.component.spec.ts:57:32)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:398:28)
+	    at AsyncTestZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:897:39)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:2129:39)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 5 of 315 (1 FAILED) (0 secs / 0.463 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0) AppComponent should set user theme to theme-override-light FAILED
+	Expected 'theme-override-dark' to equal 'theme-override-light'.
+	    at <Jasmine>
+	    at UserContext.apply (src/app/app.component.spec.ts:57:32)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:398:28)
+	    at AsyncTestZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:897:39)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:2129:39)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 5 of 315 (1 FAILED) (0 secs / 0.463 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 5 of 315 (1 FAILED) (0 secs / 0.463 secs)
+DEBUG: 'initializing tabs component'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 5 of 315 (1 FAILED) (0 secs / 0.463 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 6 of 315 (1 FAILED) (0 secs / 0.474 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 6 of 315 (1 FAILED) (0 secs / 0.474 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 6 of 315 (1 FAILED) (0 secs / 0.474 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 7 of 315 (1 FAILED) (0 secs / 0.485 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 7 of 315 (1 FAILED) (0 secs / 0.485 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 7 of 315 (1 FAILED) (0 secs / 0.485 secs)
+DEBUG: 'initializing tabs component'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 7 of 315 (1 FAILED) (0 secs / 0.485 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0) AppComponent should set user theme to theme-use-system FAILED
+	Expected 'theme-override-dark' to equal 'theme-use-system'.
+	    at <Jasmine>
+	    at UserContext.apply (src/app/app.component.spec.ts:65:32)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:398:28)
+	    at AsyncTestZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:897:39)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:2129:39)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 8 of 315 (2 FAILED) (0 secs / 0.493 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0) AppComponent should set user theme to theme-use-system FAILED
+	Expected 'theme-override-dark' to equal 'theme-use-system'.
+	    at <Jasmine>
+	    at UserContext.apply (src/app/app.component.spec.ts:65:32)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:398:28)
+	    at AsyncTestZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:897:39)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:2129:39)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 8 of 315 (2 FAILED) (0 secs / 0.493 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 8 of 315 (2 FAILED) (0 secs / 0.493 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 9 of 315 (2 FAILED) (0 secs / 0.503 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 9 of 315 (2 FAILED) (0 secs / 0.503 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 9 of 315 (2 FAILED) (0 secs / 0.503 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0) AppComponent should have title 'ATT&CK® Navigator' FAILED
+	Expected 'ATT&CKWISE' to equal 'ATT&CK® Navigator'.
+	    at <Jasmine>
+	    at UserContext.apply (src/app/app.component.spec.ts:41:27)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:398:28)
+	    at AsyncTestZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:897:39)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:2129:39)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 10 of 315 (3 FAILED) (0 secs / 0.518 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0) AppComponent should have title 'ATT&CK® Navigator' FAILED
+	Expected 'ATT&CKWISE' to equal 'ATT&CK® Navigator'.
+	    at <Jasmine>
+	    at UserContext.apply (src/app/app.component.spec.ts:41:27)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:398:28)
+	    at AsyncTestZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:897:39)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:2129:39)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 10 of 315 (3 FAILED) (0 secs / 0.518 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 10 of 315 (3 FAILED) (0 secs / 0.518 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 11 of 315 (3 FAILED) (0 secs / 0.529 secs)
+21 11 2026 01:58:11.202:WARN [web-server]: 404: /_karma_webpack_/CHANGELOG.md
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 12 of 315 (3 FAILED) (0 secs / 0.545 secs)
+21 11 2026 01:58:11.210:WARN [web-server]: 404: /_karma_webpack_/CHANGELOG.md
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 13 of 315 (3 FAILED) (0 secs / 0.549 secs)
+21 11 2026 01:58:11.214:WARN [web-server]: 404: /_karma_webpack_/CHANGELOG.md
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 14 of 315 (3 FAILED) (0 secs / 0.553 secs)
+21 11 2026 01:58:11.218:WARN [web-server]: 404: /_karma_webpack_/CHANGELOG.md
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 15 of 315 (3 FAILED) (0 secs / 0.557 secs)
+21 11 2026 01:58:11.231:WARN [web-server]: 404: /_karma_webpack_/USAGE.md
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 16 of 315 (3 FAILED) (0 secs / 0.569 secs)
+21 11 2026 01:58:11.238:WARN [web-server]: 404: /_karma_webpack_/USAGE.md
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 17 of 315 (3 FAILED) (0 secs / 0.573 secs)
+21 11 2026 01:58:11.242:WARN [web-server]: 404: /_karma_webpack_/USAGE.md
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 18 of 315 (3 FAILED) (0 secs / 0.577 secs)
+21 11 2026 01:58:11.248:WARN [web-server]: 404: /_karma_webpack_/USAGE.md
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 19 of 315 (3 FAILED) (0 secs / 0.581 secs)
+21 11 2026 01:58:11.252:WARN [web-server]: 404: /_karma_webpack_/USAGE.md
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 20 of 315 (3 FAILED) (0 secs / 0.585 secs)
+21 11 2026 01:58:11.258:WARN [web-server]: 404: /_karma_webpack_/USAGE.md
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 21 of 315 (3 FAILED) (0 secs / 0.589 secs)
+21 11 2026 01:58:11.263:WARN [web-server]: 404: /_karma_webpack_/USAGE.md
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 22 of 315 (3 FAILED) (0 secs / 0.594 secs)
+21 11 2026 01:58:11.268:WARN [web-server]: 404: /_karma_webpack_/USAGE.md
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 23 of 315 (3 FAILED) (0 secs / 0.598 secs)
+21 11 2026 01:58:11.273:WARN [web-server]: 404: /_karma_webpack_/USAGE.md
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 24 of 315 (3 FAILED) (0 secs / 0.602 secs)
+21 11 2026 01:58:11.277:WARN [web-server]: 404: /_karma_webpack_/USAGE.md
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 25 of 315 (3 FAILED) (0 secs / 0.606 secs)
+21 11 2026 01:58:11.283:WARN [web-server]: 404: /_karma_webpack_/USAGE.md
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 26 of 315 (3 FAILED) (0 secs / 0.611 secs)
+21 11 2026 01:58:11.289:WARN [web-server]: 404: /_karma_webpack_/USAGE.md
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 27 of 315 (3 FAILED) (0 secs / 0.629 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 28 of 315 (3 FAILED) (0 secs / 0.63 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 29 of 315 (3 FAILED) (0 secs / 0.631 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 30 of 315 (3 FAILED) (0 secs / 0.632 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 31 of 315 (3 FAILED) (0 secs / 0.633 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 32 of 315 (3 FAILED) (0 secs / 0.634 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 33 of 315 (3 FAILED) (0 secs / 0.635 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 34 of 315 (3 FAILED) (0 secs / 0.636 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 35 of 315 (3 FAILED) (0 secs / 0.636 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 36 of 315 (3 FAILED) (0 secs / 0.636 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 37 of 315 (3 FAILED) (0 secs / 0.637 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 38 of 315 (3 FAILED) (0 secs / 0.638 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 39 of 315 (3 FAILED) (0 secs / 0.639 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 40 of 315 (3 FAILED) (0 secs / 0.64 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 41 of 315 (3 FAILED) (0 secs / 0.641 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 42 of 315 (3 FAILED) (0 secs / 0.642 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 43 of 315 (3 FAILED) (0 secs / 0.643 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 44 of 315 (3 FAILED) (0 secs / 0.644 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 44 of 315 (3 FAILED) (0 secs / 0.644 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 44 of 315 (3 FAILED) (0 secs / 0.644 secs)
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 45 of 315 (3 FAILED) (0 secs / 0.651 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 45 of 315 (3 FAILED) (0 secs / 0.651 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 45 of 315 (3 FAILED) (0 secs / 0.651 secs)
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 46 of 315 (3 FAILED) (0 secs / 0.654 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 46 of 315 (3 FAILED) (0 secs / 0.654 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 46 of 315 (3 FAILED) (0 secs / 0.654 secs)
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 47 of 315 (3 FAILED) (0 secs / 0.658 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 47 of 315 (3 FAILED) (0 secs / 0.658 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 47 of 315 (3 FAILED) (0 secs / 0.658 secs)
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 48 of 315 (3 FAILED) (0 secs / 0.662 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 48 of 315 (3 FAILED) (0 secs / 0.662 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 48 of 315 (3 FAILED) (0 secs / 0.662 secs)
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 49 of 315 (3 FAILED) (0 secs / 0.667 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 49 of 315 (3 FAILED) (0 secs / 0.667 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 49 of 315 (3 FAILED) (0 secs / 0.667 secs)
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 50 of 315 (3 FAILED) (0 secs / 0.67 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 50 of 315 (3 FAILED) (0 secs / 0.67 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 50 of 315 (3 FAILED) (0 secs / 0.67 secs)
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 51 of 315 (3 FAILED) (0 secs / 0.673 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 51 of 315 (3 FAILED) (0 secs / 0.673 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 51 of 315 (3 FAILED) (0 secs / 0.673 secs)
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 52 of 315 (3 FAILED) (0 secs / 0.676 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 52 of 315 (3 FAILED) (0 secs / 0.676 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 52 of 315 (3 FAILED) (0 secs / 0.676 secs)
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 53 of 315 (3 FAILED) (0 secs / 0.679 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 53 of 315 (3 FAILED) (0 secs / 0.679 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 53 of 315 (3 FAILED) (0 secs / 0.679 secs)
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 54 of 315 (3 FAILED) (0 secs / 0.683 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 54 of 315 (3 FAILED) (0 secs / 0.683 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 54 of 315 (3 FAILED) (0 secs / 0.683 secs)
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 55 of 315 (3 FAILED) (0 secs / 0.686 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 55 of 315 (3 FAILED) (0 secs / 0.686 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 55 of 315 (3 FAILED) (0 secs / 0.686 secs)
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 56 of 315 (3 FAILED) (0 secs / 0.689 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 56 of 315 (3 FAILED) (0 secs / 0.689 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 56 of 315 (3 FAILED) (0 secs / 0.689 secs)
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 57 of 315 (3 FAILED) (0 secs / 0.692 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 57 of 315 (3 FAILED) (0 secs / 0.692 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 57 of 315 (3 FAILED) (0 secs / 0.692 secs)
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 58 of 315 (3 FAILED) (0 secs / 0.695 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 58 of 315 (3 FAILED) (0 secs / 0.695 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 58 of 315 (3 FAILED) (0 secs / 0.695 secs)
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 59 of 315 (3 FAILED) (0 secs / 0.698 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 59 of 315 (3 FAILED) (0 secs / 0.698 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 59 of 315 (3 FAILED) (0 secs / 0.698 secs)
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 60 of 315 (3 FAILED) (0 secs / 0.701 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 60 of 315 (3 FAILED) (0 secs / 0.701 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 60 of 315 (3 FAILED) (0 secs / 0.701 secs)
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 61 of 315 (3 FAILED) (0 secs / 0.704 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 61 of 315 (3 FAILED) (0 secs / 0.704 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 61 of 315 (3 FAILED) (0 secs / 0.704 secs)
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 62 of 315 (3 FAILED) (0 secs / 0.707 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 62 of 315 (3 FAILED) (0 secs / 0.707 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 62 of 315 (3 FAILED) (0 secs / 0.707 secs)
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 63 of 315 (3 FAILED) (0 secs / 0.711 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 63 of 315 (3 FAILED) (0 secs / 0.711 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 63 of 315 (3 FAILED) (0 secs / 0.711 secs)
+DEBUG: 'initializing ViewModel 'vm''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 64 of 315 (3 FAILED) (0 secs / 0.714 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 64 of 315 (3 FAILED) (0 secs / 0.714 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 65 of 315 (3 FAILED) (0 secs / 0.72 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 66 of 315 (3 FAILED) (0 secs / 0.724 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 66 of 315 (3 FAILED) (0 secs / 0.724 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 67 of 315 (3 FAILED) (0 secs / 0.73 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 67 of 315 (3 FAILED) (0 secs / 0.73 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 68 of 315 (3 FAILED) (0 secs / 0.736 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 68 of 315 (3 FAILED) (0 secs / 0.736 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 69 of 315 (3 FAILED) (0 secs / 0.739 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 69 of 315 (3 FAILED) (0 secs / 0.739 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 70 of 315 (3 FAILED) (0 secs / 0.741 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 70 of 315 (3 FAILED) (0 secs / 0.741 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 71 of 315 (3 FAILED) (0 secs / 0.743 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 71 of 315 (3 FAILED) (0 secs / 0.743 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 72 of 315 (3 FAILED) (0 secs / 0.745 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 72 of 315 (3 FAILED) (0 secs / 0.745 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 73 of 315 (3 FAILED) (0 secs / 0.747 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 73 of 315 (3 FAILED) (0 secs / 0.747 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 74 of 315 (3 FAILED) (0 secs / 0.75 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 74 of 315 (3 FAILED) (0 secs / 0.75 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 75 of 315 (3 FAILED) (0 secs / 0.752 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 75 of 315 (3 FAILED) (0 secs / 0.752 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 76 of 315 (3 FAILED) (0 secs / 0.754 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 76 of 315 (3 FAILED) (0 secs / 0.754 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 77 of 315 (3 FAILED) (0 secs / 0.756 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 77 of 315 (3 FAILED) (0 secs / 0.756 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 78 of 315 (3 FAILED) (0 secs / 0.758 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 78 of 315 (3 FAILED) (0 secs / 0.758 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 79 of 315 (3 FAILED) (0 secs / 0.76 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 80 of 315 (3 FAILED) (0 secs / 0.762 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 80 of 315 (3 FAILED) (0 secs / 0.762 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 81 of 315 (3 FAILED) (0 secs / 0.764 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 82 of 315 (3 FAILED) (0 secs / 0.767 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 82 of 315 (3 FAILED) (0 secs / 0.767 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 83 of 315 (3 FAILED) (0 secs / 0.769 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 83 of 315 (3 FAILED) (0 secs / 0.769 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 84 of 315 (3 FAILED) (0 secs / 0.771 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 84 of 315 (3 FAILED) (0 secs / 0.771 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 85 of 315 (3 FAILED) (0 secs / 0.775 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 85 of 315 (3 FAILED) (0 secs / 0.775 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 85 of 315 (3 FAILED) (0 secs / 0.775 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 86 of 315 (3 FAILED) (0 secs / 0.777 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 86 of 315 (3 FAILED) (0 secs / 0.777 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 86 of 315 (3 FAILED) (0 secs / 0.777 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 87 of 315 (3 FAILED) (0 secs / 0.778 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 87 of 315 (3 FAILED) (0 secs / 0.778 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 87 of 315 (3 FAILED) (0 secs / 0.778 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 88 of 315 (3 FAILED) (0 secs / 0.779 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 88 of 315 (3 FAILED) (0 secs / 0.779 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 88 of 315 (3 FAILED) (0 secs / 0.779 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 89 of 315 (3 FAILED) (0 secs / 0.78 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 89 of 315 (3 FAILED) (0 secs / 0.78 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 89 of 315 (3 FAILED) (0 secs / 0.78 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 90 of 315 (3 FAILED) (0 secs / 0.781 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 90 of 315 (3 FAILED) (0 secs / 0.781 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 90 of 315 (3 FAILED) (0 secs / 0.781 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 91 of 315 (3 FAILED) (0 secs / 0.782 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 91 of 315 (3 FAILED) (0 secs / 0.782 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 91 of 315 (3 FAILED) (0 secs / 0.782 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 92 of 315 (3 FAILED) (0 secs / 0.784 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 92 of 315 (3 FAILED) (0 secs / 0.784 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 92 of 315 (3 FAILED) (0 secs / 0.784 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 93 of 315 (3 FAILED) (0 secs / 0.786 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 93 of 315 (3 FAILED) (0 secs / 0.786 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 93 of 315 (3 FAILED) (0 secs / 0.786 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 94 of 315 (3 FAILED) (0 secs / 0.787 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 94 of 315 (3 FAILED) (0 secs / 0.787 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 95 of 315 (3 FAILED) (0 secs / 0.788 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 95 of 315 (3 FAILED) (0 secs / 0.788 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 96 of 315 (3 FAILED) (0 secs / 0.789 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 96 of 315 (3 FAILED) (0 secs / 0.789 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 97 of 315 (3 FAILED) (0 secs / 0.79 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 97 of 315 (3 FAILED) (0 secs / 0.79 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 98 of 315 (3 FAILED) (0 secs / 0.79 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 98 of 315 (3 FAILED) (0 secs / 0.79 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 99 of 315 (3 FAILED) (0 secs / 0.791 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 99 of 315 (3 FAILED) (0 secs / 0.791 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 100 of 315 (3 FAILED) (0 secs / 0.793 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 100 of 315 (3 FAILED) (0 secs / 0.793 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 101 of 315 (3 FAILED) (0 secs / 0.794 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 101 of 315 (3 FAILED) (0 secs / 0.794 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 102 of 315 (3 FAILED) (0 secs / 0.795 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 102 of 315 (3 FAILED) (0 secs / 0.795 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 103 of 315 (3 FAILED) (0 secs / 0.796 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 103 of 315 (3 FAILED) (0 secs / 0.796 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 104 of 315 (3 FAILED) (0 secs / 0.798 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 104 of 315 (3 FAILED) (0 secs / 0.798 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 105 of 315 (3 FAILED) (0 secs / 0.799 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 105 of 315 (3 FAILED) (0 secs / 0.799 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 105 of 315 (3 FAILED) (0 secs / 0.799 secs)
+DEBUG: 'initializing data service'
+LOG: VersionChangelog{additions: ['T0004'], changes: ['T0003'], minor_changes: ['T0000'], deprecations: [], revocations: ['T0001'], unchanged: [], reviewed: Set{}, copied: Set{}, oldDomainVersionID: 'enterprise-attack-13', newDomainVersionID: 'enterprise-attack-14'}
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 105 of 315 (3 FAILED) (0 secs / 0.799 secs)
+LOG: VersionChangelog{additions: ['T0004'], changes: ['T0003'], minor_changes: ['T0000'], deprecations: [], revocations: ['T0001'], unchanged: [], reviewed: Set{}, copied: Set{}, oldDomainVersionID: 'enterprise-attack-13', newDomainVersionID: 'enterprise-attack-14'}
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 106 of 315 (3 FAILED) (0 secs / 0.801 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 106 of 315 (3 FAILED) (0 secs / 0.801 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 106 of 315 (3 FAILED) (0 secs / 0.801 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 107 of 315 (3 FAILED) (0 secs / 0.802 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 107 of 315 (3 FAILED) (0 secs / 0.802 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 107 of 315 (3 FAILED) (0 secs / 0.802 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'retrieving data', ['https://raw.githubusercontent.com/mitre/cti/ATT%26CK-v13.1/enterprise-attack/enterprise-attack.json']
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 107 of 315 (3 FAILED) (0 secs / 0.802 secs)
+DEBUG: 'retrieving data', ['https://raw.githubusercontent.com/mitre/cti/ATT%26CK-v13.1/enterprise-attack/enterprise-attack.json']
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 108 of 315 (3 FAILED) (0 secs / 0.803 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 108 of 315 (3 FAILED) (0 secs / 0.803 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 108 of 315 (3 FAILED) (0 secs / 0.803 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 109 of 315 (3 FAILED) (0 secs / 0.804 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 109 of 315 (3 FAILED) (0 secs / 0.804 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 109 of 315 (3 FAILED) (0 secs / 0.804 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'fetching data from TAXII server'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 109 of 315 (3 FAILED) (0 secs / 0.804 secs)
+DEBUG: 'fetching data from TAXII server'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 110 of 315 (3 FAILED) (0 secs / 0.805 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 110 of 315 (3 FAILED) (0 secs / 0.805 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 110 of 315 (3 FAILED) (0 secs / 0.805 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'retrieving data', ['https://raw.githubusercontent.com/mitre/cti/ATT%26CK-v13.1/enterprise-attack/enterprise-attack.json']
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 110 of 315 (3 FAILED) (0 secs / 0.805 secs)
+DEBUG: 'retrieving data', ['https://raw.githubusercontent.com/mitre/cti/ATT%26CK-v13.1/enterprise-attack/enterprise-attack.json']
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 111 of 315 (3 FAILED) (0 secs / 0.807 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 111 of 315 (3 FAILED) (0 secs / 0.807 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 111 of 315 (3 FAILED) (0 secs / 0.807 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 112 of 315 (3 FAILED) (0 secs / 0.808 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 112 of 315 (3 FAILED) (0 secs / 0.808 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 112 of 315 (3 FAILED) (0 secs / 0.808 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 113 of 315 (3 FAILED) (0 secs / 0.809 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 113 of 315 (3 FAILED) (0 secs / 0.809 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 113 of 315 (3 FAILED) (0 secs / 0.809 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'retrieving data', ['https://raw.githubusercontent.com/mitre/cti/ATT%26CK-v13.1/enterprise-attack/enterprise-attack.json']
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 113 of 315 (3 FAILED) (0 secs / 0.809 secs)
+DEBUG: 'retrieving data', ['https://raw.githubusercontent.com/mitre/cti/ATT%26CK-v13.1/enterprise-attack/enterprise-attack.json']
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 114 of 315 (3 FAILED) (0 secs / 0.81 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 114 of 315 (3 FAILED) (0 secs / 0.81 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 114 of 315 (3 FAILED) (0 secs / 0.81 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 115 of 315 (3 FAILED) (0 secs / 0.812 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 115 of 315 (3 FAILED) (0 secs / 0.812 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 115 of 315 (3 FAILED) (0 secs / 0.812 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 116 of 315 (3 FAILED) (0 secs / 0.814 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 116 of 315 (3 FAILED) (0 secs / 0.814 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 117 of 315 (3 FAILED) (0 secs / 0.817 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 117 of 315 (3 FAILED) (0 secs / 0.817 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 117 of 315 (3 FAILED) (0 secs / 0.817 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 118 of 315 (3 FAILED) (0 secs / 0.818 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 118 of 315 (3 FAILED) (0 secs / 0.818 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 118 of 315 (3 FAILED) (0 secs / 0.818 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 119 of 315 (3 FAILED) (0 secs / 0.82 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 119 of 315 (3 FAILED) (0 secs / 0.82 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 119 of 315 (3 FAILED) (0 secs / 0.82 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 120 of 315 (3 FAILED) (0 secs / 0.821 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 120 of 315 (3 FAILED) (0 secs / 0.821 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 120 of 315 (3 FAILED) (0 secs / 0.821 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 121 of 315 (3 FAILED) (0 secs / 0.823 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 121 of 315 (3 FAILED) (0 secs / 0.823 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 121 of 315 (3 FAILED) (0 secs / 0.823 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 122 of 315 (3 FAILED) (0 secs / 0.83 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 122 of 315 (3 FAILED) (0 secs / 0.83 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 122 of 315 (3 FAILED) (0 secs / 0.83 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 123 of 315 (3 FAILED) (0 secs / 0.831 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 123 of 315 (3 FAILED) (0 secs / 0.831 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 123 of 315 (3 FAILED) (0 secs / 0.831 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 124 of 315 (3 FAILED) (0 secs / 0.832 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 124 of 315 (3 FAILED) (0 secs / 0.832 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 124 of 315 (3 FAILED) (0 secs / 0.832 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 125 of 315 (3 FAILED) (0 secs / 0.833 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 125 of 315 (3 FAILED) (0 secs / 0.833 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 125 of 315 (3 FAILED) (0 secs / 0.833 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 126 of 315 (3 FAILED) (0 secs / 0.834 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 126 of 315 (3 FAILED) (0 secs / 0.834 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 126 of 315 (3 FAILED) (0 secs / 0.834 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 127 of 315 (3 FAILED) (0 secs / 0.837 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 127 of 315 (3 FAILED) (0 secs / 0.837 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 127 of 315 (3 FAILED) (0 secs / 0.837 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 128 of 315 (3 FAILED) (0 secs / 0.849 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 129 of 315 (3 FAILED) (0 secs / 0.851 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 130 of 315 (3 FAILED) (0 secs / 0.853 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 130 of 315 (3 FAILED) (0 secs / 0.853 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 131 of 315 (3 FAILED) (0 secs / 0.856 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 131 of 315 (3 FAILED) (0 secs / 0.856 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 132 of 315 (3 FAILED) (0 secs / 0.859 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 132 of 315 (3 FAILED) (0 secs / 0.859 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 132 of 315 (3 FAILED) (0 secs / 0.859 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 133 of 315 (3 FAILED) (0 secs / 0.864 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 133 of 315 (3 FAILED) (0 secs / 0.864 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 133 of 315 (3 FAILED) (0 secs / 0.864 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 134 of 315 (3 FAILED) (0 secs / 0.867 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 134 of 315 (3 FAILED) (0 secs / 0.867 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 134 of 315 (3 FAILED) (0 secs / 0.867 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 135 of 315 (3 FAILED) (0 secs / 0.87 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 135 of 315 (3 FAILED) (0 secs / 0.87 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 135 of 315 (3 FAILED) (0 secs / 0.87 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 136 of 315 (3 FAILED) (0 secs / 0.873 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 136 of 315 (3 FAILED) (0 secs / 0.873 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 136 of 315 (3 FAILED) (0 secs / 0.873 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 137 of 315 (3 FAILED) (0 secs / 0.876 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 137 of 315 (3 FAILED) (0 secs / 0.876 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 137 of 315 (3 FAILED) (0 secs / 0.876 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 138 of 315 (3 FAILED) (0 secs / 0.879 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 138 of 315 (3 FAILED) (0 secs / 0.879 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 138 of 315 (3 FAILED) (0 secs / 0.879 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 139 of 315 (3 FAILED) (0 secs / 0.881 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 139 of 315 (3 FAILED) (0 secs / 0.881 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 139 of 315 (3 FAILED) (0 secs / 0.881 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 140 of 315 (3 FAILED) (0 secs / 0.884 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 140 of 315 (3 FAILED) (0 secs / 0.884 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 140 of 315 (3 FAILED) (0 secs / 0.884 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 141 of 315 (3 FAILED) (0 secs / 0.888 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 141 of 315 (3 FAILED) (0 secs / 0.888 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 141 of 315 (3 FAILED) (0 secs / 0.888 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 142 of 315 (3 FAILED) (0 secs / 0.891 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 142 of 315 (3 FAILED) (0 secs / 0.891 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 142 of 315 (3 FAILED) (0 secs / 0.891 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 143 of 315 (3 FAILED) (0 secs / 0.894 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 143 of 315 (3 FAILED) (0 secs / 0.894 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 143 of 315 (3 FAILED) (0 secs / 0.894 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 144 of 315 (3 FAILED) (0 secs / 0.897 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 144 of 315 (3 FAILED) (0 secs / 0.897 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 144 of 315 (3 FAILED) (0 secs / 0.897 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 145 of 315 (3 FAILED) (0 secs / 0.9 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 145 of 315 (3 FAILED) (0 secs / 0.9 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 145 of 315 (3 FAILED) (0 secs / 0.9 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 146 of 315 (3 FAILED) (0 secs / 0.902 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 146 of 315 (3 FAILED) (0 secs / 0.902 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 146 of 315 (3 FAILED) (0 secs / 0.902 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 147 of 315 (3 FAILED) (0 secs / 0.934 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 147 of 315 (3 FAILED) (0 secs / 0.934 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 147 of 315 (3 FAILED) (0 secs / 0.934 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 147 of 315 (3 FAILED) (0 secs / 0.934 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 148 of 315 (3 FAILED) (0 secs / 0.945 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 148 of 315 (3 FAILED) (0 secs / 0.945 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 148 of 315 (3 FAILED) (0 secs / 0.945 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 148 of 315 (3 FAILED) (0 secs / 0.945 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 149 of 315 (3 FAILED) (0 secs / 0.951 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 149 of 315 (3 FAILED) (0 secs / 0.951 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 149 of 315 (3 FAILED) (0 secs / 0.951 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 149 of 315 (3 FAILED) (0 secs / 0.951 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 150 of 315 (3 FAILED) (0 secs / 0.957 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 150 of 315 (3 FAILED) (0 secs / 0.957 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 150 of 315 (3 FAILED) (0 secs / 0.957 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 150 of 315 (3 FAILED) (0 secs / 0.957 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 151 of 315 (3 FAILED) (0 secs / 0.962 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 151 of 315 (3 FAILED) (0 secs / 0.962 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 151 of 315 (3 FAILED) (0 secs / 0.962 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 151 of 315 (3 FAILED) (0 secs / 0.962 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 152 of 315 (3 FAILED) (0 secs / 0.967 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 152 of 315 (3 FAILED) (0 secs / 0.967 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 152 of 315 (3 FAILED) (0 secs / 0.967 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 152 of 315 (3 FAILED) (0 secs / 0.967 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 153 of 315 (3 FAILED) (0 secs / 0.974 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 153 of 315 (3 FAILED) (0 secs / 0.974 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 153 of 315 (3 FAILED) (0 secs / 0.974 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 153 of 315 (3 FAILED) (0 secs / 0.974 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 154 of 315 (3 FAILED) (0 secs / 0.979 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 154 of 315 (3 FAILED) (0 secs / 0.979 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 154 of 315 (3 FAILED) (0 secs / 0.979 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 154 of 315 (3 FAILED) (0 secs / 0.979 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 155 of 315 (3 FAILED) (0 secs / 0.984 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 155 of 315 (3 FAILED) (0 secs / 0.984 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 155 of 315 (3 FAILED) (0 secs / 0.984 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 155 of 315 (3 FAILED) (0 secs / 0.984 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 156 of 315 (3 FAILED) (0 secs / 0.989 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 156 of 315 (3 FAILED) (0 secs / 0.989 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 156 of 315 (3 FAILED) (0 secs / 0.989 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 156 of 315 (3 FAILED) (0 secs / 0.989 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 157 of 315 (3 FAILED) (0 secs / 0.994 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 157 of 315 (3 FAILED) (0 secs / 0.994 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 157 of 315 (3 FAILED) (0 secs / 0.994 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 157 of 315 (3 FAILED) (0 secs / 0.994 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 158 of 315 (3 FAILED) (0 secs / 1.003 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 158 of 315 (3 FAILED) (0 secs / 1.003 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 158 of 315 (3 FAILED) (0 secs / 1.003 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 158 of 315 (3 FAILED) (0 secs / 1.003 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 159 of 315 (3 FAILED) (0 secs / 1.008 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 159 of 315 (3 FAILED) (0 secs / 1.008 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 159 of 315 (3 FAILED) (0 secs / 1.008 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 159 of 315 (3 FAILED) (0 secs / 1.008 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 160 of 315 (3 FAILED) (0 secs / 1.012 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 160 of 315 (3 FAILED) (0 secs / 1.012 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 160 of 315 (3 FAILED) (0 secs / 1.012 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 160 of 315 (3 FAILED) (0 secs / 1.012 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 161 of 315 (3 FAILED) (0 secs / 1.017 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 161 of 315 (3 FAILED) (0 secs / 1.017 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 161 of 315 (3 FAILED) (0 secs / 1.017 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 161 of 315 (3 FAILED) (0 secs / 1.017 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 162 of 315 (3 FAILED) (0 secs / 1.022 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 162 of 315 (3 FAILED) (0 secs / 1.022 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 162 of 315 (3 FAILED) (0 secs / 1.022 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 162 of 315 (3 FAILED) (0 secs / 1.022 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 163 of 315 (3 FAILED) (0 secs / 1.026 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 163 of 315 (3 FAILED) (0 secs / 1.026 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 163 of 315 (3 FAILED) (0 secs / 1.026 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 164 of 315 (3 FAILED) (0 secs / 1.031 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 164 of 315 (3 FAILED) (0 secs / 1.031 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 164 of 315 (3 FAILED) (0 secs / 1.031 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 165 of 315 (3 FAILED) (0 secs / 1.036 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 165 of 315 (3 FAILED) (0 secs / 1.036 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 165 of 315 (3 FAILED) (0 secs / 1.036 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 166 of 315 (3 FAILED) (0 secs / 1.048 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 166 of 315 (3 FAILED) (0 secs / 1.048 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 166 of 315 (3 FAILED) (0 secs / 1.048 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 167 of 315 (3 FAILED) (0 secs / 1.052 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 167 of 315 (3 FAILED) (0 secs / 1.052 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 167 of 315 (3 FAILED) (0 secs / 1.052 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 168 of 315 (3 FAILED) (0 secs / 1.056 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 168 of 315 (3 FAILED) (0 secs / 1.056 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 168 of 315 (3 FAILED) (0 secs / 1.056 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 169 of 315 (3 FAILED) (0 secs / 1.06 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 169 of 315 (3 FAILED) (0 secs / 1.06 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 169 of 315 (3 FAILED) (0 secs / 1.06 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 170 of 315 (3 FAILED) (0 secs / 1.064 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 170 of 315 (3 FAILED) (0 secs / 1.064 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 170 of 315 (3 FAILED) (0 secs / 1.064 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 171 of 315 (3 FAILED) (0 secs / 1.068 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 171 of 315 (3 FAILED) (0 secs / 1.068 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 171 of 315 (3 FAILED) (0 secs / 1.068 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 172 of 315 (3 FAILED) (0 secs / 1.072 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 172 of 315 (3 FAILED) (0 secs / 1.072 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 172 of 315 (3 FAILED) (0 secs / 1.072 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 173 of 315 (3 FAILED) (0 secs / 1.076 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 173 of 315 (3 FAILED) (0 secs / 1.076 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 173 of 315 (3 FAILED) (0 secs / 1.076 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 174 of 315 (3 FAILED) (0 secs / 1.08 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 174 of 315 (3 FAILED) (0 secs / 1.08 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 174 of 315 (3 FAILED) (0 secs / 1.08 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 175 of 315 (3 FAILED) (0 secs / 1.085 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 175 of 315 (3 FAILED) (0 secs / 1.085 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 175 of 315 (3 FAILED) (0 secs / 1.085 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 176 of 315 (3 FAILED) (0 secs / 1.089 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 176 of 315 (3 FAILED) (0 secs / 1.089 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 176 of 315 (3 FAILED) (0 secs / 1.089 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 177 of 315 (3 FAILED) (0 secs / 1.093 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 177 of 315 (3 FAILED) (0 secs / 1.093 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 177 of 315 (3 FAILED) (0 secs / 1.093 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 178 of 315 (3 FAILED) (0 secs / 1.097 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 178 of 315 (3 FAILED) (0 secs / 1.097 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 178 of 315 (3 FAILED) (0 secs / 1.097 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 179 of 315 (3 FAILED) (0 secs / 1.1 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 179 of 315 (3 FAILED) (0 secs / 1.1 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 179 of 315 (3 FAILED) (0 secs / 1.1 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 180 of 315 (3 FAILED) (0 secs / 1.103 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 180 of 315 (3 FAILED) (0 secs / 1.103 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 180 of 315 (3 FAILED) (0 secs / 1.103 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 181 of 315 (3 FAILED) (0 secs / 1.107 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 181 of 315 (3 FAILED) (0 secs / 1.107 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 181 of 315 (3 FAILED) (0 secs / 1.107 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 182 of 315 (3 FAILED) (0 secs / 1.111 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 182 of 315 (3 FAILED) (0 secs / 1.111 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 182 of 315 (3 FAILED) (0 secs / 1.111 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 183 of 315 (3 FAILED) (0 secs / 1.116 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 183 of 315 (3 FAILED) (0 secs / 1.116 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 183 of 315 (3 FAILED) (0 secs / 1.116 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 184 of 315 (3 FAILED) (0 secs / 1.121 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 184 of 315 (3 FAILED) (0 secs / 1.121 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 184 of 315 (3 FAILED) (0 secs / 1.121 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 185 of 315 (3 FAILED) (0 secs / 1.127 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 185 of 315 (3 FAILED) (0 secs / 1.127 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 185 of 315 (3 FAILED) (0 secs / 1.127 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 186 of 315 (3 FAILED) (0 secs / 1.133 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 186 of 315 (3 FAILED) (0 secs / 1.133 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 186 of 315 (3 FAILED) (0 secs / 1.133 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 187 of 315 (3 FAILED) (0 secs / 1.139 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 187 of 315 (3 FAILED) (0 secs / 1.139 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 187 of 315 (3 FAILED) (0 secs / 1.139 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 188 of 315 (3 FAILED) (0 secs / 1.143 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 188 of 315 (3 FAILED) (0 secs / 1.143 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 188 of 315 (3 FAILED) (0 secs / 1.143 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 189 of 315 (3 FAILED) (0 secs / 1.151 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 189 of 315 (3 FAILED) (0 secs / 1.151 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 189 of 315 (3 FAILED) (0 secs / 1.151 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 190 of 315 (3 FAILED) (0 secs / 1.163 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 190 of 315 (3 FAILED) (0 secs / 1.163 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 190 of 315 (3 FAILED) (0 secs / 1.163 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 191 of 315 (3 FAILED) (0 secs / 1.174 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 191 of 315 (3 FAILED) (0 secs / 1.174 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 191 of 315 (3 FAILED) (0 secs / 1.174 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 192 of 315 (3 FAILED) (0 secs / 1.178 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 192 of 315 (3 FAILED) (0 secs / 1.178 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 192 of 315 (3 FAILED) (0 secs / 1.178 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 193 of 315 (3 FAILED) (0 secs / 1.183 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 193 of 315 (3 FAILED) (0 secs / 1.183 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 193 of 315 (3 FAILED) (0 secs / 1.183 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 194 of 315 (3 FAILED) (0 secs / 1.187 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 194 of 315 (3 FAILED) (0 secs / 1.187 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 194 of 315 (3 FAILED) (0 secs / 1.187 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 195 of 315 (3 FAILED) (0 secs / 1.191 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 195 of 315 (3 FAILED) (0 secs / 1.191 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 195 of 315 (3 FAILED) (0 secs / 1.191 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 196 of 315 (3 FAILED) (0 secs / 1.196 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 196 of 315 (3 FAILED) (0 secs / 1.196 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 196 of 315 (3 FAILED) (0 secs / 1.196 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 197 of 315 (3 FAILED) (0 secs / 1.201 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 197 of 315 (3 FAILED) (0 secs / 1.201 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 197 of 315 (3 FAILED) (0 secs / 1.201 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 198 of 315 (3 FAILED) (0 secs / 1.206 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 198 of 315 (3 FAILED) (0 secs / 1.206 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 199 of 315 (3 FAILED) (0 secs / 1.209 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 199 of 315 (3 FAILED) (0 secs / 1.209 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 200 of 315 (3 FAILED) (0 secs / 1.211 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 200 of 315 (3 FAILED) (0 secs / 1.211 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 201 of 315 (3 FAILED) (0 secs / 1.22 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 201 of 315 (3 FAILED) (0 secs / 1.22 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 202 of 315 (3 FAILED) (0 secs / 1.221 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 202 of 315 (3 FAILED) (0 secs / 1.221 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 203 of 315 (3 FAILED) (0 secs / 1.223 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 203 of 315 (3 FAILED) (0 secs / 1.223 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'test1''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 203 of 315 (3 FAILED) (0 secs / 1.223 secs)
+DEBUG: 'initializing ViewModel 'test1''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 204 of 315 (3 FAILED) (0 secs / 1.226 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 204 of 315 (3 FAILED) (0 secs / 1.226 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 205 of 315 (3 FAILED) (0 secs / 1.228 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 205 of 315 (3 FAILED) (0 secs / 1.228 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 206 of 315 (3 FAILED) (0 secs / 1.23 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 206 of 315 (3 FAILED) (0 secs / 1.23 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 207 of 315 (3 FAILED) (0 secs / 1.232 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 207 of 315 (3 FAILED) (0 secs / 1.232 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 208 of 315 (3 FAILED) (0 secs / 1.233 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 208 of 315 (3 FAILED) (0 secs / 1.233 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'test1''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 208 of 315 (3 FAILED) (0 secs / 1.233 secs)
+DEBUG: 'initializing ViewModel 'test1''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 209 of 315 (3 FAILED) (0 secs / 1.235 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 209 of 315 (3 FAILED) (0 secs / 1.235 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 210 of 315 (3 FAILED) (0 secs / 1.236 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 210 of 315 (3 FAILED) (0 secs / 1.236 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'test1''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 210 of 315 (3 FAILED) (0 secs / 1.236 secs)
+DEBUG: 'initializing ViewModel 'test1''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 211 of 315 (3 FAILED) (0 secs / 1.237 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 211 of 315 (3 FAILED) (0 secs / 1.237 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 212 of 315 (3 FAILED) (0 secs / 1.239 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 212 of 315 (3 FAILED) (0 secs / 1.239 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 213 of 315 (3 FAILED) (0 secs / 1.24 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 213 of 315 (3 FAILED) (0 secs / 1.24 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 214 of 315 (3 FAILED) (0 secs / 1.241 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 214 of 315 (3 FAILED) (0 secs / 1.241 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'test''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 214 of 315 (3 FAILED) (0 secs / 1.241 secs)
+DEBUG: 'initializing ViewModel 'test''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 215 of 315 (3 FAILED) (0 secs / 1.243 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 215 of 315 (3 FAILED) (0 secs / 1.243 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 216 of 315 (3 FAILED) (0 secs / 1.244 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 216 of 315 (3 FAILED) (0 secs / 1.244 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 217 of 315 (3 FAILED) (0 secs / 1.246 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 217 of 315 (3 FAILED) (0 secs / 1.246 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 217 of 315 (3 FAILED) (0 secs / 1.246 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing ViewModel 'layer1''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 217 of 315 (3 FAILED) (0 secs / 1.246 secs)
+DEBUG: 'initializing ViewModel 'layer1''
+DEBUG: 'initializing ViewModel 'layer by operation''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 217 of 315 (3 FAILED) (0 secs / 1.246 secs)
+DEBUG: 'initializing ViewModel 'layer by operation''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 218 of 315 (3 FAILED) (0 secs / 1.251 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 218 of 315 (3 FAILED) (0 secs / 1.251 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 219 of 315 (3 FAILED) (0 secs / 1.252 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 219 of 315 (3 FAILED) (0 secs / 1.252 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 220 of 315 (3 FAILED) (0 secs / 1.253 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 220 of 315 (3 FAILED) (0 secs / 1.253 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 221 of 315 (3 FAILED) (0 secs / 1.255 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 221 of 315 (3 FAILED) (0 secs / 1.255 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 222 of 315 (3 FAILED) (0 secs / 1.257 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 222 of 315 (3 FAILED) (0 secs / 1.257 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'test1''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 222 of 315 (3 FAILED) (0 secs / 1.257 secs)
+DEBUG: 'initializing ViewModel 'test1''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 223 of 315 (3 FAILED) (0 secs / 1.26 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 223 of 315 (3 FAILED) (0 secs / 1.26 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'test1''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 223 of 315 (3 FAILED) (0 secs / 1.26 secs)
+DEBUG: 'initializing ViewModel 'test1''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 224 of 315 (3 FAILED) (0 secs / 1.262 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 224 of 315 (3 FAILED) (0 secs / 1.262 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'test1''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 224 of 315 (3 FAILED) (0 secs / 1.262 secs)
+DEBUG: 'initializing ViewModel 'test1''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 225 of 315 (3 FAILED) (0 secs / 1.264 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 225 of 315 (3 FAILED) (0 secs / 1.264 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'test1''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 225 of 315 (3 FAILED) (0 secs / 1.264 secs)
+DEBUG: 'initializing ViewModel 'test1''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 226 of 315 (3 FAILED) (0 secs / 1.265 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 226 of 315 (3 FAILED) (0 secs / 1.265 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 227 of 315 (3 FAILED) (0 secs / 1.267 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 227 of 315 (3 FAILED) (0 secs / 1.267 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'test1''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 227 of 315 (3 FAILED) (0 secs / 1.267 secs)
+DEBUG: 'initializing ViewModel 'test1''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 228 of 315 (3 FAILED) (0 secs / 1.268 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 228 of 315 (3 FAILED) (0 secs / 1.268 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 229 of 315 (3 FAILED) (0 secs / 1.269 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 229 of 315 (3 FAILED) (0 secs / 1.269 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 230 of 315 (3 FAILED) (0 secs / 1.271 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 230 of 315 (3 FAILED) (0 secs / 1.271 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'test1''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 230 of 315 (3 FAILED) (0 secs / 1.271 secs)
+DEBUG: 'initializing ViewModel 'test1''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 231 of 315 (3 FAILED) (0 secs / 1.272 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 231 of 315 (3 FAILED) (0 secs / 1.272 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'test1''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 231 of 315 (3 FAILED) (0 secs / 1.272 secs)
+DEBUG: 'initializing ViewModel 'test1''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 232 of 315 (3 FAILED) (0 secs / 1.273 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 232 of 315 (3 FAILED) (0 secs / 1.273 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 233 of 315 (3 FAILED) (0 secs / 1.275 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 233 of 315 (3 FAILED) (0 secs / 1.275 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'test''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 233 of 315 (3 FAILED) (0 secs / 1.275 secs)
+DEBUG: 'initializing ViewModel 'test''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 234 of 315 (3 FAILED) (0 secs / 1.276 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 234 of 315 (3 FAILED) (0 secs / 1.276 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'test1''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 234 of 315 (3 FAILED) (0 secs / 1.276 secs)
+DEBUG: 'initializing ViewModel 'test1''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 235 of 315 (3 FAILED) (0 secs / 1.278 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 235 of 315 (3 FAILED) (0 secs / 1.278 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 236 of 315 (3 FAILED) (0 secs / 1.279 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 236 of 315 (3 FAILED) (0 secs / 1.279 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'test1''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 236 of 315 (3 FAILED) (0 secs / 1.279 secs)
+DEBUG: 'initializing ViewModel 'test1''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 237 of 315 (3 FAILED) (0 secs / 1.281 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 237 of 315 (3 FAILED) (0 secs / 1.281 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'test1''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 237 of 315 (3 FAILED) (0 secs / 1.281 secs)
+DEBUG: 'initializing ViewModel 'test1''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 238 of 315 (3 FAILED) (0 secs / 1.283 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 238 of 315 (3 FAILED) (0 secs / 1.283 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 239 of 315 (3 FAILED) (0 secs / 1.285 secs)
+21 11 2026 01:58:12.067:WARN [web-server]: 404: /_karma_webpack_/layers/spec/v4.5/layerformat.md
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 240 of 315 (3 FAILED) (0 secs / 1.288 secs)
+21 11 2026 01:58:12.071:WARN [web-server]: 404: /_karma_webpack_/layers/spec/v4.5/layerformat.md
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 241 of 315 (3 FAILED) (0 secs / 1.291 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 241 of 315 (3 FAILED) (0 secs / 1.291 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 241 of 315 (3 FAILED) (0 secs / 1.291 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 242 of 315 (3 FAILED) (0 secs / 1.297 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 242 of 315 (3 FAILED) (0 secs / 1.297 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 242 of 315 (3 FAILED) (0 secs / 1.297 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 243 of 315 (3 FAILED) (0 secs / 1.303 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 243 of 315 (3 FAILED) (0 secs / 1.303 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 243 of 315 (3 FAILED) (0 secs / 1.303 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 244 of 315 (3 FAILED) (0 secs / 1.308 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 244 of 315 (3 FAILED) (0 secs / 1.308 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 244 of 315 (3 FAILED) (0 secs / 1.308 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 245 of 315 (3 FAILED) (0 secs / 1.314 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 245 of 315 (3 FAILED) (0 secs / 1.314 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 245 of 315 (3 FAILED) (0 secs / 1.314 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 246 of 315 (3 FAILED) (0 secs / 1.319 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 246 of 315 (3 FAILED) (0 secs / 1.319 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 246 of 315 (3 FAILED) (0 secs / 1.319 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 247 of 315 (3 FAILED) (0 secs / 1.323 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 247 of 315 (3 FAILED) (0 secs / 1.323 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 247 of 315 (3 FAILED) (0 secs / 1.323 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 248 of 315 (3 FAILED) (0 secs / 1.327 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 248 of 315 (3 FAILED) (0 secs / 1.327 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 248 of 315 (3 FAILED) (0 secs / 1.327 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 249 of 315 (3 FAILED) (0 secs / 1.331 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 249 of 315 (3 FAILED) (0 secs / 1.331 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 249 of 315 (3 FAILED) (0 secs / 1.331 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 250 of 315 (3 FAILED) (0 secs / 1.336 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 250 of 315 (3 FAILED) (0 secs / 1.336 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 250 of 315 (3 FAILED) (0 secs / 1.336 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 251 of 315 (3 FAILED) (0 secs / 1.34 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 251 of 315 (3 FAILED) (0 secs / 1.34 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 251 of 315 (3 FAILED) (0 secs / 1.34 secs)
+DEBUG: 'initializing tabs component'
+DEBUG: 'initializing ViewModel 'layer2''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 251 of 315 (3 FAILED) (0 secs / 1.34 secs)
+DEBUG: 'initializing ViewModel 'layer2''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 252 of 315 (3 FAILED) (0 secs / 1.351 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 252 of 315 (3 FAILED) (0 secs / 1.351 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 252 of 315 (3 FAILED) (0 secs / 1.351 secs)
+DEBUG: 'initializing tabs component'
+DEBUG: 'initializing ViewModel 'layer2''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 252 of 315 (3 FAILED) (0 secs / 1.351 secs)
+DEBUG: 'initializing ViewModel 'layer2''
+DEBUG: 'initializing ViewModel 'layer2''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 252 of 315 (3 FAILED) (0 secs / 1.351 secs)
+DEBUG: 'initializing ViewModel 'layer2''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 253 of 315 (3 FAILED) (0 secs / 1.357 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 253 of 315 (3 FAILED) (0 secs / 1.357 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 253 of 315 (3 FAILED) (0 secs / 1.357 secs)
+DEBUG: 'initializing tabs component'
+DEBUG: 'initializing ViewModel 'layer2''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 253 of 315 (3 FAILED) (0 secs / 1.357 secs)
+DEBUG: 'initializing ViewModel 'layer2''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 254 of 315 (3 FAILED) (0 secs / 1.365 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 254 of 315 (3 FAILED) (0 secs / 1.365 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 254 of 315 (3 FAILED) (0 secs / 1.365 secs)
+DEBUG: 'initializing tabs component'
+DEBUG: 'initializing ViewModel 'layer2''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 254 of 315 (3 FAILED) (0 secs / 1.365 secs)
+DEBUG: 'initializing ViewModel 'layer2''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 255 of 315 (3 FAILED) (0 secs / 1.37 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 255 of 315 (3 FAILED) (0 secs / 1.37 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 255 of 315 (3 FAILED) (0 secs / 1.37 secs)
+DEBUG: 'initializing tabs component'
+DEBUG: 'initializing ViewModel 'layer2''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 255 of 315 (3 FAILED) (0 secs / 1.37 secs)
+DEBUG: 'initializing ViewModel 'layer2''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 256 of 315 (3 FAILED) (0 secs / 1.376 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 256 of 315 (3 FAILED) (0 secs / 1.376 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 256 of 315 (3 FAILED) (0 secs / 1.376 secs)
+DEBUG: 'initializing tabs component'
+DEBUG: 'initializing ViewModel 'layer2''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 256 of 315 (3 FAILED) (0 secs / 1.376 secs)
+DEBUG: 'initializing ViewModel 'layer2''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 257 of 315 (3 FAILED) (0 secs / 1.382 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 257 of 315 (3 FAILED) (0 secs / 1.382 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 257 of 315 (3 FAILED) (0 secs / 1.382 secs)
+DEBUG: 'initializing tabs component'
+DEBUG: 'initializing ViewModel 'layer2''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 257 of 315 (3 FAILED) (0 secs / 1.382 secs)
+DEBUG: 'initializing ViewModel 'layer2''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 258 of 315 (3 FAILED) (0 secs / 1.398 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 258 of 315 (3 FAILED) (0 secs / 1.398 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 258 of 315 (3 FAILED) (0 secs / 1.398 secs)
+DEBUG: 'initializing tabs component'
+DEBUG: 'initializing ViewModel 'layer2''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 258 of 315 (3 FAILED) (0 secs / 1.398 secs)
+DEBUG: 'initializing ViewModel 'layer2''
+DEBUG: 'initializing ViewModel 'layer2''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 258 of 315 (3 FAILED) (0 secs / 1.398 secs)
+DEBUG: 'initializing ViewModel 'layer2''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 259 of 315 (3 FAILED) (0 secs / 1.406 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 259 of 315 (3 FAILED) (0 secs / 1.406 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 259 of 315 (3 FAILED) (0 secs / 1.406 secs)
+DEBUG: 'initializing tabs component'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 259 of 315 (3 FAILED) (0 secs / 1.406 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 260 of 315 (3 FAILED) (0 secs / 1.411 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 260 of 315 (3 FAILED) (0 secs / 1.411 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 260 of 315 (3 FAILED) (0 secs / 1.411 secs)
+DEBUG: 'initializing tabs component'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 260 of 315 (3 FAILED) (0 secs / 1.411 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 261 of 315 (3 FAILED) (0 secs / 1.416 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 261 of 315 (3 FAILED) (0 secs / 1.416 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 261 of 315 (3 FAILED) (0 secs / 1.416 secs)
+DEBUG: 'initializing tabs component'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 261 of 315 (3 FAILED) (0 secs / 1.416 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 262 of 315 (3 FAILED) (0 secs / 1.421 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 262 of 315 (3 FAILED) (0 secs / 1.421 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 262 of 315 (3 FAILED) (0 secs / 1.421 secs)
+DEBUG: 'initializing tabs component'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 262 of 315 (3 FAILED) (0 secs / 1.421 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 263 of 315 (3 FAILED) (0 secs / 1.425 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 263 of 315 (3 FAILED) (0 secs / 1.425 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 263 of 315 (3 FAILED) (0 secs / 1.425 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 264 of 315 (3 FAILED) (0 secs / 1.429 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 264 of 315 (3 FAILED) (0 secs / 1.429 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 264 of 315 (3 FAILED) (0 secs / 1.429 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 265 of 315 (3 FAILED) (0 secs / 1.434 secs)
+DEBUG: 'initializing ViewModel 'loading layer...''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 265 of 315 (3 FAILED) (0 secs / 1.434 secs)
+DEBUG: 'initializing ViewModel 'loading layer...''
+ERROR: Error: the domain and version specified conflict with an existing set of ATT&CK data (Enterprise ATT&CK v13)
+Error: the domain and version specified conflict with an existing set of ATT&CK data (Enterprise ATT&CK v13)
+    at TabsComponent.validateInput (http://localhost:9876/_karma_webpack_/webpack:/src/app/tabs/tabs.component.ts:539:23)
+    at TabsComponent.newLayerFromURL (http://localhost:9876/_karma_webpack_/webpack:/src/app/tabs/tabs.component.ts:483:26)
+    at http://localhost:9876/_karma_webpack_/webpack:/src/app/tabs/tabs.component.ts:869:34
+    at next (<anonymous>)
+    at asyncGeneratorStep (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular-devkit/build-angular/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js:3:1)
+    at apply (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular-devkit/build-angular/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js:17:1)
+    at _ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:398:28)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone-testing.js:2132:39)
+    at _ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:397:34)
+    at ZoneImpl.run (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:113:43)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 265 of 315 (3 FAILED) (0 secs / 1.434 secs)
+ERROR: Error: the domain and version specified conflict with an existing set of ATT&CK data (Enterprise ATT&CK v13)
+Error: the domain and version specified conflict with an existing set of ATT&CK data (Enterprise ATT&CK v13)
+    at TabsComponent.validateInput (http://localhost:9876/_karma_webpack_/webpack:/src/app/tabs/tabs.component.ts:539:23)
+    at TabsComponent.newLayerFromURL (http://localhost:9876/_karma_webpack_/webpack:/src/app/tabs/tabs.component.ts:483:26)
+    at http://localhost:9876/_karma_webpack_/webpack:/src/app/tabs/tabs.component.ts:869:34
+    at next (<anonymous>)
+    at asyncGeneratorStep (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular-devkit/build-angular/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js:3:1)
+    at apply (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular-devkit/build-angular/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js:17:1)
+    at _ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:398:28)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone-testing.js:2132:39)
+    at _ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:397:34)
+    at ZoneImpl.run (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:113:43)
+ALERT: 'ERROR the domain and version specified conflict with an existing set of ATT&CK data (Enterprise ATT&CK v13)'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 265 of 315 (3 FAILED) (0 secs / 1.434 secs)
+ALERT: 'ERROR the domain and version specified conflict with an existing set of ATT&CK data (Enterprise ATT&CK v13)'
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 265 of 315 (3 FAILED) (0 secs / 1.434 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 265 of 315 (3 FAILED) (0 secs / 1.434 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 266 of 315 (3 FAILED) (0 secs / 1.438 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 266 of 315 (3 FAILED) (0 secs / 1.438 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 266 of 315 (3 FAILED) (0 secs / 1.438 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 267 of 315 (3 FAILED) (0 secs / 1.442 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 267 of 315 (3 FAILED) (0 secs / 1.442 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 267 of 315 (3 FAILED) (0 secs / 1.442 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 268 of 315 (3 FAILED) (0 secs / 1.446 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 268 of 315 (3 FAILED) (0 secs / 1.446 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 268 of 315 (3 FAILED) (0 secs / 1.446 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 269 of 315 (3 FAILED) (0 secs / 1.45 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 269 of 315 (3 FAILED) (0 secs / 1.45 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 269 of 315 (3 FAILED) (0 secs / 1.45 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 270 of 315 (3 FAILED) (0 secs / 1.456 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 270 of 315 (3 FAILED) (0 secs / 1.456 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 270 of 315 (3 FAILED) (0 secs / 1.456 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 271 of 315 (3 FAILED) (0 secs / 1.461 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 271 of 315 (3 FAILED) (0 secs / 1.461 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 271 of 315 (3 FAILED) (0 secs / 1.461 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 272 of 315 (3 FAILED) (0 secs / 1.465 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 272 of 315 (3 FAILED) (0 secs / 1.465 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 272 of 315 (3 FAILED) (0 secs / 1.465 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 273 of 315 (3 FAILED) (0 secs / 1.471 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 273 of 315 (3 FAILED) (0 secs / 1.471 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 273 of 315 (3 FAILED) (0 secs / 1.471 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 274 of 315 (3 FAILED) (0 secs / 1.475 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 274 of 315 (3 FAILED) (0 secs / 1.475 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 274 of 315 (3 FAILED) (0 secs / 1.475 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0) TabsComponent tab utility functions should call openTab when opening a new blank tab FAILED
+	Expected spy openTab to have been called.
+	    at <Jasmine>
+	    at UserContext.apply (src/app/tabs/tabs.component.spec.ts:380:39)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:398:28)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:2132:39)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:397:34)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 275 of 315 (4 FAILED) (0 secs / 1.479 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0) TabsComponent tab utility functions should call openTab when opening a new blank tab FAILED
+	Expected spy openTab to have been called.
+	    at <Jasmine>
+	    at UserContext.apply (src/app/tabs/tabs.component.spec.ts:380:39)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:398:28)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:2132:39)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:397:34)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 275 of 315 (4 FAILED) (0 secs / 1.479 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 275 of 315 (4 FAILED) (0 secs / 1.479 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 276 of 315 (4 FAILED) (0 secs / 1.482 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 276 of 315 (4 FAILED) (0 secs / 1.482 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 276 of 315 (4 FAILED) (0 secs / 1.482 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 277 of 315 (4 FAILED) (0 secs / 1.486 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 277 of 315 (4 FAILED) (0 secs / 1.486 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 277 of 315 (4 FAILED) (0 secs / 1.486 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 278 of 315 (4 FAILED) (0 secs / 1.489 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 278 of 315 (4 FAILED) (0 secs / 1.489 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 278 of 315 (4 FAILED) (0 secs / 1.489 secs)
+DEBUG: 'initializing tabs component'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 278 of 315 (4 FAILED) (0 secs / 1.489 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 279 of 315 (4 FAILED) (0 secs / 1.493 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 279 of 315 (4 FAILED) (0 secs / 1.493 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 279 of 315 (4 FAILED) (0 secs / 1.493 secs)
+DEBUG: 'initializing tabs component'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 279 of 315 (4 FAILED) (0 secs / 1.493 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 280 of 315 (4 FAILED) (0 secs / 1.499 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 280 of 315 (4 FAILED) (0 secs / 1.499 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 280 of 315 (4 FAILED) (0 secs / 1.499 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 281 of 315 (4 FAILED) (0 secs / 1.503 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 281 of 315 (4 FAILED) (0 secs / 1.503 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 281 of 315 (4 FAILED) (0 secs / 1.503 secs)
+DEBUG: 'initializing tabs component'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 281 of 315 (4 FAILED) (0 secs / 1.503 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 281 of 315 (4 FAILED) (0 secs / 1.503 secs)
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 282 of 315 (4 FAILED) (0 secs / 1.514 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 282 of 315 (4 FAILED) (0 secs / 1.514 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 282 of 315 (4 FAILED) (0 secs / 1.514 secs)
+DEBUG: 'initializing tabs component'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 282 of 315 (4 FAILED) (0 secs / 1.514 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing ViewModel 'layer1''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 282 of 315 (4 FAILED) (0 secs / 1.514 secs)
+DEBUG: 'initializing ViewModel 'layer1''
+DEBUG: 'initializing ViewModel 'layer by operation''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 282 of 315 (4 FAILED) (0 secs / 1.514 secs)
+DEBUG: 'initializing ViewModel 'layer by operation''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 283 of 315 (4 FAILED) (0 secs / 1.528 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 283 of 315 (4 FAILED) (0 secs / 1.528 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 283 of 315 (4 FAILED) (0 secs / 1.528 secs)
+DEBUG: 'initializing tabs component'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 283 of 315 (4 FAILED) (0 secs / 1.528 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing ViewModel 'layer by operation''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 283 of 315 (4 FAILED) (0 secs / 1.528 secs)
+DEBUG: 'initializing ViewModel 'layer by operation''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 284 of 315 (4 FAILED) (0 secs / 1.541 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 284 of 315 (4 FAILED) (0 secs / 1.541 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 284 of 315 (4 FAILED) (0 secs / 1.541 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 285 of 315 (4 FAILED) (0 secs / 1.546 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 285 of 315 (4 FAILED) (0 secs / 1.546 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 285 of 315 (4 FAILED) (0 secs / 1.546 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 286 of 315 (4 FAILED) (0 secs / 1.552 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 286 of 315 (4 FAILED) (0 secs / 1.552 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 286 of 315 (4 FAILED) (0 secs / 1.552 secs)
+DEBUG: 'initializing tabs component'
+LOG: 'mytest', [Tab{domain: '', isCloseable: false, showScoreVariables: false, title: 'new test tab', isDataTable: false, viewModel: null}, Tab{domain: 'enterprise-attack', isCloseable: true, showScoreVariables: false, title: 'existing test tab', isDataTable: true}]
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 286 of 315 (4 FAILED) (0 secs / 1.552 secs)
+LOG: 'mytest', [Tab{domain: '', isCloseable: false, showScoreVariables: false, title: 'new test tab', isDataTable: false, viewModel: null}, Tab{domain: 'enterprise-attack', isCloseable: true, showScoreVariables: false, title: 'existing test tab', isDataTable: true}]
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 287 of 315 (4 FAILED) (0 secs / 1.556 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 287 of 315 (4 FAILED) (0 secs / 1.556 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 287 of 315 (4 FAILED) (0 secs / 1.556 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 288 of 315 (4 FAILED) (0 secs / 1.56 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 288 of 315 (4 FAILED) (0 secs / 1.56 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 288 of 315 (4 FAILED) (0 secs / 1.56 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 289 of 315 (4 FAILED) (0 secs / 1.564 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 289 of 315 (4 FAILED) (0 secs / 1.564 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 289 of 315 (4 FAILED) (0 secs / 1.564 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 290 of 315 (4 FAILED) (0 secs / 1.568 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 290 of 315 (4 FAILED) (0 secs / 1.568 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 290 of 315 (4 FAILED) (0 secs / 1.568 secs)
+DEBUG: 'initializing tabs component'
+DEBUG: 'initializing ViewModel 'loading layer...''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 290 of 315 (4 FAILED) (0 secs / 1.568 secs)
+DEBUG: 'initializing ViewModel 'loading layer...''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 291 of 315 (4 FAILED) (0 secs / 1.573 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 291 of 315 (4 FAILED) (0 secs / 1.573 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 291 of 315 (4 FAILED) (0 secs / 1.573 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 292 of 315 (4 FAILED) (0 secs / 1.577 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 292 of 315 (4 FAILED) (0 secs / 1.577 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 292 of 315 (4 FAILED) (0 secs / 1.577 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 293 of 315 (4 FAILED) (0 secs / 1.581 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 293 of 315 (4 FAILED) (0 secs / 1.581 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 293 of 315 (4 FAILED) (0 secs / 1.581 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 294 of 315 (4 FAILED) (0 secs / 1.586 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 294 of 315 (4 FAILED) (0 secs / 1.586 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 294 of 315 (4 FAILED) (0 secs / 1.586 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 295 of 315 (4 FAILED) (0 secs / 1.59 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 295 of 315 (4 FAILED) (0 secs / 1.59 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 295 of 315 (4 FAILED) (0 secs / 1.59 secs)
+DEBUG: 'initializing tabs component'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 296 of 315 (4 FAILED) (0 secs / 1.598 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 296 of 315 (4 FAILED) (0 secs / 1.598 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 297 of 315 (4 FAILED) (0 secs / 1.605 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 297 of 315 (4 FAILED) (0 secs / 1.605 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 298 of 315 (4 FAILED) (0 secs / 1.609 secs)
+DEBUG: 'initializing data service'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 298 of 315 (4 FAILED) (0 secs / 1.609 secs)
+DEBUG: 'initializing data service'
+DEBUG: 'initializing ViewModel 'layer''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 298 of 315 (4 FAILED) (0 secs / 1.609 secs)
+DEBUG: 'initializing ViewModel 'layer''
+DEBUG: 'initializing ViewModel 'loading layer...''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 298 of 315 (4 FAILED) (0 secs / 1.609 secs)
+DEBUG: 'initializing ViewModel 'loading layer...''
+ERROR: Error: Error: 'enterprise-attack' (v17) is an invalid domain.
+Error: Error: 'enterprise-attack' (v17) is an invalid domain.
+    at http://localhost:9876/_karma_webpack_/webpack:/src/app/tabs/tabs.component.ts:954:39
+    at next (<anonymous>)
+    at asyncGeneratorStep (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular-devkit/build-angular/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js:3:1)
+    at apply (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular-devkit/build-angular/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js:17:1)
+    at _ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:398:28)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone-testing.js:2132:39)
+    at _ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:397:34)
+    at Object.onInvoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/core/fesm2022/core.mjs:6568:33)
+    at _ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:397:34)
+    at ZoneImpl.run (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:113:43)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 298 of 315 (4 FAILED) (0 secs / 1.609 secs)
+ERROR: Error: Error: 'enterprise-attack' (v17) is an invalid domain.
+Error: Error: 'enterprise-attack' (v17) is an invalid domain.
+    at http://localhost:9876/_karma_webpack_/webpack:/src/app/tabs/tabs.component.ts:954:39
+    at next (<anonymous>)
+    at asyncGeneratorStep (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular-devkit/build-angular/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js:3:1)
+    at apply (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular-devkit/build-angular/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js:17:1)
+    at _ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:398:28)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone-testing.js:2132:39)
+    at _ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:397:34)
+    at Object.onInvoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/core/fesm2022/core.mjs:6568:33)
+    at _ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:397:34)
+    at ZoneImpl.run (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:113:43)
+ALERT: 'ERROR parsing layer from https://raw.githubusercontent.com/mitre-attack/attack-navigator/master/layers/samples/Bear_APT.json, check the javascript console for more information.'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 298 of 315 (4 FAILED) (0 secs / 1.609 secs)
+ALERT: 'ERROR parsing layer from https://raw.githubusercontent.com/mitre-attack/attack-navigator/master/layers/samples/Bear_APT.json, check the javascript console for more information.'
+DEBUG: 'initializing ViewModel 'loading layer...''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 298 of 315 (4 FAILED) (0 secs / 1.609 secs)
+DEBUG: 'initializing ViewModel 'loading layer...''
+ERROR: Error: Error: 'enterprise-attack' (v17) is an invalid domain.
+Error: Error: 'enterprise-attack' (v17) is an invalid domain.
+    at http://localhost:9876/_karma_webpack_/webpack:/src/app/tabs/tabs.component.ts:954:39
+    at next (<anonymous>)
+    at asyncGeneratorStep (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular-devkit/build-angular/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js:3:1)
+    at apply (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular-devkit/build-angular/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js:17:1)
+    at _ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:398:28)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone-testing.js:2132:39)
+    at _ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:397:34)
+    at Object.onInvoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/core/fesm2022/core.mjs:6568:33)
+    at _ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:397:34)
+    at ZoneImpl.run (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:113:43)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 298 of 315 (4 FAILED) (0 secs / 1.609 secs)
+ERROR: Error: Error: 'enterprise-attack' (v17) is an invalid domain.
+Error: Error: 'enterprise-attack' (v17) is an invalid domain.
+    at http://localhost:9876/_karma_webpack_/webpack:/src/app/tabs/tabs.component.ts:954:39
+    at next (<anonymous>)
+    at asyncGeneratorStep (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular-devkit/build-angular/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js:3:1)
+    at apply (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular-devkit/build-angular/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js:17:1)
+    at _ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:398:28)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone-testing.js:2132:39)
+    at _ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:397:34)
+    at Object.onInvoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/core/fesm2022/core.mjs:6568:33)
+    at _ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:397:34)
+    at ZoneImpl.run (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:113:43)
+ALERT: 'ERROR parsing layer from https://raw.githubusercontent.com/mitre-attack/attack-navigator/master/layers/samples/Bear_APT.json, check the javascript console for more information.'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 298 of 315 (4 FAILED) (0 secs / 1.609 secs)
+ALERT: 'ERROR parsing layer from https://raw.githubusercontent.com/mitre-attack/attack-navigator/master/layers/samples/Bear_APT.json, check the javascript console for more information.'
+DEBUG: 'initializing ViewModel 'loading layer...''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 298 of 315 (4 FAILED) (0 secs / 1.609 secs)
+DEBUG: 'initializing ViewModel 'loading layer...''
+ERROR: Error: Error: 'enterprise-attack' (v17) is an invalid domain.
+Error: Error: 'enterprise-attack' (v17) is an invalid domain.
+    at http://localhost:9876/_karma_webpack_/webpack:/src/app/tabs/tabs.component.ts:954:39
+    at next (<anonymous>)
+    at asyncGeneratorStep (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular-devkit/build-angular/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js:3:1)
+    at apply (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular-devkit/build-angular/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js:17:1)
+    at _ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:398:28)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone-testing.js:2132:39)
+    at _ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:397:34)
+    at Object.onInvoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/core/fesm2022/core.mjs:6568:33)
+    at _ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:397:34)
+    at ZoneImpl.run (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:113:43)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 298 of 315 (4 FAILED) (0 secs / 1.609 secs)
+ERROR: Error: Error: 'enterprise-attack' (v17) is an invalid domain.
+Error: Error: 'enterprise-attack' (v17) is an invalid domain.
+    at http://localhost:9876/_karma_webpack_/webpack:/src/app/tabs/tabs.component.ts:954:39
+    at next (<anonymous>)
+    at asyncGeneratorStep (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular-devkit/build-angular/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js:3:1)
+    at apply (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular-devkit/build-angular/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js:17:1)
+    at _ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:398:28)
+    at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone-testing.js:2132:39)
+    at _ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:397:34)
+    at Object.onInvoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/core/fesm2022/core.mjs:6568:33)
+    at _ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:397:34)
+    at ZoneImpl.run (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone.js:113:43)
+ALERT: 'ERROR parsing layer from https://raw.githubusercontent.com/mitre-attack/attack-navigator/master/layers/samples/Bear_APT.json, check the javascript console for more information.'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 298 of 315 (4 FAILED) (0 secs / 1.609 secs)
+ALERT: 'ERROR parsing layer from https://raw.githubusercontent.com/mitre-attack/attack-navigator/master/layers/samples/Bear_APT.json, check the javascript console for more information.'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 299 of 315 (4 FAILED) (0 secs / 1.93 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 300 of 315 (4 FAILED) (0 secs / 1.933 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 300 of 315 (4 FAILED) (0 secs / 1.933 secs)
+DEBUG: 'initializing ViewModel 'name''
+ERROR: 'Error: Link required field 'url' or 'divider' not present'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 300 of 315 (4 FAILED) (0 secs / 1.933 secs)
+ERROR: 'Error: Link required field 'url' or 'divider' not present'
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 301 of 315 (4 FAILED) (0 secs / 1.935 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 301 of 315 (4 FAILED) (0 secs / 1.935 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 302 of 315 (4 FAILED) (0 secs / 1.937 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 303 of 315 (4 FAILED) (0 secs / 1.939 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 304 of 315 (4 FAILED) (0 secs / 1.94 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 305 of 315 (4 FAILED) (0 secs / 1.942 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 306 of 315 (4 FAILED) (0 secs / 1.943 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 307 of 315 (4 FAILED) (0 secs / 1.945 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 308 of 315 (4 FAILED) (0 secs / 1.946 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 309 of 315 (4 FAILED) (0 secs / 1.947 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 309 of 315 (4 FAILED) (0 secs / 1.947 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 310 of 315 (4 FAILED) (0 secs / 1.948 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 310 of 315 (4 FAILED) (0 secs / 1.948 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 311 of 315 (4 FAILED) (0 secs / 1.95 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 311 of 315 (4 FAILED) (0 secs / 1.95 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 312 of 315 (4 FAILED) (0 secs / 1.954 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 312 of 315 (4 FAILED) (0 secs / 1.954 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 313 of 315 (4 FAILED) (0 secs / 1.958 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 314 of 315 (4 FAILED) (0 secs / 1.961 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 314 of 315 (4 FAILED) (0 secs / 1.961 secs)
+DEBUG: 'initializing ViewModel 'name''
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 315 of 315 (4 FAILED) (0 secs / 1.966 secs)
+Chrome Headless 156.0.0.0 (Linux 0.0.0): Executed 315 of 315 (4 FAILED) (2.266 secs / 1.966 secs)
+TOTAL: 4 FAILED, 311 SUCCESS
+TOTAL: 4 FAILED, 311 SUCCESS
+✔ Browser application bundle generation complete.
+✔ Browser application bundle generation complete.
+
+real	0m40.416s
+user	1m15.894s
+sys	0m3.222s
+exit 1

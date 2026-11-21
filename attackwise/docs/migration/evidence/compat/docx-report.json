@@ -1,0 +1,48 @@
+{
+  "en": {
+    "filename": "ATTACKWISE-Report-2026-11-21.docx",
+    "paragraphsAndCells": 42,
+    "tables": 2,
+    "rows": 5,
+    "rtl": true,
+    "chartBytes": 10361,
+    "documentXmlIdentical": true,
+    "sample": [
+      "ATT&amp;CKWISE",
+      "Executive Threat Defense Report — MITRE ATT&amp;CK Enterprise",
+      "21 November 2026",
+      "ATT&amp;CK dataset version: 20",
+      "Executive summary",
+      "Risk formula: A − mean(D)",
+      "Residual risk index: Not Rated",
+      "A = attack score. D = selected linked defense scores. Negative results are preserved; the 0–100 index uses max(0, A − D). Missing scores are not zero.",
+      "Defense-selection coverage: 50% — Moderate selection coverage",
+      "Of 2 selected attack techniques, 1 have a selected defense and 1 have no selected defense.",
+      "Coverage reflects selected related defenses, not verified deployment or effectiveness.",
+      "Tactical coverage breakdown"
+    ]
+  },
+  "ar": {
+    "filename": "ATTACKWISE-Report-2026-11-21.docx",
+    "paragraphsAndCells": 42,
+    "tables": 2,
+    "rows": 5,
+    "rtl": true,
+    "chartBytes": 10871,
+    "documentXmlIdentical": true,
+    "sample": [
+      "ATT&amp;CKWISE",
+      "التقرير التنفيذي لخطة الدفاع — MITRE ATT&amp;CK Enterprise",
+      "21 نوفمبر 2026",
+      "ATT&amp;CK dataset version: 20",
+      "الملخص التنفيذي",
+      "معادلة الخطر: A − mean(D)",
+      "مؤشر الخطر المتبقي: غير مقيّم",
+      "A = سكور الهجوم. D = سكورات الدفاعات المختارة المرتبطة. تظهر النتائج السالبة كما هي ويستخدم المؤشر max(0, A − D). السكور المفقود ليس صفراً.",
+      "نسبة تغطية اختيار الدفاعات: 50% — تغطية اختيار متوسطة",
+      "من أصل 2 تقنية هجوم محددة: 1 لها دفاع مختار، و1 دون دفاع مختار.",
+      "التغطية تعكس اختيار الدفاعات المرتبطة ولا تؤكد التطبيق أو فعالية الحماية.",
+      "تحليل التغطية حسب التكتيك"
+    ]
+  }
+}

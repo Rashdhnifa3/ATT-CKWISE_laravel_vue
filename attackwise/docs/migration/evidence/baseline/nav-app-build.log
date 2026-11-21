@@ -1,0 +1,27 @@
+
+> attack-navigator@5.3.2 build
+> ng build
+
+❯ Building...
+✔ Building...
+Initial chunk files          | Names            |  Raw size
+main.js                      | main             |   8.20 MB | 
+scripts.js                   | scripts          |   1.75 MB | 
+polyfills.js                 | polyfills        | 553.13 kB | 
+styles.css                   | styles           | 153.39 kB | 
+chunk-HXXPWGDR.js            | -                |   5.09 kB | 
+
+                             | Initial total    |  10.66 MB
+
+Lazy chunk files             | Names            |  Raw size
+reference-report-TVGCXW3O.js | reference-report | 540.17 kB | 
+
+Application bundle generation complete. [15.348 seconds]
+
+Output location: <worktree>/nav-app/dist
+
+
+real	0m16.752s
+user	1m7.388s
+sys	0m2.825s
+exit 0
