@@ -4,7 +4,7 @@
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { markRaw, reactive } from 'vue';
-import { ConfigService } from '../domain/config';
+import { ConfigService, httpClientInit } from '../domain/config';
 import { DataService, DataLoadError } from '../domain/data-service';
 import { Domain, Version } from '../domain/stix';
 import { ViewModel, layerVersion, navVersion, type PlanningView } from '../layer/view-model';
@@ -296,7 +296,7 @@ export class Workspace {
         if (!this.validateInput(loadData, domainVersionID)) return;
         const url = new URL(loadData.url).toString();
         try {
-            const res = await fetch(url);
+            const res = await fetch(url, httpClientInit);
             if (!res.ok) throw new DataLoadError('HTTP ' + res.status);
             await res.json();
         } catch (err) {
@@ -468,7 +468,7 @@ export class Workspace {
     async loadLayerFromURL(loadURL: string, replace: boolean, defaultLayers = false): Promise<void> {
         let layerFile: any;
         try {
-            const res = await fetch(loadURL);
+            const res = await fetch(loadURL, httpClientInit);
             if (!res.ok) throw new Error('HTTP ' + res.status);
             const text = await res.text();
             layerFile = JSON.parse(text);

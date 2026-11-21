@@ -22,6 +22,10 @@ export interface CollectionIndex {
     [k: string]: unknown;
 }
 
+/** Accept header Angular's HttpClient sends by default; used wherever the reference used HttpClient.get. */
+export const HTTP_CLIENT_ACCEPT = 'application/json, text/plain, */*';
+export const httpClientInit: RequestInit = { headers: { Accept: HTTP_CLIENT_ACCEPT } };
+
 /** API base for the official ATT&CK data endpoints. Same-origin `/api/v1` unless built otherwise. */
 export function apiBase(): string {
     const configured = (import.meta.env?.VITE_ATTACKWISE_API_BASE as string | undefined) ?? '/api/v1';
@@ -120,7 +124,7 @@ export class ConfigService {
 
     /** Loads ./assets/config.json and, when configured, the official collection index (via API). */
     public async loadConfig(fetcher: typeof fetch = fetch.bind(window)): Promise<void> {
-        const res = await fetcher('./assets/config.json');
+        const res = await fetcher('./assets/config.json', httpClientInit);
         if (!res.ok) throw new ConfigError(`config.json returned HTTP ${res.status}`);
         const config = this.validateConfig(await res.json());
         for (const item of config['custom_context_menu_items'] || []) this.contextMenuItems.push(item);

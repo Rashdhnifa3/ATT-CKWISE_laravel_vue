@@ -7,13 +7,14 @@ import { marked } from 'marked';
 import { notify, type DialogState } from '../app/notify';
 import { navVersion } from '../layer/view-model';
 import { sanitizeHtml } from '../app/sanitize';
+import { httpClientInit } from '../domain/config';
 
 const changelogHtml = ref('');
 const changelogError = ref('');
 async function loadChangelog() {
     if (changelogHtml.value) return;
     try {
-        const res = await fetch('./CHANGELOG.md');
+        const res = await fetch('./CHANGELOG.md', httpClientInit);
         if (!res.ok) throw new Error('HTTP ' + res.status);
         changelogHtml.value = sanitizeHtml(await marked.parse(await res.text()));
     } catch (e) {

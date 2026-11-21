@@ -39,7 +39,7 @@ async function open(browser: Browser, server: Server, hash: string, config: Reco
     const context = await browser.newContext({ viewport: { width: 1280, height: 900 } });
     await context.route('**/assets/config.json', (r) => r.fulfill({ json: { ...baseConfig, collection_index_url: '', versions: configData, ...config } }));
     await context.route(configData.entries[0].domains[0].data[0], (r) => r.fulfill({ json: { type: 'bundle', objects } }));
-    await context.route(CUSTOM_BUNDLE, (r) => r.fulfill({ json: { type: 'bundle', objects: objects.map((o) => (o.type === 'attack-pattern' ? { ...o, name: o.name + ' (custom)' } : o)) } }));
+    await context.route(CUSTOM_BUNDLE, (r) => r.fulfill({ json: { type: 'bundle', objects: objects.map((o) => (o.type === 'attack-pattern' ? { ...o, name: (o as { name: string }).name + ' (custom)' } : o)) } }));
     await context.route('https://synthetic.example/layers/*.json', (r) => {
         const name = decodeURIComponent(r.request().url().split('/').pop()!.replace('.json', ''));
         return r.fulfill({ json: name === 'pair' ? [layer('Pair A'), layer('Pair B')] : layer(name) });

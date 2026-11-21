@@ -20,7 +20,8 @@ import {
     type DomainLookup,
     type StixSDO,
 } from './stix';
-import { apiBase, type CollectionIndex, type ConfigService } from './config';
+import { apiBase, HTTP_CLIENT_ACCEPT, type CollectionIndex, type ConfigService } from './config';
+import { Collection, TaxiiConnect } from './taxii';
 
 export const minimumSupportedVersion = '4.0';
 
@@ -275,14 +276,20 @@ export class DataService implements DomainLookup {
     /** Fetches every bundle of a domain. Throws DataLoadError on HTTP or parse failure. */
     public async getDomainData(domain: Domain): Promise<any[]> {
         if (domain.taxii_collection && domain.taxii_url) {
-            throw new DataLoadError('TAXII sources are not supported by the Vue build yet (see CURRENT_PARITY.md D04).');
+            // Reference: TaxiiConnect(url, '', '') — config `authentication` is not used for TAXII.
+            const conn = new TaxiiConnect(domain.taxii_url, '', '', 10000, this.fetcher);
+            try {
+                return [await new Collection(domain.taxii_collection, domain.taxii_url, conn).getObjects()];
+            } catch (e) {
+                throw new DataLoadError((e as Error).message);
+            }
         }
         const headers: Record<string, string> = {};
         if (domain.authentication && domain.authentication.enabled) {
             const token = `${domain.authentication.serviceName}:${domain.authentication.apiKey}`;
             headers['Authorization'] = 'Basic ' + btoa(token);
         }
-        if (domain.official) headers['Accept'] = 'application/json';
+        headers['Accept'] = domain.official ? 'application/json' : HTTP_CLIENT_ACCEPT;
         return Promise.all(
             domain.urls.map(async (url) => {
                 let res: Response;
