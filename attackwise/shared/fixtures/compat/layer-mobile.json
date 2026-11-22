@@ -1,9 +1,0 @@
-{
-  "name": "Synthetic mobile layer",
-  "versions": {
-    "attack": "20",
-    "layer": "4.5"
-  },
-  "domain": "mobile-attack",
-  "techniques": []
-}
